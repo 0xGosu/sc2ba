@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+pkill -f Python
+#cd /Users/TVA/Documents/GitHub/
+#python sc2ba.py

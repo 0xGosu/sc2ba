@@ -1,0 +1,39 @@
+  14	  0:19	  Pylon
+  15	  0:39	  Gateway,
+  16	  0:47	  Assimilator
+  20	  1:25	  Nexus
+  20	  1:35	  Cybernetics Core
+  21	  1:44	  Assimilator
+  22	  1:56	  Pylon
+  23	  2:11	  Warp Gate
+  23	  2:12	  Adept (Chrono Boost)
+  27	  2:31	  Stargate
+  27	  2:35	  Adept
+  35	  3:12	  Oracle (Chrono Boost)
+  36	  3:16	  Pylon
+  41	  3:22	  Gateway
+  42	  3:31	  Assimilator x2
+  43	  3:35	  Pylon
+  32	  3:41	  Phoenix (Chrono Boost)
+  47	  3:52	  Pylon
+  49	  3:57	  Oracle (Chrono Boost)
+  55	  4:19	  Adept x2
+  60	  4:27	  Oracle
+  67	  4:46	  Sentry x2
+  67	  4:48	  Nexus
+  72	  5:02	  Robotics Facility x2
+  72	  5:11	  Oracle
+  77	  5:26	  Sentry
+  83	  5:43	  Gateway x3
+  83	  5:49	  Gateway
+  83	  5:53	  Immortal (Chrono Boost)
+  87	  6:01	  Immortal (Chrono Boost)
+  96	  6:18	  Twilight Council
+  96	  6:19	  Forge
+  100	  6:29	  Immortal x2 (Chrono Boost)
+  106	  6:46	  Sentry x2
+  112	  6:50	  Assimilator x2
+  114	  6:58	  Templar Archives
+  114	  7:01	  Immortal (Chrono Boost)
+  115	  7:07	  Immortal (Chrono Boost)
+  126	  7:25	  Zealot x3

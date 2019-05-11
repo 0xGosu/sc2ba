@@ -1,0 +1,49 @@
+  14	  0:17	  Pylon
+  15	  0:38	  Gateway
+  17	  0:46	  Assimilator
+  15	  0:55	  Assimilator
+  19	  1:12	  Gateway
+  21	  1:25	  Cybernetics Core
+  22	  1:37	  Pylon
+  24	  2:03	  Warp Gate, Sentry, Stalker
+  28	  2:10	  Pylon
+  28	  2:29	  Stalker
+  30	  2:34	  Stargate
+  30	  2:50	  Nexus
+  30	  2:58	  Stalker
+  33	  3:09	  Oracle
+  33	  3:10	  Shield Battery
+  33	  3:25	  Pylon
+  38	  3:46	  Oracle
+  43	  4:08	  Robotics Facility
+  46	  4:20	  Adept x2
+  53	  4:35	  Pylon
+  55	  4:50	  Forge
+  57	  4:56	  Immortal
+  58	  5:04	  Sentry
+  61	  5:10	  Protoss Ground Weapons Level 1
+  64	  5:22	  Twilight Council
+  65	  5:30	  Assimilator x2
+  65	  5:35	  Observer
+  68	  5:58	  Charge
+  68	  6:04	  Immortal
+  68	  6:11	  Gateway x4
+  72	  6:19	  Gateway x2
+  72	  6:25	  Templar Archives
+  72	  6:30	  Protoss Ground Weapons Level 2
+  72	  6:34	  Immortal
+  76	  6:53	  Zealot x2
+  80	  7:08	  High Templar x2
+  82	  7:12	  Archon
+  82	  7:14	  Nexus
+  84	  7:19	  Warp Prism
+  84	  7:21	  Zealot x3
+  90	  7:28	  Zealot x2
+  94	  7:35	  Zealot
+  98	  7:41	  High Templar x2
+  98	  7:43	  Zealot x2
+  106	  7:51	  Archon
+  112	  8:08	  High Templar x2
+  118	  8:13	  Archon
+  130	  8:37	  High Templar x2
+  136	  8:42	  Archon
