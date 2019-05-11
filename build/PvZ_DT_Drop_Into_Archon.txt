@@ -4,12 +4,12 @@
   16	  0:46	  Gateway
   18	  1:00	  Probe to Gas  # Keep 16 probes for mineral
   20	  1:24	  Nexus	 # move this probe to cyber core place, pull scout probe back
-  20	  1:34	  Cybernetics Core # After this focus on Gas
+  20|fc	  1:34	  Cybernetics Core # After this focus on Gas
   21	  1:37	  Assimilator
   22	  1:50	  Pylon # use scout probe to put this remote pylon
   22	  1:57	  Probe to Gas
   23	  2:12	  Warp Gate, Stalker # 4:07 research warpgate complete
-  26	  2:22	  Twilight Council
+  26|vw	  2:22	  Twilight Council
   26	  2:36	  Probe to Minerals, Chronoboost
   28	  2:50	  Robotics Facility
   30	  2:58	  Chronoboost

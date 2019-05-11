@@ -9,16 +9,18 @@
 #
 import re
 
-lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*)\t\s*(\d+:\d+)\t\s*([\w ,]+)')
 import datetime
 import time
 from collections import namedtuple
 
-BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 import os
 import keyboard
-import objc
+# import objc
 import sys
+
+BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
+
+lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*)\t\s*(\d+:\d+)\t\s*([\w ,]+)')
 
 
 def parse_build(build_content, factor=1, verbose=0, max_time=60 * 15):
@@ -82,10 +84,12 @@ class Runner(object):
     sync_handler_map = {}
 
 
-def run_build(run, start_key='q', max_time=60*15):
-    # keyboard.call_later(say, args=['build %s is ready' % run.build_name], delay=0.1)
-    print('build %s is ready' % run.build_name)
-    # keyboard.wait(start_key)
+def run_build(run, start_key='', max_time=60 * 15):
+    keyboard.call_later(say, args=['build %s is ready' % run.build_name], delay=0.1)
+    print("build is ready", run.build_name)
+    if start_key:
+        print("Press {} to start".format(start_key))
+        keyboard.wait(start_key)
     runner.stop_now = False
     keyboard.call_later(say, args=['start'], delay=0)
     start_time = datetime.datetime.now()
@@ -109,24 +113,30 @@ def run_build(run, start_key='q', max_time=60*15):
 
 
 def process_runner_build_orders(run, enable_sync=True):
-    def sync_build(sync_keys, step_time):
-        print("sync build %s %s" % (run.cur_second, step_time))
-        if run.cur_second > step_time:  # only sync backward (go back in time)
-            run.offset = step_time - run.cur_second  # offset will be negative
-            # remove remove sync listerner
-            handler = run.sync_handler_map.pop(sync_keys)
-            if handler:
-                keyboard.remove_word_listener(handler)
-                print("build synced and handler removed")
-
     for step in run.build_orders:
         if step.sync and len(step.sync) >= 2 and enable_sync:
-            print("create sync for: %s" % step)
-            step_time, keys = step.time, step.sync  # duplicated the value to avoid referrence
-            run.sync_handler_map[keys] = keyboard.add_word_listener(keys[:-1],
-                                                                    lambda: sync_build(keys, step_time),
-                                                                    triggers=[keys[-1]], match_suffix=True,
-                                                                    timeout=0.5)
+            print("create sync for:", step)
+
+            def make_sync_build():
+                step_time, keys = step.time, step.sync  # duplicated the value to avoid referrence
+
+                def f(step_time=step_time):
+                    print("sync build", run.cur_second, step_time)
+                    if run.cur_second > step_time:  # only sync backward (go back in time)
+                        run.offset = step_time - run.cur_second  # offset will be negative
+                        # remove remove sync listerner
+                        handler = run.sync_handler_map.pop(keys, None)
+                        if handler:
+                            keyboard.remove_word_listener(handler)
+                            print("build synced and handler removed")
+
+                return f
+
+            run.sync_handler_map[str(step.sync)] = keyboard.add_word_listener(str(step.sync[:-1]),
+                                                                              make_sync_build(),
+                                                                              triggers=[str(step.sync[-1])],
+                                                                              match_suffix=True,
+                                                                              timeout=0.5)
 
 
 def print_test(kb_event, *args):
@@ -156,19 +166,19 @@ def main():
 
     file_path, build_name = get_build_path(verbose=1)
     with open(file_path) as f:
-        bo = parse_build(f.read(), verbose=0)
+        bo = parse_build(f.read(), verbose=0, factor=1)
     # for s in bo:
     #     print s
     runner.build_name = build_name.replace('_', ' ')
     runner.build_orders = bo
-    runner.offset = 13 + 1
+    runner.offset = 1
 
     # enable sync feature
-    # process_runner_build_orders(runner, enable_sync=True)
-    # test code
+    process_runner_build_orders(runner, enable_sync=True)
 
-    keyboard.hook(print_test, suppress=False)
-    keyboard.wait('command')
+    # test code
+    # keyboard.hook(print_test, suppress=False)
+    # keyboard.wait('command')
 
     def stop_now(*args):
         runner.stop_now = True
@@ -177,10 +187,9 @@ def main():
             runner.build_orders = bo
             print("stop and reload build")
 
-    # keyboard.add_word_listener('stop', stop_now, triggers=['space'], match_suffix=True, timeout=1)
-
-    # keyboard.on_press_key('command', stop_now, suppress=False)
-    run_build(runner, start_key='shift')
+    keyboard.add_word_listener('stop', stop_now, triggers=['space'], match_suffix=True, timeout=1)
+    while 1:
+        run_build(runner, start_key='q')
 
 
 if __name__ == '__main__':
