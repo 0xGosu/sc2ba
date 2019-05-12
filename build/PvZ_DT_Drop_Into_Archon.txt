@@ -29,9 +29,9 @@
   57	  5:10	  Build Gateway x3, Pylon x2
   66|ve	  5:25	  Templar Archives
   66	  5:35	  Immortal
+  +25	  5:45	  Warp Zealot
   66	  6:00	  Forge x2, Pylon x3
-  75|fq	  6:25	  Nexus F3
+  75|fq+  6:25	  Nexus F3
   80	  6:40	  Research Upgrades Chronoboost
   88	  7:15	  Build Gateway x3, Pylon x5
   99	  7:44	  Probe to Minerals and Gas
-  +25	  7:55	  Warp Zealot
