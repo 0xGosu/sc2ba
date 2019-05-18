@@ -20,10 +20,13 @@ import sys
 
 BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 
-lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*\+?)\s*\t?\s*(\d+:\d+)\t\s*([\w ,]+)')
+lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*\+?)\s*\t?\s*(\d+:\d+)\t\s*([\w +,.]+)')
+
+# this should be equal 1 unless for testing
+factor = 1
 
 
-def parse_build(build_content, factor=1, verbose=0, max_time=60 * 15):
+def parse_build(build_content, verbose=0, max_time=60 * 20):
     build_orders = list()
     for match in lotv_regex.findall(build_content):
         supply = match[0]
@@ -69,7 +72,9 @@ def binary_search_step(second, b, e, build_orders):
         return binary_search_step(second, b, mid, build_orders)
 
 
-def say(msg):
+def say(msg, verbose=False):
+    if verbose:
+        print("say: " + msg)
     os.system("say '%s'" % msg)
 
 
@@ -83,6 +88,19 @@ class Runner(object):
     stop_now = False
 
     sync_handler_map = {}
+
+
+def process_step_message(step):
+    for message in step.message.split('.'):
+        if not message:
+            continue
+        m = re.search(r'^\+(\d+)\s+(.+)$', message)
+        if m:
+            delay = int(m.group(1)) / factor
+            message = m.group(2)
+        else:
+            delay = 0
+        keyboard.call_later(say, args=[message], delay=delay)
 
 
 def run_build(run, start_key='', max_time=60 * 15):
@@ -100,15 +118,14 @@ def run_build(run, start_key='', max_time=60 * 15):
         second = run.cur_second + run.offset
         step = find_build_step(second, run.build_orders)
         if step != run.last_step:
-            keyboard.call_later(say, args=[step.message], delay=0)
+            process_step_message(step)
             print(run.cur_second, run.offset, step)
             run.last_step = step
         if run.stop_now or step == run.build_orders[-1]:
             # final step
             break
         time.sleep(0.1)
-    keyboard.call_later(say, args=['build is stop'], delay=0.1)
-    print("build is stop")
+    keyboard.call_later(say, args=['build is stop', True], delay=0.1)
 
 
 def process_runner_build_orders(run, enable_sync=True):
@@ -144,6 +161,7 @@ def process_runner_build_orders(run, enable_sync=True):
                                 keyboard.remove_word_listener(handler)
                                 print("build synced and handler removed")
                         keyboard.call_later(say, args=['synced'], delay=0)
+
                 return f
 
             run.sync_handler_map[str(keys)] = keyboard.add_word_listener(str(keys),
@@ -151,10 +169,6 @@ def process_runner_build_orders(run, enable_sync=True):
                                                                          triggers=[str(keys[-1])],
                                                                          match_suffix=True,
                                                                          timeout=0.6)
-
-
-def print_test(kb_event, *args):
-    print("%s + %s at %s" % (kb_event.modifiers, kb_event.name, kb_event.time))
 
 
 def get_build_path(verbose=0):
@@ -176,8 +190,9 @@ def get_build_path(verbose=0):
 def reload_runner(set_offset=1, verbose='say'):
     global runner
     runner.build_name = os.path.split(runner.build_path)[-1].replace('.txt', '').replace('_', ' ')
+    print("Reload build: {}".format(runner.build_name))
     with open(runner.build_path) as f:
-        bo = parse_build(f.read(), verbose=0, factor=1)
+        bo = parse_build(f.read())
     runner.build_orders = bo
     if set_offset is not None:
         runner.offset = set_offset
@@ -192,7 +207,6 @@ def reload_runner(set_offset=1, verbose='say'):
         else:
             msg = 'build %s is ready' % runner.build_name
         keyboard.call_later(say, args=[msg], delay=0)
-    print("build is ready", runner.build_name)
 
 
 def main():
