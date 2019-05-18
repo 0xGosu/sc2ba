@@ -143,7 +143,7 @@ def process_runner_build_orders(run, enable_sync=True):
                             if handler:
                                 keyboard.remove_word_listener(handler)
                                 print("build synced and handler removed")
-
+                        keyboard.call_later(say, args=['synced'], delay=0)
                 return f
 
             run.sync_handler_map[str(keys)] = keyboard.add_word_listener(str(keys),
@@ -227,7 +227,7 @@ def main():
                                    match_suffix=True, timeout=1.2)
 
     while 1:
-        reload_runner()
+        reload_runner(set_offset=2)
         run_build(runner, start_key='q')
 
 

@@ -3,14 +3,14 @@
   15	  0:38	  Chronoboost
   17	  0:42	  Assimilator
   18	  0:56	  Assimilator
-  19	  1:07	  Gateway  # Scoute Probe, should be build before 1:11
+  19	  1:07	  Gateway  # Scout Probe, should be build before 1:11
   21|fc	  1:18	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
   22	  1:32	  Pylon
   24	  1:57	  Warp Gate, Adept x2 Chronoboost # 1:58 -> 3:53 research warpgate complete
   28|vw	  2:03	  Twilight Council  # 2:06
   29	  2:16	  Adept x2
-  29	  2:23	  Pylon
-  31	  2:42	  Dark Shrine
+  29	  2:23	  Pylon  # use scout probe to put this remote pylon
+  31|vr	  2:42	  Dark Shrine
   35	  2:53	  Adept x2
   35	  3:05	  Chronoboost Warpgate # 3:43 research warpgate complete
   35	  3:09	  Probe to F2
@@ -20,19 +20,23 @@
   39	  3:57	  Warp in Dark Templar
   39	  4:00	  Pylon
   43	  4:24	  Warp Prism
-  43	  4:28	  Probe to Minerals
+  43	  4:27	  Probe to Minerals
   39	  4:34	  Assimilator x2
   45	  4:42	  Warp in Dark Templar
   47	  4:56	  Probe to Gas
   49	  5:00	  Observer
   49	  5:10	  Gateway x2, Pylon
-  58	  5:20	  Templar Archives
+  58|ve	  5:20	  Templar Archives
   40	  5:40	  Immortal
-  xx	  6:00	  Charge Chronoboost
+  +21	  5:56	  Warp in Unit
+  00	  6:00	  Charge Chronoboost
   79	  6:35	  Gateway x2, Pylon x2
-  66	  6:45	  Forge x2
-  75|fq+  7:00	  Nexus F3
+  66|fs	  6:45	  Forge x2
+  00	  6:50	  Probe to F3
+  75      7:05	  Nexus F3
   88	  7:15	  Gateway x2, Pylon x3
   80	  7:25	  Research Upgrades Chronoboost
-  +40	  7:50	  Immortal
-  99	  8:20	  Probe to Minerals and Gas
+  99	  8:15	  Probe to F4
+  99	  8:16	  Probe to Minerals and Gas
+  99|fq+  8:35	  Nexus F4
+  99	  9:46	  Probe to Minerals and Gas

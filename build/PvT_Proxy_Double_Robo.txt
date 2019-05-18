@@ -7,7 +7,7 @@
   21	  1:30	  Pylon
   22	  2:00	  Robotics Facility x2
   25	  2:07	  Adept
-  25	  2:15	  Pylon
+  25	  2:15	  Pylon # use scout probe to put this remote pylon
   00	  2:46	  Immortal x2 Chronoboost # put 2 probe from gas to minerals when this happent or reach 200 gas
   00	  3:15	  Warp Prism Chronoboost
   00	  3:20	  Immortal
@@ -25,8 +25,14 @@
   00	  5:45	  Gateway x3, Pylon x2
   00|vw   6:00	  Twilight Council
   +40	  6:20	  Immortal
-  00	  6:40	  Charge, Templar Archives
-  00|fq+  7:00	  Nexus F3
-  00	  7:15	  Forge x2, Pylon x2
+  +21	  6:32	  Warp in Unit
+  00|ve	  6:36	  Templar Archives
+  00	  6:40	  Charge Chronoboost
+  00	  6:45	  Probe to F3
+  00      7:00	  Nexus F3
+  00|fs	  7:15	  Forge x2, Pylon x2
   00	  7:55	  Research Upgrades
-  00	  8:20	  Probe to Minerals and Gas
+  00	  8:00	  Probe to F4
+  00	  8:11	  Probe to Minerals and Gas
+  99|fq+  8:20	  Nexus F4
+  99	  9:31	  Probe to Minerals and Gas

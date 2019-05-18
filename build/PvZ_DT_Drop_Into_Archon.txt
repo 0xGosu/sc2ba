@@ -3,8 +3,8 @@
   15	  0:40	  Assimilator
   16	  0:46	  Gateway
   18	  1:00	  Probe to Gas  # Keep 16 probes for mineral
-  20	  1:19	  Probe to F2
-  20	  1:24	  Nexus	F2 # move this probe to cyber core place, pull scout probe back
+  20	  1:18	  Probe to F2
+  20	  1:25	  Nexus	F2 # move this probe to cyber core place, pull scout probe back
   20|fc	  1:34	  Cybernetics Core # After this focus on Gas
   21	  1:37	  Assimilator
   22	  1:50	  Pylon # use scout probe to put this remote pylon
@@ -13,9 +13,9 @@
   26|vw	  2:22	  Twilight Council
   26	  2:36	  Probe to Minerals, Chronoboost
   28	  2:50	  Robotics Facility
-  30	  2:58	  Chronoboost
-  34	  3:01	  Dark Shrine
-  36	  3:25	  Build Gateway x3
+  30	  2:56	  Chronoboost Probe
+  34|vr	  3:01	  Dark Shrine
+  36	  3:22	  Build Gateway x3
   36	  3:37	  Warp Prism
   41	  3:47	  Assimilator x2, Pylon
   42	  4:00	  Pylon x2
@@ -24,16 +24,19 @@
   46	  4:36	  Immortal Chronoboost
   46	  4:48	  DT Blink Chronoboost
   57	  4:53	  Pylon x2
-  57	  5:00	  Charge Chronoboost
+  57	  5:00	  Research Charge Chronoboost
   57	  5:05	  Observer
   57	  5:10	  Build Gateway x3, Pylon x2
-  66|ve	  5:25	  Templar Archives
   66	  5:35	  Immortal
-  +24	  5:45	  Warping
-  66	  6:00	  Forge x2
-  66	  6:04	  Research Psionic Storm
+  66|ve	  5:40	  Templar Archives
+  +21	  5:45	  Warp in Unit
   70	  6:10	  Probe to F3
-  75|fq+  6:25	  Nexus F3
-  80	  6:45	  Research Upgrades Chronoboost
-  88	  7:10	  Build Pylon x3
+  66	  6:20	  Research Psionic Storm
+  75      6:25	  Nexus F3
+  57	  6:35	  Build Gateway x3, Pylon x2
+  99|fs	  6:50	  Forge x2
+  99	  7:22	  Research Upgrades Chronoboost
+  99	  7:25	  Probe to F4
   99	  7:36	  Probe to Minerals and Gas
+  99|fq+  7:45	  Nexus F4
+  99	  8:56	  Probe to Minerals and Gas
