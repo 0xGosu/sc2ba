@@ -193,7 +193,7 @@ def get_build_path(verbose=0):
     return file_path, build_path_list
 
 
-def reload_runner(set_offset=1, verbose='say'):
+def reload_runner(set_offset=0, verbose='say'):
     global runner
     runner.build_name = os.path.split(runner.build_path)[-1].replace('.txt', '').replace('_', ' ')
     print("Reload build: {}".format(runner.build_name))
@@ -259,7 +259,7 @@ def main():
                                match_suffix=True, timeout=1.2)
 
     while 1:
-        reload_runner(set_offset=2)
+        reload_runner(set_offset=1)
         run_build(runner, start_key='q')
 
 
