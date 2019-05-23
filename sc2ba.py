@@ -146,7 +146,7 @@ def process_runner_build_orders(run, enable_sync=True):
                 _rmv_handler = None
             else:
                 keys = step.sync
-                _rmv_handler = str(keys)
+                _rmv_handler = str(keys)+str(step.time)
 
             print("create sync %s for:" % (keys), step)
 
@@ -158,13 +158,16 @@ def process_runner_build_orders(run, enable_sync=True):
                         if remove_handler_key is not None:  # remove remove sync listerner
                             handler = run.sync_handler_map.pop(remove_handler_key, None)
                             if handler:
-                                keyboard.remove_word_listener(handler)
+                                try:
+                                    keyboard.remove_word_listener(handler)
+                                except KeyError:
+                                    pass
                                 print("build synced and handler removed")
                         keyboard.call_later(say, args=['synced'], delay=0)
 
                 return f
 
-            run.sync_handler_map[str(keys)] = keyboard.add_word_listener(str(keys),
+            run.sync_handler_map[str(keys)+str(step.time)] = keyboard.add_word_listener(str(keys[:-1]),
                                                                          make_sync_build(),
                                                                          triggers=[str(keys[-1])],
                                                                          match_suffix=True,
@@ -239,6 +242,9 @@ def main():
 
         keyboard.add_word_listener('b' + str(build_index), make_switch_build_func(), triggers=['space'],
                                    match_suffix=True, timeout=1.2)
+    # add reset current build trigger (remove offset and reinstall sync point)
+    keyboard.add_word_listener('bb', lambda: reload_runner(verbose='say build is reset'), triggers=['space'],
+                               match_suffix=True, timeout=1.2)
 
     while 1:
         reload_runner(set_offset=2)
