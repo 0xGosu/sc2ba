@@ -25,7 +25,6 @@
   49	  5:10	  Gateway x2, Pylon
   58|ve	  5:25	  Templar Archives
   +40	  5:40	  Immortal
-  +23	  5:56	  Warp in Unit
   00	  6:00	  Research Charge Chronoboost
   66	  6:05	  Research Psionic Storm
   79	  6:35	  Gateway x2, Pylon x2
@@ -36,3 +35,4 @@
   99	  8:15	  Probe to F4
   99|fq+  8:35	  Nexus F4
   99	  9:46	  Probe to Minerals and Gas
+  00	  10:20	  Probe to F5

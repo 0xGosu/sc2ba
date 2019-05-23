@@ -22,11 +22,12 @@ BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 
 lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*\+?)\s*\t?\s*(\d+:\d+)\t\s*([\w +,.]+)')
 
+MAX_BUILD_TIME = 60 * 20
 # this should be equal 1 unless for testing
-factor = 1
+FACTOR = 1
 
 
-def parse_build(build_content, verbose=0, max_time=60 * 20):
+def parse_build(build_content, verbose=0, max_time=MAX_BUILD_TIME):
     build_orders = list()
     for match in lotv_regex.findall(build_content):
         supply = match[0]
@@ -34,14 +35,14 @@ def parse_build(build_content, verbose=0, max_time=60 * 20):
         m, s = match[2].split(':')
         btime = datetime.timedelta(minutes=int(m), seconds=int(s)).seconds
         msg = match[3].strip()
-        step = BuildStep(supply, sync_keys, btime / factor, msg)
+        step = BuildStep(supply, sync_keys, btime / FACTOR, msg)
         if verbose:
             print(step)
         if supply[0] == '+':  # repeated step
             duration = int(supply)
             while btime + duration <= max_time:
                 btime += duration
-                build_orders.append(BuildStep(supply, sync_keys, btime / factor, msg))
+                build_orders.append(BuildStep(supply, sync_keys, btime / FACTOR, msg))
         build_orders.append(step)
     build_orders.sort(key=lambda s: s.time)
     return build_orders
@@ -84,6 +85,7 @@ class Runner(object):
     build_orders = []
     cur_second = 0
     offset = 0
+    offset_before_sync = None
     last_step = None
     stop_now = False
 
@@ -96,25 +98,25 @@ def process_step_message(step):
             continue
         m = re.search(r'^\+(\d+)\s+(.+)$', message)
         if m:
-            delay = int(m.group(1)) / factor
+            delay = int(m.group(1)) / FACTOR
             message = m.group(2)
         else:
             delay = 0
         keyboard.call_later(say, args=[message], delay=delay)
 
 
-def run_build(run, start_key='', max_time=60 * 15):
+def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
     if start_key:
         print("Press {} to start".format(start_key))
         keyboard.wait(start_key)
     runner.stop_now = False
     keyboard.call_later(say, args=['start'], delay=0)
-    start_time = datetime.datetime.now()
+    start_time = time.time()
     run.cur_second = 0
     run.last_step = None
     second = 0
     while second <= max_time:
-        run.cur_second = (datetime.datetime.now() - start_time).seconds
+        run.cur_second = time.time() - start_time
         second = run.cur_second + run.offset
         step = find_build_step(second, run.build_orders)
         if step != run.last_step:
@@ -132,9 +134,9 @@ def process_runner_build_orders(run, enable_sync=True):
     # remove all sync handler
     if run.sync_handler_map:
         print("remove all existing sync handler")
-        for handler in run.sync_handler_map.values():
+        for handler_instance in run.sync_handler_map.values():
             try:
-                keyboard.remove_word_listener(handler)
+                keyboard.remove_word_listener(handler_instance)
             except KeyError:
                 pass
 
@@ -143,10 +145,10 @@ def process_runner_build_orders(run, enable_sync=True):
 
             if step.sync[-1] == '+':
                 keys = step.sync[:-1]  # remove char + out of keys sync
-                _rmv_handler = None
+                _rmv_handler = str(step.sync)
             else:
                 keys = step.sync
-                _rmv_handler = str(keys)+str(step.time)
+                _rmv_handler = str(keys) + str(step.time)
 
             print("create sync %s for:" % (keys), step)
 
@@ -154,6 +156,7 @@ def process_runner_build_orders(run, enable_sync=True):
                 def f(step_time=step.time, remove_handler_key=_rmv_handler):
                     print("sync build", run.cur_second, step_time)
                     if run.cur_second > step_time:  # only sync backward (go back in time)
+                        run.offset_before_sync = run.offset
                         run.offset = step_time - run.cur_second  # offset will be negative
                         if remove_handler_key is not None:  # remove remove sync listerner
                             handler = run.sync_handler_map.pop(remove_handler_key, None)
@@ -167,11 +170,11 @@ def process_runner_build_orders(run, enable_sync=True):
 
                 return f
 
-            run.sync_handler_map[str(keys)+str(step.time)] = keyboard.add_word_listener(str(keys[:-1]),
-                                                                         make_sync_build(),
-                                                                         triggers=[str(keys[-1])],
-                                                                         match_suffix=True,
-                                                                         timeout=0.6)
+            run.sync_handler_map[str(keys) + str(step.time)] = keyboard.add_word_listener(str(keys[:-1]),
+                                                                                          make_sync_build(),
+                                                                                          triggers=[str(keys[-1])],
+                                                                                          match_suffix=True,
+                                                                                          timeout=0.6)
 
 
 def get_build_path(verbose=0):
@@ -243,7 +246,16 @@ def main():
         keyboard.add_word_listener('b' + str(build_index), make_switch_build_func(), triggers=['space'],
                                    match_suffix=True, timeout=1.2)
     # add reset current build trigger (remove offset and reinstall sync point)
-    keyboard.add_word_listener('bb', lambda: reload_runner(verbose='say build is reset'), triggers=['space'],
+    keyboard.add_word_listener('bs', lambda: reload_runner(verbose='say build is reset'), triggers=['space'],
+                               match_suffix=True, timeout=1.2)
+
+    # add go back to offset_before_sync
+    def go_back_to_offset_before_sync():
+        if runner.offset_before_sync is not None:
+            runner.offset = runner.offset_before_sync
+            keyboard.call_later(say, args=['redo'], delay=0)
+
+    keyboard.add_word_listener('bb', go_back_to_offset_before_sync, triggers=['space'],
                                match_suffix=True, timeout=1.2)
 
     while 1:
