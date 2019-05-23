@@ -23,6 +23,11 @@ BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*\+?)\s*\t?\s*(\d+:\d+)\t\s*([\w +,.]+)')
 
 MAX_BUILD_TIME = 60 * 20
+SYNC_DELTA = 2
+START_OFFSET = 1
+CMD_KEY_TIMEOUT = 1.2
+SYNC_KEY_TIMEOUT = 0.9
+TIME_SLEEP_UNIT = 0.2
 # this should be equal 1 unless for testing
 FACTOR = 1
 
@@ -121,13 +126,13 @@ def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
         step = find_build_step(second, run.build_orders)
         if step != run.last_step:
             process_step_message(step)
-            print(run.cur_second, run.offset, step)
+            print("%.2f %.2f"%(run.cur_second, run.offset), step)
             run.last_step = step
         if run.stop_now or step == run.build_orders[-1]:
             # final step
             break
-        time.sleep(0.1)
-    keyboard.call_later(say, args=['build is stop', True], delay=0.1)
+        time.sleep(TIME_SLEEP_UNIT)
+    keyboard.call_later(say, args=['build is stop', True], delay=0)
 
 
 def process_runner_build_orders(run, enable_sync=True):
@@ -154,10 +159,16 @@ def process_runner_build_orders(run, enable_sync=True):
 
             def make_sync_build():
                 def f(step_time=step.time, remove_handler_key=_rmv_handler):
-                    print("sync build", run.cur_second, step_time)
-                    if run.cur_second > step_time:  # only sync backward (go back in time)
-                        run.offset_before_sync = run.offset
-                        run.offset = step_time - run.cur_second  # offset will be negative
+                    print("sync build %.2f <> %d"%(run.cur_second, step_time))
+                    # only sync backward (go back in time) and current time if off by more than SYNC_DELTA
+                    if run.cur_second > step_time - (START_OFFSET + SYNC_DELTA):
+                        if abs(run.cur_second + run.offset - step_time) > SYNC_DELTA:
+                            run.offset_before_sync = run.offset
+                            run.offset = step_time - run.cur_second  # offset will be negative
+                            keyboard.call_later(say, args=['synced'], delay=0)
+                        else:
+                            keyboard.call_later(say, args=['good'], delay=0)
+                        # still removed the handler even though SYNC_DELTA check failed
                         if remove_handler_key is not None:  # remove remove sync listerner
                             handler = run.sync_handler_map.pop(remove_handler_key, None)
                             if handler:
@@ -165,8 +176,7 @@ def process_runner_build_orders(run, enable_sync=True):
                                     keyboard.remove_word_listener(handler)
                                 except KeyError:
                                     pass
-                                print("build synced and handler removed")
-                        keyboard.call_later(say, args=['synced'], delay=0)
+                        print("build synced and handler removed")
 
                 return f
 
@@ -174,7 +184,7 @@ def process_runner_build_orders(run, enable_sync=True):
                                                                                           make_sync_build(),
                                                                                           triggers=[str(keys[-1])],
                                                                                           match_suffix=True,
-                                                                                          timeout=0.6)
+                                                                                          timeout=SYNC_KEY_TIMEOUT)
 
 
 def get_build_path(verbose=0):
@@ -231,7 +241,7 @@ def main():
         runner.stop_now = True
         print("stop build now")
 
-    keyboard.add_word_listener('stop', stop_now, triggers=['space'], match_suffix=True, timeout=1.2)
+    keyboard.add_word_listener('stop', stop_now, triggers=['space'], match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     for i in range(len(build_path_list)):
         build_index = i + 1
@@ -244,10 +254,10 @@ def main():
             return f
 
         keyboard.add_word_listener('b' + str(build_index), make_switch_build_func(), triggers=['space'],
-                                   match_suffix=True, timeout=1.2)
+                                   match_suffix=True, timeout=CMD_KEY_TIMEOUT)
     # add reset current build trigger (remove offset and reinstall sync point)
     keyboard.add_word_listener('bs', lambda: reload_runner(verbose='say build is reset'), triggers=['space'],
-                               match_suffix=True, timeout=1.2)
+                               match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     # add go back to offset_before_sync
     def go_back_to_offset_before_sync():
@@ -256,10 +266,10 @@ def main():
             keyboard.call_later(say, args=['redo'], delay=0)
 
     keyboard.add_word_listener('bb', go_back_to_offset_before_sync, triggers=['space'],
-                               match_suffix=True, timeout=1.2)
+                               match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     while 1:
-        reload_runner(set_offset=1)
+        reload_runner(set_offset=START_OFFSET)
         run_build(runner, start_key='q')
 
 
