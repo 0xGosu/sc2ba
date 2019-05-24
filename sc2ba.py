@@ -23,7 +23,7 @@ BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*\+?)\s*\t?\s*(\d+:\d+)\t\s*([\w +,.]+)')
 
 MAX_BUILD_TIME = 60 * 20
-SYNC_DELTA = 2
+SYNC_DELTA = 3
 START_OFFSET = 1
 CMD_KEY_TIMEOUT = 1.2
 SYNC_KEY_TIMEOUT = 0.9
@@ -111,22 +111,25 @@ def process_step_message(step):
 
 
 def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
-    if start_key:
-        print("Press {} to start".format(start_key))
-        keyboard.wait(start_key)
     runner.stop_now = False
-    keyboard.call_later(say, args=['start'], delay=0)
-    start_time = time.time()
     run.cur_second = 0
     run.last_step = None
     second = 0
+
+    # wait for first start key
+    if start_key:
+        print("Press {} to start".format(start_key))
+        keyboard.wait(start_key)
+
+    start_time = time.time()
+    keyboard.call_later(say, args=['start'], delay=0)
     while second <= max_time:
         run.cur_second = time.time() - start_time
         second = run.cur_second + run.offset
         step = find_build_step(second, run.build_orders)
         if step != run.last_step:
             process_step_message(step)
-            print("%.2f %.2f"%(run.cur_second, run.offset), step)
+            print("%.2f %.2f" % (run.cur_second, run.offset), step)
             run.last_step = step
         if run.stop_now or step == run.build_orders[-1]:
             # final step
@@ -138,12 +141,14 @@ def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
 def process_runner_build_orders(run, enable_sync=True):
     # remove all sync handler
     if run.sync_handler_map:
-        print("remove all existing sync handler")
-        for handler_instance in run.sync_handler_map.values():
+        for sync_keys, sync_handler_instance in run.sync_handler_map.items():
             try:
-                keyboard.remove_word_listener(handler_instance)
+                keyboard.remove_word_listener(sync_handler_instance)
             except KeyError:
                 pass
+            else:
+                print("removed %s sync handler" % (sync_keys))
+        print("remove all existing sync handler")
 
     for step in run.build_orders:
         if step.sync and len(step.sync) >= 2 and enable_sync:
@@ -159,32 +164,36 @@ def process_runner_build_orders(run, enable_sync=True):
 
             def make_sync_build():
                 def f(step_time=step.time, remove_handler_key=_rmv_handler):
-                    print("sync build %.2f <> %d"%(run.cur_second, step_time))
+                    print("sync build %.2f <> %d" % (run.cur_second + run.offset, step_time))
                     # only sync backward (go back in time) and current time if off by more than SYNC_DELTA
                     if run.cur_second > step_time - (START_OFFSET + SYNC_DELTA):
                         if abs(run.cur_second + run.offset - step_time) > SYNC_DELTA:
                             run.offset_before_sync = run.offset
                             run.offset = step_time - run.cur_second  # offset will be negative
                             keyboard.call_later(say, args=['synced'], delay=0)
+                            print("build synced")
                         else:
                             keyboard.call_later(say, args=['good'], delay=0)
+                            print("still good")
                         # still removed the handler even though SYNC_DELTA check failed
-                        if remove_handler_key is not None:  # remove remove sync listerner
+                        if remove_handler_key is not None and '+' not in remove_handler_key:
+                            # remove sync listerner
                             handler = run.sync_handler_map.pop(remove_handler_key, None)
                             if handler:
                                 try:
                                     keyboard.remove_word_listener(handler)
                                 except KeyError:
                                     pass
-                        print("build synced and handler removed")
+                                else:
+                                    print("handler removed")
 
                 return f
 
-            run.sync_handler_map[str(keys) + str(step.time)] = keyboard.add_word_listener(str(keys[:-1]),
-                                                                                          make_sync_build(),
-                                                                                          triggers=[str(keys[-1])],
-                                                                                          match_suffix=True,
-                                                                                          timeout=SYNC_KEY_TIMEOUT)
+            run.sync_handler_map[_rmv_handler] = keyboard.add_word_listener(str(keys[:-1]),
+                                                                            make_sync_build(),
+                                                                            triggers=[str(keys[-1])],
+                                                                            match_suffix=True,
+                                                                            timeout=SYNC_KEY_TIMEOUT)
 
 
 def get_build_path(verbose=0):
