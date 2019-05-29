@@ -11,7 +11,7 @@
   00	  1:25	  Probe to Pylon
   00	  1:35	  Pylon  # use scout probe to put this remote pylon
   46|va	  1:57	  Robotics Facility x2
-  00	  2:00	  Stalker # Chronoboost if enemy appear
+  00	  2:00	  Sentry # Chronoboost if enemy appear
   00	  2:15	  Pylon
   00	  2:43	  Immortal x2 Chronoboost # put 2 probe from gas to minerals when this happent or reach 200 gas
   29	  2:48	  Shield Battery
