@@ -1,5 +1,5 @@
   00	  0:15	  Probe to Pylon
-  18|fw	  0:17	  Pylon
+  18|fw-  0:17	  Pylon
   46|fa	  0:35	  Gateway  # Scout Probe
   00	  0:37	  Chronoboost
   00	  0:43	  Assimilator .+21 Probe to Gas

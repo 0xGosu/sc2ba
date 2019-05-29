@@ -20,7 +20,7 @@ import sys
 
 BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 
-lotv_regex = re.compile(r'([+\-\d]+)\|?(\w*\+?)\s*\t?\s*(\d+:\d+)\t\s*([\w +,.]+)')
+lotv_regex = re.compile(r'([+\-\d]+)\|?([\w+\-]*)\s*\t*\s*(\d+:\d+)\t\s*([\w +,.]+)')
 
 MAX_BUILD_TIME = 60 * 20
 SYNC_DELTA = 3
@@ -156,6 +156,9 @@ def process_runner_build_orders(run, enable_sync=True):
             if step.sync[-1] == '+':
                 keys = step.sync[:-1]  # remove char + out of keys sync
                 _rmv_handler = str(step.sync)
+            elif step.sync[-1] == '-':
+                keys = step.sync[:-1]  # remove char + out of keys sync
+                _rmv_handler = str(step.sync) + str(step.supply)
             else:
                 keys = step.sync
                 _rmv_handler = str(keys) + str(step.time)
@@ -167,16 +170,24 @@ def process_runner_build_orders(run, enable_sync=True):
                     print("sync build %.2f <> %d" % (run.cur_second + run.offset, step_time))
                     # only sync backward (go back in time) and current time if off by more than SYNC_DELTA
                     if run.cur_second > step_time - (START_OFFSET + SYNC_DELTA):
-                        if abs(run.cur_second + run.offset - step_time) > SYNC_DELTA:
-                            run.offset_before_sync = run.offset
-                            run.offset = step_time - run.cur_second  # offset will be negative
-                            keyboard.call_later(say, args=['synced'], delay=0)
-                            print("build synced")
-                        else:
-                            keyboard.call_later(say, args=['good'], delay=0)
-                            print("still good")
+                        skip_and_remove = False
+                        if '-' in remove_handler_key:
+                            outbound_duration = int(remove_handler_key.split('-')[-1])
+                            if run.cur_second > step_time + outbound_duration:
+                                print("skip sync and force remove")
+                                skip_and_remove = True
+                        # check for sync point if different less than SYNC_DELTA then consider it as good as synced
+                        if not skip_and_remove:
+                            if abs(run.cur_second + run.offset - step_time) > SYNC_DELTA:
+                                run.offset_before_sync = run.offset
+                                run.offset = step_time - run.cur_second  # offset will be negative
+                                keyboard.call_later(say, args=['synced'], delay=0)
+                                print("build synced")
+                            else:
+                                keyboard.call_later(say, args=['good'], delay=0)
+                                print("still good")
                         # still removed the handler even though SYNC_DELTA check failed
-                        if remove_handler_key is not None and '+' not in remove_handler_key:
+                        if skip_and_remove or (remove_handler_key is not None and '+' not in remove_handler_key):
                             # remove sync listerner
                             handler = run.sync_handler_map.pop(remove_handler_key, None)
                             if handler:

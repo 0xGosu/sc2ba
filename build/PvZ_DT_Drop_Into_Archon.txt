@@ -1,5 +1,5 @@
   00	  0:12	  Probe to entrance  # 1st probe out
-  18|fw	  0:18	  Pylon # Scout Probe
+  18|fw-  0:18	  Pylon # Scout Probe
   00	  0:37	  Chronoboost
   00	  0:40	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral until build Cyber Core
   46|fa	  0:46	  Gateway
