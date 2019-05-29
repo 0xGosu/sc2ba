@@ -2,7 +2,7 @@
   18|fw-  0:18	  Pylon # Scout Probe
   00	  0:37	  Chronoboost
   00	  0:40	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral until build Cyber Core
-  46|fa	  0:46	  Gateway
+  46|fa-  0:46	  Gateway
   00	  1:18	  Probe to F2
   71      1:25	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
   36|fc	  1:32	  Cybernetics Core # After this focus on Gas
