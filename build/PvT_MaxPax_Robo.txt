@@ -1,8 +1,10 @@
-  00	  0:20	  Pylon
+  00	  0:17	  Pylon
+  00	  0:37	  Chronoboost
   18|fw-  0:39	  Pylon
   00	  0:44	  Assimilator .+21 Probe to Gas
   46|fa-  0:57	  Gateway
-  71	  1:31	  Nexus .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
+  00	  1:24	  Probe to F2
+  71	  1:31	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
   27	  1:39	  Zealot Chronoboost
   36|fc	  1:44	  Cybernetics Core
   27	  1:58	  Zealot Chronoboost
@@ -10,61 +12,49 @@
   30	  2:15	  Stalker
   00	  2:20	  Warp Gate .+100 warpgate completed
   30	  2:45	  Stalker
-  43	  2:50	  Stargate
+  43|vq	  2:50	  Stargate
   00	  2:56	  Shield Battery
   25	  3:25	  Phoenix
-  46|va	  3:27	  Robotics Facility
+  46|va	  3:34	  Robotics Facility
   25	  3:50	  Phoenix
   00	  3:57	  Pylon
   00	  4:03	  Assimilator .+21 Probe to Gas
-  46|vd	  4:19	  Robotics Bay
-  00	  4:21	  Pylon
+  00	  4:13	  Pylon
+  46|vd	  4:20	  Robotics Bay
+  21	  4:22	  Observer
   00	  4:24	  Assimilator .+21 Probe to Gas
-  48	  4:28	  , Phoenix
-  53	  4:47	  Nexus .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
-  54	  4:56	  Disruptor
-  55	  5:00	  Phoenix
-  61	  5:12	  Robotics Facility
-  62	  5:19	  Pylon x2
-  62	  5:29	  Disruptor,
-  62	  5:37	  , Phoenix
-  67	  5:48	  Assimilator x2
-  68	  5:50	  Disruptor,
-  68	  5:53	  Pylon
-  69	  5:59	  Forge
-  69	  6:04	  Observer
-  73	  6:05	  Phoenix
-  81	  6:21	  Disruptor x2
-  84	  6:30	  Phoenix
-  92	  6:45	  Nexus
-  92	  6:46	  Pylon
-  94	  6:56	  Phoenix
-  94	  6:57	  Pylon x2
-  98	  7:08	  Colossus
-  99	  7:11	  Disruptor
-  105	  7:20	  Photon Cannon x2
-  108	  7:25	  Phoenix
-  110	  7:33	  Pylon
-  113	  7:38	  Fleet Beacon
-  113	  7:43	  Disruptor
-  114	  7:47	  Stargate
-  116	  7:54	  Disruptor
-  120	  8:01	  Photon Cannon
-  120	  8:02	  Pylon
-  123	  8:06	  Shield Battery, Carrier
-  123	  8:11	  Assimilator x2
-  123	  8:12	  Carrier
-  126	  8:17	  Protoss Air Weapons Level 1, Photon Cannon
-  127	  8:20	  Observer
-  144	  8:47	  Photon Cannon x2
-  143	  8:53	  Disruptor
-  144	  9:13	  Pylon x3
-  144	  9:15	  Carrier x2
-  145	  9:20	  Pylon
-  145	  9:22	  Stargate
-  146	  9:30	  Photon Cannon x2
-  146	  9:32	  Observer
-  159	  9:39	  Pylon
-  160	  9:52	  Nexus
-  160	  9:54	  Pylon
-  160	  9:55	  Twilight Council
+  25	  4:28	  Phoenix
+  00	  4:32	  Probe to F3
+  71	  4:47	  Nexus F3 .+71 Probe to Minerals Chronoboost
+  25	  5:00	  Phoenix
+  36	  5:06	  Disruptor
+  46	  5:12	  Robotics Facility
+  00	  5:19	  Pylon x2
+  25	  5:27	  Phoenix
+  36	  5:42	  Disruptor
+  00	  5:46	  Assimilator x2 .+21 Probe to Gas
+  00	  5:52	  Pylon
+  32|fs	  5:56	  Forge .+32 Research Upgrades Level 1
+  36	  6:00	  Disruptor
+  21	  6:18	  Observer
+  25	  6:05	  Phoenix
+  00	  6:25	  Probe to F4
+  25	  6:30	  Phoenix
+  39	  6:39	  Immortal x2
+  00	  6:45	  Nexus F4 .+71 Probe to Minerals and Gas
+  99	  7:00	  Extended Thermal Lance
+  43	  7:17	  Fleet Beacon, Stargate
+  54	  7:20	  Colossus x2
+  64	  8:06	  Carrier x2
+  36|vw	  8:14	  Twilight Council
+  39	  8:16	  Immortal x2
+  36|ve	  8:50	  Templar Archives
+  54	  8:56	  Colossus x2
+  +64	  9:10	  Carrier x2
+  00	  9:19	  Probe to F5
+  00	  9:26	  Research Psionic Storm Chronoboost
+  00	  9:28	  Warp in High Templar
+  71|fq+  9:49	  Nexus F5
+  00	  10:00	  Probe to Minerals and Gas  # Nexus Completed after 71s
+  00	  11:00	  Probe to F6
+  71	  11:30	  Nexus F6
