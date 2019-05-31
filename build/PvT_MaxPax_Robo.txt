@@ -1,41 +1,45 @@
+  00	  0:03	  Scout Probe
   00	  0:17	  Pylon
   00	  0:37	  Chronoboost
-  18|fw-  0:39	  Pylon
+  18|fw-  0:39	  Pylon  # use scout probe to put this remote pylon
   00	  0:44	  Assimilator .+21 Probe to Gas
-  46|fa-  0:57	  Gateway
+  46|fa-  0:57	  Gateway  # put near remote pylon
   00	  1:24	  Probe to F2
-  71	  1:31	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
-  27	  1:39	  Zealot Chronoboost
-  36|fc	  1:44	  Cybernetics Core
-  27	  1:58	  Zealot Chronoboost
-  00	  2:00	  Assimilator .+21 Probe to Gas
-  30	  2:15	  Stalker
-  00	  2:20	  Warp Gate .+100 warpgate completed
-  30	  2:45	  Stalker
-  43|vq	  2:50	  Stargate
-  00	  2:56	  Shield Battery
-  25	  3:25	  Phoenix
+  71	  1:33	  Nexus F2 .+71 Probe to Minerals Chronoboost
+  36|fc	  1:43	  Cybernetics Core # stop make probe at 16 mineral + 3 gas until reach 250 mineral to make Cyber + 1 zealot
+  27	  1:44	  Zealot Chronoboost
+  00	  1:59	  Assimilator .+21 Probe to Gas
+  27	  2:02	  Zealot
+  00	  2:05	  Chronoboost Gateway
+  30	  2:20	  Stalker
+  00	  2:25	  Chronoboost Gateway
+  43|vq	  2:40	  Stargate
+  30	  2:50	  Stalker
+  00	  2:57	  Warp Gate .+100 warpgate completed
+  00	  3:00	  Shield Battery
+  00	  3:10	  Assimilator x2 .+21 Probe to Gas
+  43	  3:25	  Voidray Chronoboost
+  00	  3:29	  Pylon
   46|va	  3:34	  Robotics Facility
-  25	  3:50	  Phoenix
-  00	  3:57	  Pylon
-  00	  4:03	  Assimilator .+21 Probe to Gas
-  00	  4:13	  Pylon
+  46	  3:55	  Gateway x3
+  00	  4:00	  Pylon
+  43	  3:58	  Voidray Chronoboost
   46|vd	  4:20	  Robotics Bay
-  21	  4:22	  Observer
-  00	  4:24	  Assimilator .+21 Probe to Gas
-  25	  4:28	  Phoenix
+  39	  4:22	  Immortal
+  00	  4:24	  Pylon x2
+  43	  4:31	  Voidray
   00	  4:32	  Probe to F3
   71	  4:47	  Nexus F3 .+71 Probe to Minerals Chronoboost
-  25	  5:00	  Phoenix
   36	  5:06	  Disruptor
+  25	  5:14	  Phoenix
   46	  5:12	  Robotics Facility
   00	  5:19	  Pylon x2
-  25	  5:27	  Phoenix
+  25	  5:39	  Phoenix
   36	  5:42	  Disruptor
   00	  5:46	  Assimilator x2 .+21 Probe to Gas
-  00	  5:52	  Pylon
-  32|fs	  5:56	  Forge .+32 Research Upgrades Level 1
-  36	  6:00	  Disruptor
+  00	  5:52	  Pylon x2
+  32	  5:56	  Forge .+32 Research Upgrades Level 1
+  36	  5:58	  Disruptor
   21	  6:18	  Observer
   25	  6:05	  Phoenix
   00	  6:25	  Probe to F4
