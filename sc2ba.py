@@ -32,8 +32,17 @@ TIME_SLEEP_UNIT = 0.2
 FACTOR = 1
 
 
+def add_step(build_orders, time_map, step):
+    build_orders.append(step)
+    # construct time map
+    same_time_list = time_map.get(step.time, list())
+    same_time_list.append(step)
+    time_map[step.time] = same_time_list
+
+
 def parse_build(build_content, verbose=0, max_time=MAX_BUILD_TIME):
     build_orders = list()
+    time_map = dict()
     for match in lotv_regex.findall(build_content):
         supply = match[0]
         sync_keys = match[1]
@@ -47,20 +56,23 @@ def parse_build(build_content, verbose=0, max_time=MAX_BUILD_TIME):
             duration = int(supply)
             while btime + duration <= max_time:
                 btime += duration
-                build_orders.append(BuildStep(supply, sync_keys, btime / FACTOR, msg))
-        build_orders.append(step)
+                add_step(build_orders, time_map, BuildStep(supply, sync_keys, btime / FACTOR, msg))
+        add_step(build_orders, time_map, step)
+
     build_orders.sort(key=lambda s: s.time)
-    return build_orders
+    return build_orders, time_map
 
 
 def find_build_step(second, build_orders):
-    return binary_search_step(second, 0, len(build_orders), build_orders)
-    prev_step = None
-    for step in build_orders:  # build_orders must be sorted in time
-        if second < step.time:
-            return prev_step
-        prev_step = step
-    return step
+    found_step = binary_search_step(second, 0, len(build_orders), build_orders)
+    same_time_list = None
+    if found_step:
+        global runner
+        same_time_list = runner.build_orders_time_map[found_step.time]
+        if len(same_time_list) <= 1:
+            same_time_list = None
+
+    return found_step, same_time_list
 
 
 def binary_search_step(second, b, e, build_orders):
@@ -88,6 +100,7 @@ class Runner(object):
     build_path = ""
     build_name = ""
     build_orders = []
+    build_orders_time_map = {}
     cur_second = 0
     offset = 0
     offset_before_sync = None
@@ -126,10 +139,16 @@ def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
     while second <= max_time:
         run.cur_second = time.time() - start_time
         second = run.cur_second + run.offset
-        step = find_build_step(second, run.build_orders)
+        step, same_time_steps = find_build_step(second, run.build_orders)
         if step != run.last_step:
-            process_step_message(step)
-            print("%.2f %.2f" % (run.cur_second, run.offset), step)
+            if run.last_step is None or (step.time != run.last_step.time):
+                if same_time_steps is None:
+                    process_step_message(step)
+                    print("%.2f %.2f" % (run.cur_second, run.offset), step)
+                else:
+                    for each_step in same_time_steps:
+                        process_step_message(each_step)
+                    print("%.2f %.2f" % (run.cur_second, run.offset), same_time_steps)
             run.last_step = step
         if run.stop_now or step == run.build_orders[-1]:
             # final step
@@ -228,8 +247,9 @@ def reload_runner(set_offset=0, verbose='say'):
     runner.build_name = os.path.split(runner.build_path)[-1].replace('.txt', '').replace('_', ' ')
     print("Reload build: {}".format(runner.build_name))
     with open(runner.build_path) as f:
-        bo = parse_build(f.read())
+        bo, tm = parse_build(f.read())
     runner.build_orders = bo
+    runner.build_orders_time_map = tm
     if set_offset is not None:
         runner.offset = set_offset
 
