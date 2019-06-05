@@ -4,7 +4,7 @@
   00	  0:44	  Assimilator .+21 Probe to Gas
   46|fa-  0:57	  Gateway  # put near remote pylon
   00	  1:24	  Probe to F2
-  71	  1:33	  Nexus F2 .+71 Probe to Minerals Chronoboost
+  71	  1:33	  Nexus F2 .+69 Probe to Minerals Chronoboost
   36|fc	  1:43	  Cybernetics Core # stop make probe at 16 mineral + 3 gas until reach 250 mineral to make Cyber + 1 zealot
   27	  1:44	  Zealot Chronoboost
   00	  1:59	  Assimilator .+21 Probe to Gas
@@ -57,5 +57,5 @@
   00	  9:19	  Probe to F5
   71|fq+  9:49	  Nexus F5
   00	  10:00	  Probe to Minerals and Gas  # Nexus Completed after 71s
-  00	  11:00	  Probe to F6
-  71	  11:30	  Nexus
+  00	  12:00	  Probe to F6
+  71	  12:30	  Nexus

@@ -8,14 +8,14 @@
   00	  1:00	  Scout Probe
   00	  1:16	  Probe to Cyber core
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
-  00	  1:25	  Probe to Pylon
+  00	  1:25	  Probe to remote Pylon
   00	  1:35	  Pylon  # use scout probe to put this remote pylon
   46|va	  1:57	  Robotics Facility x2
-  00	  2:00	  Sentry # Chronoboost if enemy appear
+  00	  2:02	  Sentry #
   00	  2:15	  Pylon
-  39	  2:43	  Immortal x2 Chronoboost # put 2 probe from gas to minerals when this happent or reach 200 gas
+  39	  2:43	  Immortal x2 Chronoboost # put 2 probe from gas to minerals when this happen or reach 200 gas
   29	  2:48	  Shield Battery
-  00	  3:10	  Warp Prism Chronoboost, Immortal # put 2 probe back to gas when this happent or reach 475 mineral
+  00	  3:10	  Warp Prism Chronoboost, Immortal # put 2 probe back to gas when this happen or reach 475 mineral
   00	  3:23	  Pylon
   00	  3:36	  Observer
   39	  3:50	  Immortal
@@ -40,5 +40,5 @@
   00	  8:10	  Probe to F4
   71|fq+  8:30	  Nexus F4
   00	  9:41	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
-  00	  10:41	  Probe to F5
-  71	  11:11	  Nexus F5
+  00	  11:30	  Probe to F5
+  71	  12:00	  Nexus F5

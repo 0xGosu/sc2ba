@@ -1,20 +1,23 @@
-  00	  0:09	  Probe to entrance  # before 1st probe out
-  18|fw-  0:18	  Pylon # Scout Probe
+  00	  0:08	  Probe to entrance  # before 1st probe out
+  18      0:18	  Pylon
+  00	  0:20	  Scout Probe  # use this to block Zerg 2nd Hatchery
+  00	  0:34	  Probe to entrance  # to gateway
   00	  0:37	  Chronoboost
   00	  0:40	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral until build Cyber Core
   46|fa-  0:46	  Gateway
   00	  1:18	  Probe to F2
-  71      1:25	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
+  71      1:25	  Nexus F2 .+69 Probe to Minerals Chronoboost .+92 Chronoboost Probe
   36|fc	  1:32	  Cybernetics Core # After this focus on Gas
-  00	  1:37	  Assimilator .+21 Probe to Gas
-  00	  1:45	  Pylon # use scout probe to put this proxy pylon
+  00	  1:35	  Assimilator .+21 Probe to Gas
+  00	  1:42	  Pylon and Fake Pylon
   00	  2:08	  Warp Gate, Stalker .+100 warpgate completed
   36|vw	  2:12	  Twilight Council
-  46	  2:33	  Robotics Facility .+37 Warp Prism Chronoboost # should be put next to proxy pylon
+  46	  2:33	  Robotics Facility .+37 Warp Prism Chronoboost
   71|vr	  2:48	  Dark Shrine
   53	  3:06	  Build Gateway x2  # 46 + 7s (warp transform)
-  00	  3:32	  Assimilator x2, Pylon .+21 Probe to Gas
-  18	  3:40	  Pylon x2
+  00	  3:24	  Probe to remote Pylon
+  00	  3:32	  Assimilator x2, Pylon x2 .+21 Probe to Gas
+  18	  3:38	  Pylon  # use scout probe to put this proxy pylon
   00	  4:00	  Warp in Dark Templar x3
   00	  4:12	  DT Blink Chronoboost
   40	  4:26	  Immortal Chronoboost
@@ -23,15 +26,14 @@
   00	  5:00	  Research Charge Chronoboost
   00	  5:05	  Observer
   00	  5:10	  Build Gateway x3, Pylon x2
+  32	  5:30	  Forge .+32 Research Attack Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   +40	  5:35	  Immortal
-  36	  5:40	  Templar Archives
   00	  6:10	  Probe to F3
-  00	  6:20	  Research Psionic Storm
   00      6:25	  Nexus F3 .+71 Probe to Minerals and Gas
   00	  6:35	  Build Gateway x4, Pylon x2
-  32	  6:50	  Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  36	  6:50	  Templar Archives .+37 Research Psionic Storm
   00	  7:55	  Probe to F4
   71|fq+  8:05	  Nexus F4
   00	  9:16	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
-  00	  10:16	  Probe to F5
-  71	  10:46	  Nexus F5
+  00	  11:16	  Probe to F5
+  71	  11:46	  Nexus F5
