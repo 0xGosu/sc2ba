@@ -1,16 +1,16 @@
   00	  0:08	  Probe to entrance  # before 1st probe out
   18      0:18	  Pylon
-  00	  0:20	  Scout Probe  # use this to block Zerg 2nd Hatchery
-  00	  0:34	  Probe to entrance  # to gateway
+  00	  0:20	  Scout Probe  # early scout use this to block Zerg 2nd Hatchery
   00	  0:37	  Chronoboost
-  00	  0:40	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral until build Cyber Core
-  46|fa-  0:46	  Gateway
+  00	  0:39	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
+  00	  0:40	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
+  46|fa-  0:50	  Gateway  # 0:46
   00	  1:18	  Probe to F2
   71      1:25	  Nexus F2 .+69 Probe to Minerals Chronoboost .+92 Chronoboost Probe
-  36|fc	  1:32	  Cybernetics Core # After this focus on Gas
-  00	  1:35	  Assimilator .+21 Probe to Gas
-  00	  1:42	  Pylon and Fake Pylon
-  00	  2:08	  Warp Gate, Stalker .+100 warpgate completed
+  00	  1:34	  Assimilator .+21 Probe to Gas
+  36|fc	  1:36	  Cybernetics Core # 1:32
+  00	  1:42	  Pylon
+  00	  2:12	  Warp Gate, Stalker .+100 warpgate completed
   36|vw	  2:12	  Twilight Council
   46	  2:33	  Robotics Facility .+37 Warp Prism Chronoboost
   71|vr	  2:48	  Dark Shrine
