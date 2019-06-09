@@ -14,7 +14,7 @@
   00	  2:25	  Chronoboost Gateway
   30	  2:36	  Stalker  # 2:40
   43|vq	  2:40	  Stargate
-  00	  2:58	  Warp Gate .+100 warpgate completed
+  00	  2:58	  Research Warp Gate .+100 warpgate completed
   00	  3:00	  Shield Battery, Pylon
   36	  3:25	  Oracle Chronoboost
   46|va	  3:34	  Robotics Facility, Pylon

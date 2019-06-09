@@ -11,7 +11,7 @@
   00	  1:23	  Scout Probe to remote Pylon
   00	  1:35	  Remote Pylon  # use scout probe to put this remote pylon
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon, after this focus on mineral
-  00	  2:03	  Warp Gate .+100 warpgate completed
+  00	  2:03	  Research Warp Gate .+100 warpgate completed
   00	  2:06	  Block Pylon
   39	  2:43	  Immortal Chronoboost Warp Prism #
   29	  2:48	  Shield Battery

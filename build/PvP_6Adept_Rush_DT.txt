@@ -9,7 +9,7 @@
   00	  1:20	  Scout Probe
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
   00	  1:37	  Pylon  # use scout probe to put this hidden pylon
-  00	  1:57	  Warp Gate, Adept x2 Chronoboost .+100 warpgate completed
+  00	  1:57	  Research Warp Gate, Adept x2 Chronoboost .+100 warpgate completed
   36|vw	  2:03	  Twilight Council  # put next to hidden pylon
   00	  2:16	  Adept x2
   00	  2:20	  Pylon  # use scout probe to put this remote pylon
