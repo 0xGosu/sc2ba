@@ -20,30 +20,22 @@
   00	  3:15	  Shield Battery
   36	  3:25	  Oracle Chronoboost
   46	  3:32	  Stargate, Pylon
-  25	  3:51	  Phoenix
+  10*25	  3:51	  Phoenix
   46	  3:55	  Robotics Facility, Pylon x2
-  00	  4:16	  Phoenix
   21	  4:22	  Observer
   46	  4:25	  Gateway, Pylon x2
   00	  4:31	  Probe to Nexus F3
   21	  4:37	  Observer
-  00	  4:41	  Phoenix
   71	  4:50	  Nexus F3 Pylon x2 .+71 Probe to Minerals Chronoboost
   00	  5:00	  Research Air Weapons Level 1  # .+129
-  00	  5:07	  Phoenix
   43|vs	  5:17	  Fleet Beacon, Stargate, Pylon
-  25	  5:32	  Phoenix
   00	  5:40	  Assimilator x2, Pylon .+21 Probe to Gas
   46	  5:54	  Robotics Bay, Pylon x2 .+47 Extended Thermal Lance
-  25	  5:57	  Phoenix
   +64	  6:00	  Carrier x2
-  25	  6:22	  Phoenix
   00	  6:25	  Probe to Nexus F4
   00	  6:45	  Nexus F4 Assimilator x2 Pylon .+71 Probe to Minerals and Gas
-  25	  6:50	  Phoenix
   +54	  6:52	  Colossus
   25	  7:00	  Stargate, Pylon x2
-  25	  7:15	  Phoenix
   36|vw	  8:14	  Twilight Council, Pylon x2
   71	  8:50	  Dark Shrine, Pylon x2 .+71 Warp in Dark Templar
   00	  9:19	  Probe to Nexus F5

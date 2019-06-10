@@ -20,7 +20,7 @@ import sys
 
 BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 
-lotv_regex = re.compile(r'([+\-\d]+)\|?([\w+\-]*)\s*\t*\s*(\d+:\d+)\t\s*([\w +,.]+)')
+lotv_regex = re.compile(r'([+*\d]+)\|?([\w+\-]*)\s*\t*\s*(\d+:\d+)\t\s*([\w +,.]+)')
 
 MAX_BUILD_TIME = 60 * 20
 SYNC_DELTA = 3
@@ -50,16 +50,23 @@ def parse_build(build_content, verbose=0, max_time=MAX_BUILD_TIME):
         btime = datetime.timedelta(minutes=int(m), seconds=int(s)).seconds
         msg = match[3].strip()
         step = BuildStep(supply, sync_keys, btime / FACTOR, msg)
-        if verbose:
-            print(step)
         if supply[0] == '+':  # repeated step
             duration = int(supply)
             while btime + duration <= max_time:
                 btime += duration
                 add_step(build_orders, time_map, BuildStep(supply, sync_keys, btime / FACTOR, msg))
+        elif '*' in supply:
+            num_ti, duration = supply.split('*')
+            for i in range(int(num_ti)):
+                btime += int(duration)
+                add_step(build_orders, time_map, BuildStep(supply, sync_keys, btime / FACTOR, msg))
+
         add_step(build_orders, time_map, step)
 
     build_orders.sort(key=lambda s: s.time)
+    if verbose:
+        for step in build_orders:
+            print(step)
     return build_orders, time_map
 
 
@@ -123,10 +130,11 @@ def process_step_message(step):
         keyboard.call_later(say, args=[message], delay=delay)
 
 
-def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
+def run_build(start_key='', max_time=MAX_BUILD_TIME):
+    global runner
     runner.stop_now = False
-    run.cur_second = 0
-    run.last_step = None
+    runner.cur_second = 0
+    runner.last_step = None
     second = 0
 
     # wait for first start key
@@ -137,24 +145,27 @@ def run_build(run, start_key='', max_time=MAX_BUILD_TIME):
     start_time = time.time()
     keyboard.call_later(say, args=['start'], delay=0)
     while second <= max_time:
-        run.cur_second = time.time() - start_time
-        second = run.cur_second + run.offset
-        step, same_time_steps = find_build_step(second, run.build_orders)
-        if step != run.last_step:
-            if run.last_step is None or (step.time != run.last_step.time):
+        runner.cur_second = time.time() - start_time
+        second = runner.cur_second + runner.offset
+        step, same_time_steps = find_build_step(second, runner.build_orders)
+        if step != runner.last_step:
+            if runner.last_step is None or (step.time != runner.last_step.time):
                 if same_time_steps is None:
                     process_step_message(step)
-                    print("%.2f %.2f" % (run.cur_second, run.offset), step)
+                    print("%.2f %.2f" % (runner.cur_second, runner.offset), step)
                 else:
                     for each_step in same_time_steps:
                         process_step_message(each_step)
-                    print("%.2f %.2f" % (run.cur_second, run.offset), same_time_steps)
-            run.last_step = step
-        if run.stop_now or step == run.build_orders[-1]:
+                    print("%.2f %.2f" % (runner.cur_second, runner.offset), same_time_steps)
+            runner.last_step = step
+        if runner.stop_now or step == runner.build_orders[-1]:
             # final step
             break
         time.sleep(TIME_SLEEP_UNIT)
     keyboard.call_later(say, args=['build is stop', True], delay=0)
+    runner.cur_second = 0
+    runner.last_step = None
+    time.sleep(3)  # sleep for a shortime before exit run
 
 
 def process_runner_build_orders(run, enable_sync=True):
@@ -310,7 +321,7 @@ def main():
 
     while 1:
         reload_runner(set_offset=START_OFFSET)
-        run_build(runner, start_key='q')
+        run_build(start_key='q')
 
 
 if __name__ == '__main__':
