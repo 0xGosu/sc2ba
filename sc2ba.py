@@ -289,8 +289,9 @@ def main():
     # keyboard.wait('command')
 
     def stop_now():
-        runner.stop_now = True
-        print("stop build now")
+        if not (runner.stop_now is False and runner.cur_second == 0 and runner.last_step is None):
+            runner.stop_now = True
+            print("stop build now")
 
     keyboard.add_word_listener('stop', stop_now, triggers=['space'], match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
