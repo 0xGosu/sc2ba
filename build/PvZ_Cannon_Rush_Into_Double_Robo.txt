@@ -1,0 +1,23 @@
+  00	  0:08	  Probe to entrance  # before 1st probe out
+  00	  0:17	  Pylon
+  00	  0:18	  Scout Probe
+  00	  0:37	  Chronoboost
+  00	  0:40	  Probe to entrance  # to gateway
+  46	  0:39	  Gateway
+  32|fs-  0:57	  Forge
+  00	  1:03	  Assimilator .+21 Probe to Gas
+  18	  1:14	  Pylon	 # Proxy, behind expansion
+  36|fc	  1:30	  Cybernetics Core
+  00	  1:34	  Photon Cannon	  # Proxy
+  00	  1:42	  Assimilator .+21 Probe to Gas
+  00	  1:57	  Photon Cannon	  # Proxy
+  46|va	  2:08	  Robotics Facility	  # Proxy
+  00	  2:18	  Shield Battery	  # Proxy
+  00	  2:24	  Warp Gate
+  00	  2:30	  Adept
+  00	  2:41	  Pylon	  # Proxy
+  39	  2:55	  Immortal
+  00	  2:58	  Shield Battery #	  Proxy
+  00	  3:08	  Shield Battery #	  Proxy
+  00	  3:22	  Warp Prism	 # After finnished, continue Immortal production
+  00	  3:37	  Photon Cannon	 # Home for defence
