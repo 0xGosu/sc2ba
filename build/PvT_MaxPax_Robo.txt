@@ -23,24 +23,24 @@
   10*25	  3:51	  Phoenix
   46	  3:55	  Robotics Facility, Pylon x2
   21	  4:22	  Observer
-  46	  4:25	  Gateway, Pylon x2
+  46	  4:25	  Gateway x2, Pylon x2
   00	  4:31	  Probe to Nexus F3
   21	  4:37	  Observer
-  71	  4:50	  Nexus F3 Pylon x2 .+71 Probe to Minerals Chronoboost
+  71	  4:50	  Nexus F3 Assimilator x2 Pylon .+71 Probe to Minerals Chronoboost
   00	  5:00	  Research Air Weapons Level 1  # .+129
   43|vs	  5:17	  Fleet Beacon, Stargate, Pylon
-  00	  5:40	  Assimilator x2, Pylon .+21 Probe to Gas
-  46	  5:54	  Robotics Bay, Pylon x2 .+47 Extended Thermal Lance
+  46	  5:54	  Robotics Bay, Pylon x2 .+47 Research Extended Thermal Lance
   +64	  6:00	  Carrier x2
+  36|vw	  6:12	  Twilight Council, Pylon x2
   00	  6:25	  Probe to Nexus F4
   00	  6:45	  Nexus F4 Assimilator x2 Pylon .+71 Probe to Minerals and Gas
-  +54	  6:52	  Colossus
-  25	  7:00	  Stargate, Pylon x2
-  36|vw	  8:14	  Twilight Council, Pylon x2
-  71	  8:50	  Dark Shrine, Pylon x2 .+71 Warp in Dark Templar
+  71	  6:49	  Dark Shrine, Pylon x2 .+71 Warp in Dark Templar
+  00	  6:51	  Research Charge Chronoboost
+  +54	  7:00	  Colossus
+  00	  7:20	  Stargate, Gateway x3, Pylon x2
   00	  9:19	  Probe to Nexus F5
-  00	  9:30	  Mother Ship .+114 Mother ship completed
+  00	  9:40	  Mother Ship .+114 Mother ship completed
   71|fq+  9:49	  Nexus F5
   00	  10:00	  Probe to Minerals and Gas  # Nexus Completed after 71s
   00	  12:00	  Probe to Nexus F6
-  71	  12:30	  Nexus
+  71	  12:30	  Nexus F6

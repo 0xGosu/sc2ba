@@ -23,19 +23,19 @@
   +40	  4:00	  Immortal
   00	  4:15	  Pylon x2
   00	  4:55	  Pylon x2
-  00	  5:05	  Probe to remote Nexus F5
-  00	  5:30	  Remote Nexus F5 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
+  00	  5:05	  Probe to remote Nexus F2
+  00	  5:30	  Remote Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
   00	  6:34	  Assimilator x2, Pylon x2 .+21 Probe to Gas
   00|vw   7:00	  Twilight Council
   00	  7:00	  Gateway x4, Pylon x2
   36|ve	  7:38	  Templar Archives
   00	  7:40	  Research Charge Chronoboost
-  00	  7:45	  Probe to F3
+  00	  7:45	  Probe to Nexus F3
   00      8:00	  Nexus F3 .+71 Probe to Minerals and Gas
   32	  8:15	  Forge x2, Pylon x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   66	  8:20	  Research Psionic Storm
-  00	  9:10	  Probe to F4
+  00	  9:10	  Probe to Nexus F4
   71|fq+  10:30	  Nexus F4
   00	  10:41	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
-  00	  12:30	  Probe to F5
+  00	  12:30	  Probe to Nexus F5
   71	  13:00	  Nexus F5

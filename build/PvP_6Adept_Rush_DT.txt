@@ -19,7 +19,7 @@
   71|vr	  2:39	  Dark Shrine  # put next to hidden pylon
   00	  2:41	  Second Scout Probe to Remote Pylon  # 2nd scout probe
   00	  2:53	  Gateway, Stalker
-  00	  3:07	  Probe to F2
+  00	  3:07	  Probe to Nexus F2
   71	  3:16	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
   00	  3:27	  Shield Battery
   00	  3:25	  Remote Pylon  # use 2nd scout probe to put this remote pylon
@@ -34,11 +34,11 @@
   00	  6:00	  Research Charge Chronoboost
   00	  6:35	  Gateway x2, Pylon x2
   00	  6:38	  Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
-  00	  6:50	  Probe to F3
+  00	  6:50	  Probe to Nexus F3
   71      7:05	  Nexus F3 .+71 Probe to Minerals and Gas .+92 Chronoboost Probe
   00	  7:15	  Gateway x2, Pylon x3
-  00	  8:15	  Probe to F4
+  00	  8:15	  Probe to Nexus F4
   71|fq+  8:35	  Nexus F4
   00	  9:46	  Probe to Minerals and Gas
-  00	  11:20	  Probe to F5
+  00	  11:20	  Probe to Nexus F5
   00	  11:50	  Nexus F5
