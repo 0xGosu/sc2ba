@@ -2,26 +2,28 @@
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
   00	  0:18	  Scout Probe
   00	  0:37	  Chronoboost
-  00	  0:39	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
+  00	  0:39	  Assimilator
   00	  0:40	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:49	  Gateway  # 0:44
-  32|fs-  0:56	  Forge  # consider cancel Assimilator and build it back at 1.03
+  00	  0:54	  Cancel Assimilator
+  32|fs-  0:56	  Forge  # consider cancel Assimilator and build it back at 1.03 if dont have enough mineral
   00	  0:58	  Second Scout Probe
-  18|fw-  1:09	  Pylon	 # Proxy, behind expansion
-  00	  1:24	  Probe to Gas
-  00	  1:26	  Probe to entrance  # to gateway
+  00	  1:03	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral, after 1 gas done then upto 19 probes
+  18|fw-  1:07	  Pylon	 # Proxy, behind expansion
+  00	  1:25	  Probe to entrance  # to gateway
   00	  1:28	  Photon Cannon  # Proxy
+  00	  1:32	  Photon Cannon
   36|fc	  1:35	  Cybernetics Core # 1:30
   00	  1:39	  Photon Cannon	  # Proxy
-  00	  1:44	  Assimilator .+21 Probe to Gas
   46|va	  2:12	  Robotics Facility	  # Proxy
-  00	  2:16	  Shield Battery	  # Proxy
-  00	  2:24	  Research Warp Gate .+100 warpgate completed
-  00	  2:30	  Adept
-  00	  2:41	  Pylon	  # Proxy
+  00	  2:14	  Adept
+  29	  2:16	  Shield Battery	  # Proxy
+  00	  2:32	  Assimilator .+21 Probe to Gas
+  00	  2:34	  Research Warp Gate .+100 warpgate completed
+  00	  2:42	  Pylon	  # Proxy
   39	  2:58	  Immortal Chronoboost
   00	  3:07	  Shield Battery x2  #	  Proxy
-  46      3:10	  Gateway  # Proxy
+  46      3:18	  Gateway  # Proxy
   36	  3:27	  Warp Prism Chronoboost	# After finnished, continue Immortal production
-  00	  3:36	  Photon Cannon	 # Home for defence
+  00	  3:36	  Defence Photon Cannon	 # Home for defence
   +39	  3:53	  Immortal Chronoboost
