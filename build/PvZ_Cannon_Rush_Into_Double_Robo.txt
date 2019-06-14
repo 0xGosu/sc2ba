@@ -1,4 +1,4 @@
-  00	  0:08	  Probe to entrance  # before 1st probe out
+  00	  0:09	  Probe to entrance  # before 1st probe out
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
   00	  0:18	  Scout Probe
   00	  0:37	  Chronoboost
@@ -9,10 +9,10 @@
   32|fs-  0:56	  Forge  # consider cancel Assimilator and build it back at 1.03 if dont have enough mineral
   00	  0:58	  Second Scout Probe
   00	  1:03	  Assimilator .+21 Probe to Gas # Alway keep 16 probes for mineral, after 1 gas done then upto 19 probes
-  18|fw-  1:07	  Pylon	 # Proxy, behind expansion
+  18	  1:07	  Pylon	 # Proxy, behind expansion
   00	  1:25	  Probe to entrance  # to gateway
   00	  1:28	  Photon Cannon  # Proxy
-  00	  1:32	  Photon Cannon
+  00	  1:31	  Photon Cannon
   36|fc	  1:35	  Cybernetics Core # 1:30
   00	  1:39	  Photon Cannon	  # Proxy
   46|va	  2:12	  Robotics Facility	  # Proxy
