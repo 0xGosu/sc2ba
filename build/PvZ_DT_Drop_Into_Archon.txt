@@ -7,34 +7,36 @@
   00	  0:50	  Scout Probe
   00	  1:00	  Probe to Gas
   00	  1:13	  Fake Pylon
-  00	  1:22	  Assimilator .+21 Probe to Gas  # need to cut probe to make Assimilator and CC
+  00	  1:21	  Assimilator .+21 Probe to Gas  # cut probe now when build Assimilator to make Nexus and CC
   00	  1:23	  Probe to Nexus F2
-  00	  1:26	  Cancel Fake Pylon
-  71      1:30	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  00	  1:29	  Cancel Fake Pylon
+  71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
   36|fc	  1:36	  Cybernetics Core # 1:32
-  00	  1:42	  Pylon
+  00	  1:44	  Pylon
+  00	  2:02	  Zealot
   36|vw	  2:12	  Twilight Council
-  00	  2:12	  Adept
-  00	  2:17	  Probe to entrance
-  00	  2:18	  Research Warp Gate .+100 warpgate completed
-  46	  2:28	  Robotics Facility .+47 Warp Prism Chronoboost .+74 Observer
+  00	  2:14	  Probe to entrance
+  00	  2:16	  Research Warp Gate .+108 warpgate completed
+  46	  2:25	  Robotics Facility .+47 Warp Prism Chronoboost .+74 Observer
   71|vr	  2:48	  Dark Shrine
-  53	  3:03	  Build Gateway x2  # 46 + 7s (warp transform)
-  00	  3:36	  Assimilator x2, Pylon .+21 Probe to Gas
-  18	  3:45	  Pylon x2
+  53	  3:02	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
+  00	  3:12	  Chronoboost Warp Gate
+  00	  3:20	  Assimilator, Pylon .+21 Probe to Gas
+  18	  3:45	  Pylon
+  00	  3:55	  Assimilator, Pylon .+21 Probe to Gas
   00	  4:00	  Warp in Dark Templar x3
-  00	  4:15	  DT Blink Chronoboost
-  40	  4:26	  Immortal Chronoboost
-  00	  4:40	  Warp in Dark Templar
+  40	  4:28	  Immortal
+  00	  4:36	  Warp in Dark Templar  # DT Blink Chronoboost
   18	  4:53	  Pylon x2
   00	  5:00	  Research Charge Chronoboost
-  00	  5:10	  Robotics Facility, Gateway x3, Pylon x2
-  +40	  5:20	  Immortal
+  00	  5:10	  Robotics Facility, Pylon x2, Gateway x340	  5:20	  Immortal
+  40	  5:20	  Immortal
   +25	  5:25	  Warping
   32	  5:30	  Forge .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   00	  5:50	  Probe to Nexus F3
+  +40	  6:00	  Immortal x2
   00      6:05	  Nexus F3 .+71 Probe to Minerals and Gas
-  00	  6:35	  Templar Archives, Gateway x4, Pylon x2 .+37 Research Psionic Storm
+  00	  6:35	  Templar Archives, Pylon x2, Gateway x4 .+38 Research Psionic Storm
   32	  7:30	  Robotics Bay, Forge .+32 Research Upgrades Level 1
   00	  7:50	  Probe to Nexus F4
   71|fq+  8:05	  Nexus F4
