@@ -1,18 +1,18 @@
-  00	  0:02	  Scout Probe
+  00	  0:03	  Scout Probe
   00	  0:17	  Pylon
-  00	  0:35	  Gateway
-  18|fw-  0:44	  Pylon  # use scout probe to put this remote pylon
-  00	  0:48	  Assimilator .+21 Probe to Gas
-  00	  0:53	  Scout Probe to Gateway
-  00	  0:58	  Cancel First Gateway
-  46|fa-  1:02	  Gateway  # put near remote pylon
-  00	  1:25	  Probe to Nexus F2
-  71	  1:34	  Nexus F2 .+69 Probe to Minerals Chronoboost
-  36|fc	  1:48	  Cybernetics Core # stop make probe at 16 mineral + 3 gas until reach 250 mineral to make Cyber + 1 zealot
-  27	  1:43	  Zealot
+  18|fw-  0:39	  Pylon  # use scout probe to put this remote pylon
+  00	  0:44	  Assimilator .+21 Probe to Gas
+  46|fa-  0:57	  Gateway  # put near remote pylon
+  00	  1:23	  Probe to Nexus F2
+  71	  1:33	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  36|fc	  1:43	  Cybernetics Core # stop make probe at 16 mineral + 3 gas until reach 250 mineral to make Cyber + 1 zealot
+  27	  1:43	  Zealot Chronoboost
   00	  1:57	  Assimilator .+21 Probe to Gas
-  30	  2:24	  Stalker Chronoboost
-  30	  2:40	  Stalker  # 2:40
+  27	  2:00	  Zealot
+  00	  2:15	  Chronoboost Gateway
+  30	  2:20	  Stalker
+  00	  2:26	  Chronoboost Gateway
+  30	  2:36	  Stalker  # 2:40
   43|vq	  2:40	  Stargate
   00	  2:49	  Assimilator x2, Pylon .+21 Probe to Gas
   00	  2:55	  Pylon
