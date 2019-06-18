@@ -12,7 +12,7 @@
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
   00	  1:33	  Hidden Pylon  # use 1st scout probe to put this hidden pylon
   00	  1:35	  Second Scout Probe to Hidden Pylon  # 2nd scout probe
-  00	  1:57	  Adept x2 Chronoboost, Research Warp Gate .+100 warpgate completed
+  00	  1:57	  Adept x2 Chronoboost, Research Warp Gate .+108 warpgate completed
   36|vw	  2:03	  Twilight Council  # put next to hidden pylon
   00	  2:16	  Adept x2
   00	  2:25	  Pylon
@@ -41,4 +41,4 @@
   71|fq+  8:35	  Nexus F4
   00	  9:46	  Probe to Minerals and Gas
   00	  11:20	  Probe to Nexus F5
-  00	  11:50	  Nexus F5
+  00	  11:50	  Nexus Assimilator x2

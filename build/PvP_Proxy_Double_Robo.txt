@@ -11,7 +11,7 @@
   00	  1:23	  Scout Probe to remote Pylon
   00	  1:35	  Remote Pylon  # use scout probe to put this remote pylon
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon, after this focus on mineral
-  00	  2:03	  Research Warp Gate .+100 warpgate completed
+  00	  2:03	  Research Warp Gate .+108 warpgate completed
   00	  2:06	  Block Pylon
   39	  2:43	  Immortal Chronoboost Warp Prism #
   29	  2:48	  Shield Battery
@@ -28,7 +28,7 @@
   00	  6:34	  Assimilator x2, Pylon x2 .+21 Probe to Gas
   00|vw   7:00	  Twilight Council
   00	  7:00	  Gateway x4, Pylon x2
-  36|ve	  7:38	  Templar Archives
+  36	  7:38	  Templar Archives
   00	  7:40	  Research Charge Chronoboost
   00	  7:45	  Probe to Nexus F3
   00      8:00	  Nexus F3 .+71 Probe to Minerals and Gas
@@ -38,4 +38,4 @@
   71|fq+  10:30	  Nexus F4
   00	  10:41	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
   00	  12:30	  Probe to Nexus F5
-  71	  13:00	  Nexus F5
+  71	  13:00	  Nexus Assimilator x2

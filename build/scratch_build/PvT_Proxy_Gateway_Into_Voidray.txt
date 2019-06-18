@@ -1,0 +1,20 @@
+  14	  0:17	  Pylon
+  16	  0:39	  Gateway
+  16	  0:48	  Assimilator
+  18	  0:59	  Pylon
+  20	  1:18	  Gateway
+  20	  1:28	  Cybernetics Core
+  22	  1:48	  Assimilator
+  23	  2:02	  Stalker x2 (Chrono Boost)
+  27	  2:10	  Warp Gate
+  27	  2:34	  Pylon
+  27	  2:40	  Stalker x2
+  31	  2:53	  Shield Battery
+  31	  2:55	  Stargate
+  31	  2:59	  Shield Battery
+  31	  3:11	  Shield Battery x2
+  31	  3:33	  Pylon
+  31	  3:39	  Void Ray (Chrono Boost)
+  37	  4:17	  Stalker x2
+  41	  4:26	  Shield Battery x2
+  41	  4:31	  Pylon

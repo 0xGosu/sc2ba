@@ -16,7 +16,7 @@
   43|vq	  2:40	  Stargate
   00	  2:49	  Assimilator x2, Pylon .+21 Probe to Gas
   00	  2:55	  Pylon
-  00	  3:02	  Research Warp Gate .+100 warpgate completed
+  00	  3:02	  Research Warp Gate .+108 warpgate completed
   00	  3:15	  Shield Battery
   36	  3:25	  Oracle Chronoboost
   46	  3:32	  Stargate, Pylon
@@ -43,4 +43,4 @@
   71|fq+  9:49	  Nexus F5
   00	  10:00	  Probe to Minerals and Gas  # Nexus Completed after 71s
   00	  12:00	  Probe to Nexus F6
-  71	  12:30	  Nexus F6
+  71	  12:30	  Nexus Assimilator x2

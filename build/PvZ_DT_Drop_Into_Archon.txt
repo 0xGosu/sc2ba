@@ -42,4 +42,4 @@
   71|fq+  8:05	  Nexus F4
   00	  9:16	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
   00	  11:16	  Probe to Nexus F5
-  71	  11:46	  Nexus F5
+  71	  11:46	  Nexus Assimilator x2
