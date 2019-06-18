@@ -28,6 +28,7 @@ START_OFFSET = 1
 CMD_KEY_TIMEOUT = 1.2
 SYNC_KEY_TIMEOUT = 0.9
 TIME_SLEEP_UNIT = 0.2
+START_KEY = 'f1'
 # this should be equal 1 unless for testing
 FACTOR = 1
 
@@ -140,7 +141,8 @@ def run_build(start_key='', max_time=MAX_BUILD_TIME):
     # wait for first start key
     if start_key:
         print("Press {} to start".format(start_key))
-        keyboard.wait(start_key)
+        while keyboard.read_key(suppress=False) != start_key:
+            pass
 
     start_time = time.time()
     keyboard.call_later(say, args=['start'], delay=0)
@@ -322,7 +324,7 @@ def main():
 
     while 1:
         reload_runner(set_offset=START_OFFSET)
-        run_build(start_key='q')
+        run_build(start_key=START_KEY)
 
 
 if __name__ == '__main__':
