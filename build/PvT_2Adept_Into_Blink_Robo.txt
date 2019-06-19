@@ -1,21 +1,24 @@
   00	  0:09	  Scout Probe
+  00	  0:15	  Probe to Pylon
   18|fw-  0:17	  Pylon
+  00	  0:32	  Probe to Gateway
   46|fa-  0:35	  Gateway
-  00	  0:45	  Chronoboost
+  00	  0:44	  Chronoboost
   00	  0:48	  Assimilator
   00	  1:09	  Probe to Gas
+  00	  1:18	  Probe to Cyber core
   36|fc	  1:21	  Cybernetics Core
-  00	  1:26	  Probe to Nexus F2
-  00	  1:34	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  00	  1:28	  Probe to Nexus F2
+  00	  1:36	  Nexus F2 .+69 Probe to Minerals Chronoboost
   00	  1:37	  Pylon
-  00	  1:47	  Assimilator .+21 Probe to Gas
+  00	  1:42	  Assimilator .+21 Probe to Gas
   30	  1:57	  Adept Chronoboost
   00	  2:02	  Research Warp Gate .+108 warpgate completed
   00	  2:17	  Adept
   36|vw	  2:22	  Twilight Council
   30	  2:47	  Stalker
   00	  2:58	  Research Blink .+121 Blink completed
-  46	  3:07	  Gateway x2 # build Gateway x2
+  46	  3:07	  Build Gateway x2 # build Gateway x2
   30	  3:17	  Stalker
   46	  3:23	  Robotics Facility, Pylon
   00	  3:42	  Pylon
