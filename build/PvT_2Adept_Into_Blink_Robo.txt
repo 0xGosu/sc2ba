@@ -1,13 +1,14 @@
   00	  0:09	  Scout Probe
   18|fw-  0:17	  Pylon
   46|fa-  0:35	  Gateway
+  00	  0:45	  Chronoboost
   00	  0:48	  Assimilator
   00	  1:09	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core
-  00	  1:27	  Probe to Nexus F2
-  00	  1:36	  Nexus F2 .+69 Probe to Minerals Chronoboost
-  00	  1:38	  Pylon
-  00	  1:48	  Assimilator .+21 Probe to Gas
+  00	  1:26	  Probe to Nexus F2
+  00	  1:34	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  00	  1:37	  Pylon
+  00	  1:47	  Assimilator .+21 Probe to Gas
   30	  1:57	  Adept Chronoboost
   00	  2:02	  Research Warp Gate .+108 warpgate completed
   00	  2:17	  Adept
