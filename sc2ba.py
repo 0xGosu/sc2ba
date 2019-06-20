@@ -104,6 +104,12 @@ def say(msg, verbose=False):
     os.system("say '%s'" % msg)
 
 
+def type_chat(words):
+    keyboard.send('enter')
+    keyboard.write(words)
+    keyboard.send('enter')
+
+
 class Runner(object):
     build_path = ""
     build_name = ""
@@ -320,6 +326,9 @@ def main():
             keyboard.call_later(say, args=['redo'], delay=0)
 
     keyboard.add_word_listener('bb', go_back_to_offset_before_sync, triggers=['space'],
+                               match_suffix=True, timeout=CMD_KEY_TIMEOUT)
+
+    keyboard.add_word_listener('jj', lambda: type_chat("glhf"), triggers=['space'],
                                match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     while 1:
