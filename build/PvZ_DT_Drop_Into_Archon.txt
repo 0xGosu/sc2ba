@@ -29,7 +29,7 @@
   00	  4:36	  Warp in Dark Templar  # DT Blink Chronoboost
   18	  4:53	  Pylon x2
   00	  5:00	  Research Charge Chronoboost
-  00	  5:10	  Robotics Facility, Pylon x2, Gateway x340	  5:20	  Immortal
+  00	  5:10	  Robotics Facility, Pylon x2, Gateway x3
   40	  5:20	  Immortal
   +25	  5:25	  Warping
   32	  5:30	  Forge .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
