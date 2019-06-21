@@ -37,6 +37,9 @@ QUICK_CHAT_MAP = {
     'jk': "Hi iam K of the north",
     'j0': "GG WP"
 }
+REPEATED_MODE_MAP = {
+    '-': '123456gtyh'  # while - is press any key in this string will be repeated 1 more time
+}
 # this should be equal 1 unless for testing
 FACTOR = 1
 
@@ -371,6 +374,14 @@ def main():
 
     keyboard.add_word_listener('bb', go_back_to_offset_before_sync, triggers=[CMD_KEY_TRIGGER],
                                match_suffix=True, timeout=CMD_KEY_TIMEOUT)
+
+    def repeat_on_press(event):
+        # print event.name, event.scan_code, event.event_type, event.modifiers, event.is_keypad
+        for hold_key, repeat_list in REPEATED_MODE_MAP.items():
+            if event.name in repeat_list and keyboard.is_pressed(hold_key):
+                # print "repeated %s" % event.name
+                keyboard.send(event.scan_code)
+    keyboard.on_press(repeat_on_press, suppress=False)
 
     while 1:
         process_quick_chat(QUICK_CHAT_MAP)
