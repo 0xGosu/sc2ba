@@ -1,12 +1,12 @@
   00	  0:09	  Scout Probe
   00	  0:15	  Probe to Pylon
   18|fw-  0:17	  Pylon
-  00	  0:32	  Probe to Gateway
+  00	  0:33	  Probe to Gateway
   46|fa-  0:35	  Gateway
   00	  0:44	  Chronoboost
   00	  0:48	  Assimilator
   00	  1:09	  Probe to Gas
-  00	  1:18	  Probe to Cyber core
+  00	  1:19	  Probe to Cyber core
   36|fc	  1:21	  Cybernetics Core
   00	  1:28	  Probe to Nexus F2
   00	  1:36	  Nexus F2 .+69 Probe to Minerals Chronoboost
