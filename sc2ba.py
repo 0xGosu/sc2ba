@@ -25,10 +25,18 @@ lotv_regex = re.compile(r'([+*\d]+)\|?([\w+\-]*)\s*\t*\s*(\d+:\d+)\t\s*([\w +,.]
 MAX_BUILD_TIME = 60 * 20
 SYNC_DELTA = 3
 START_OFFSET = 1
+CMD_KEY_TRIGGER = 'space'
 CMD_KEY_TIMEOUT = 1.2
 SYNC_KEY_TIMEOUT = 0.9
 TIME_SLEEP_UNIT = 0.2
 START_KEY = 'f1'
+# be careful of the text in this chat map, it shouldnt crash with sync keys, because it may trigger it during game
+QUICK_CHAT_MAP = {
+    'gg': "glhf",
+    'jj': "thanks",
+    'jk': "Hi iam K of the north",
+    'j0': "GG WP"
+}
 # this should be equal 1 unless for testing
 FACTOR = 1
 
@@ -245,6 +253,42 @@ def process_runner_build_orders(run, enable_sync=True):
                                                                             timeout=SYNC_KEY_TIMEOUT)
 
 
+def process_quick_chat(chat_map, verbose=0):
+    def make_hotkey_build(_hotkey, _text, _rmv_handler=True):
+        def f(hotkey=_hotkey, text=_text, rmv_handler=_rmv_handler):
+            type_chat(text)
+            if rmv_handler:
+                try:
+                    keyboard.remove_word_listener(hotkey)
+                except KeyError:
+                    pass
+                else:
+                    if verbose:
+                        print("quickchat hotkey=%s removed" % hotkey)
+
+        return f
+
+    for hot_key in chat_map.keys():
+        try:
+            keyboard.remove_word_listener(hot_key)
+        except KeyError:
+            pass
+        else:
+            if verbose:
+                print("quickchat hotkey removed")
+
+    for hot_key, chat_text in chat_map.items():
+        if re.search(r'\w+[7890uiopjklm]', hot_key):
+            rmv_hotkey_after_chat = False
+        else:
+            rmv_hotkey_after_chat = True
+        keyboard.add_word_listener(hot_key,
+                                   make_hotkey_build(hot_key, chat_text, rmv_hotkey_after_chat),
+                                   triggers=[CMD_KEY_TRIGGER],
+                                   match_suffix=True,
+                                   timeout=CMD_KEY_TIMEOUT)
+
+
 def get_build_path(verbose=0):
     build_folder_path = os.path.join(os.getcwd(), 'build')
     build_list = sorted([p for p in os.listdir(build_folder_path) if p.endswith('.txt')])
@@ -301,7 +345,7 @@ def main():
             runner.stop_now = True
             print("stop build now")
 
-    keyboard.add_word_listener('stop', stop_now, triggers=['space'], match_suffix=True, timeout=CMD_KEY_TIMEOUT)
+    keyboard.add_word_listener('stop', stop_now, triggers=[CMD_KEY_TRIGGER], match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     for i in range(len(build_path_list)):
         build_index = i + 1
@@ -313,10 +357,10 @@ def main():
 
             return f
 
-        keyboard.add_word_listener('b' + str(build_index), make_switch_build_func(), triggers=['space'],
+        keyboard.add_word_listener('b' + str(build_index), make_switch_build_func(), triggers=[CMD_KEY_TRIGGER],
                                    match_suffix=True, timeout=CMD_KEY_TIMEOUT)
     # add reset current build trigger (remove offset and reinstall sync point)
-    keyboard.add_word_listener('bs', lambda: reload_runner(verbose='say build is reset'), triggers=['space'],
+    keyboard.add_word_listener('bs', lambda: reload_runner(verbose='say build is reset'), triggers=[CMD_KEY_TRIGGER],
                                match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     # add go back to offset_before_sync
@@ -325,13 +369,11 @@ def main():
             runner.offset = runner.offset_before_sync
             keyboard.call_later(say, args=['redo'], delay=0)
 
-    keyboard.add_word_listener('bb', go_back_to_offset_before_sync, triggers=['space'],
-                               match_suffix=True, timeout=CMD_KEY_TIMEOUT)
-
-    keyboard.add_word_listener('jj', lambda: type_chat("glhf"), triggers=['space'],
+    keyboard.add_word_listener('bb', go_back_to_offset_before_sync, triggers=[CMD_KEY_TRIGGER],
                                match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     while 1:
+        process_quick_chat(QUICK_CHAT_MAP)
         reload_runner(set_offset=START_OFFSET)
         run_build(start_key=START_KEY)
 
