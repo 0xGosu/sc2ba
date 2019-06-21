@@ -2,9 +2,9 @@
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
   00	  0:37	  Chronoboost
   00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
-  00	  0:40	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
-  46|fa-  0:49	  Gateway  # 0:46 normal scout
-  00	  0:50	  Scout Probe
+  00	  0:36	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
+  46|fa-  0:45	  Gateway  # 0:46 normal scout
+  00	  0:46	  Scout Probe
   00	  1:00	  Probe to Gas
   00	  1:13	  Fake Pylon
   00	  1:21	  Assimilator .+21 Probe to Gas  # cut probe now when build Assimilator to make Nexus and CC
