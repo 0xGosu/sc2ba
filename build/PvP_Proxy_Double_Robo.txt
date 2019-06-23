@@ -3,10 +3,12 @@
   00	  0:30	  Probe to Gateway
   46|fa-  0:35	  Gateway
   00	  0:37	  Chronoboost
-  00	  0:43	  Assimilator .+21 Probe to Gas
-  00	  0:56	  Assimilator .+21 Probe to Gas # Scout Probe
+  00	  0:42	  Assimilator
+  00	  0:56	  Assimilator
   00	  0:58	  Scout Probe
+  00	  1:03	  Probe to Gas
   00	  1:16	  Probe to Cyber core
+  00	  1:17	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
   00	  1:23	  Scout Probe to remote Pylon
   00	  1:35	  Remote Pylon  # use scout probe to put this remote pylon

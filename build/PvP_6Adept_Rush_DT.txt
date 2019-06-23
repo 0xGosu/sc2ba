@@ -3,11 +3,13 @@
   00	  0:30	  Probe to Gateway
   46|fa-  0:35	  Gateway
   15	  0:37	  Chronoboost
-  17	  0:42	  Assimilator .+21 Probe to Gas
-  18	  0:56	  Assimilator .+21 Probe to Gas
-  00	  1:03	  Probe to Gateway
+  17	  0:42	  Assimilator
+  18	  0:56	  Assimilator
+  00	  1:03	  Probe to Gas
+  00	  1:04	  Probe to Gateway
   19	  1:09	  Gateway  # should be build before 1:11
   00	  1:10	  Scout Probe to hidden pylon
+  00	  1:17	  Probe to Gas
   00	  1:18	  Probe to Cyber core
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
   00	  1:33	  Hidden Pylon  # use 1st scout probe to put this hidden pylon

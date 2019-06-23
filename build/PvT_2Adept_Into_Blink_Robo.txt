@@ -21,7 +21,7 @@
   46	  3:07	  Build Gateway x2 # build Gateway x2
   30	  3:17	  Stalker
   46	  3:23	  Robotics Facility, Pylon
-  00	  3:42	  Pylon
+  00	  3:42	  Pylon x2
   00	  3:53	  Probe to Nexus F3
   00	  4:10	  Observer
   23	  4:12	  Warp in Stalker
@@ -31,11 +31,11 @@
   +25	  4:35	  Warping
   00	  4:49	  Assimilator, Pylon .+21 Probe to Gas
   00	  4:56	  Observer  # not importance
-  32	  5:00	  Build Forge x2, Pylon .+34 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  00	  5:00	  Gateway x3, Pylon x2
   00	  5:10	  Research Charge
   3*40	  5:26	  Immortal
-  00	  5:45	  Gateway x3, Pylon x2
-  36	  6:10	  Templar Archives .+38 Research Psionic Storm
+  32	  5:30	  Build Forge x2 .+34 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  36	  6:00	  Templar Archives .+38 Research Psionic Storm
   00	  6:39	  Assimilator x2, Pylon x2 .+21 Probe to Gas
   46	  6:43	  Robotics Bay
   46	  6:50	  Robotics Facility, Pylon x2
