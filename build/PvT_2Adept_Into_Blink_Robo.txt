@@ -3,7 +3,7 @@
   18|fw-  0:17	  Pylon
   00	  0:33	  Probe to Gateway
   46|fa-  0:35	  Gateway
-  00	  0:44	  Chronoboost
+  00	  0:37	  Chronoboost
   00	  0:48	  Assimilator
   00	  1:09	  Probe to Gas
   00	  1:19	  Probe to Cyber core
