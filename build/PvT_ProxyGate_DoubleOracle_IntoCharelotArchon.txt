@@ -1,0 +1,47 @@
+  00	  0:02	  Scout Probe
+  00	  0:15	  Probe to Pylon
+  00|fw-  0:17	  Pylon
+  00      0:33    Probe to Gateway
+  46|fa-  0:35	  Gateway
+  00      0:37    Chronoboost
+  18      0:44    Proxy Pylon  # use scout probe to put this
+  00	  0:48	  Assimilator
+  00      0:53    Scout Probe to Proxy Gateway
+  46	  1:04	  Proxy Gateway
+  00      1:09    Probe to Gas
+  00	  1:11	  Assimilator
+  00      1:19    Probe to Cyber core
+  36|fc	  1:21	  Cybernetics Core
+  30	  1:57	  Stalker Chronoboost, Warpgate .+108 warpgate completed
+  27      2:03    Adept
+  00	  2:10	  Pylon
+  30	  2:17	  Stalker
+  27      2:35    Sentry
+  43|vq	  2:26	  Stargate
+  00	  2:50	  Probe to Nexus F2
+  30	  2:47	  Stalker
+  00      3:00    Nexus F2
+  36	  3:09	  Oracle Chronoboost
+  00	  3:13	  Shield Battery
+  00	  3:25	  Pylon
+  36	  3:35	  Oracle
+  46|va	  3:52	  Robotics Facility
+  25*5    4:11    Phoenix
+  +25     4:25    Warping
+  18      4:38    Observer
+  00	  4:45	  Build Gateway x2, Pylon x2
+  39	  4:56	  Immortal
+  00	  5:05	  Assimilator x2, Pylon x2 .+21 Probe to Gas
+  36|vw	  5:22	  Twilight Council
+  32      5:30    Build Forge .+34 Research Upgrades Level 1
+  36	  5:35	  Warp Prism
+  36	  5:58	  Templar Archives .+38 Research Psionic Storm
+  00      6:00    Research Charge
+  18      6:11    Observer  # 2nd observer not importance
+  +40	  6:30	  Immortal
+  00	  6:40	  Build Gateway x4
+  00	  6:54	  Probe to Nexus F3
+  71|fq+  7:09    Nexus F3
+  00      8:20    Probe to Minerals and Gas  # Nexus Completed after 71s
+  00      11:00   Probe to Nexus F4
+  71      11:30   Nexus Assimilator x2
