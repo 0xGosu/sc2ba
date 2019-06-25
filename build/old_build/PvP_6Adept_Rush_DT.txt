@@ -1,0 +1,46 @@
+  00	  0:12	  Probe to Pylon # 1st probe out
+  18|fw-  0:17	  Pylon
+  00	  0:30	  Probe to Gateway
+  46|fa-  0:35	  Gateway
+  15	  0:37	  Chronoboost
+  17	  0:42	  Assimilator
+  18	  0:56	  Assimilator
+  00	  1:03	  Probe to Gas
+  00	  1:04	  Probe to Gateway
+  19	  1:09	  Gateway  # should be build before 1:11
+  00	  1:10	  Scout Probe to hidden pylon
+  00	  1:17	  Probe to Gas
+  00	  1:18	  Probe to Cyber core
+  36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
+  00	  1:33	  Hidden Pylon  # use 1st scout probe to put this hidden pylon
+  00	  1:35	  Second Scout Probe to Hidden Pylon  # 2nd scout probe
+  00	  1:57	  Adept x2 Chronoboost, Research Warp Gate .+108 warpgate completed
+  36|vw	  2:03	  Twilight Council  # put next to hidden pylon
+  00	  2:16	  Adept x2
+  00	  2:25	  Pylon
+  71|vr	  2:39	  Dark Shrine  # put next to hidden pylon
+  00	  2:41	  Second Scout Probe to Remote Pylon  # 2nd scout probe
+  00	  2:53	  Gateway, Stalker
+  00	  3:07	  Probe to Nexus F2
+  71	  3:16	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
+  00	  3:27	  Shield Battery
+  00	  3:25	  Remote Pylon  # use 2nd scout probe to put this remote pylon
+  00	  3:50	  Warp in Dark Templar x3
+  46	  3:58	  Robotics Facility .+47 Observer .+68 Warp Prism  # if enemy also have DT put this next to remote pylon
+  00	  4:30	  Warp in Dark Templar
+  49	  4:33	  Gateway  # put this next to remote pylon
+  00	  4:45	  Assimilator x2, Pylon .+21 Probe to Gas
+  +25	  5:05	  Warping
+  49	  5:10	  Gateway x2, Pylon x2
+  +40	  5:50	  Immortal
+  00	  6:00	  Research Charge Chronoboost
+  00	  6:35	  Gateway x2, Pylon x2
+  00	  6:38	  Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  00	  6:50	  Probe to Nexus F3
+  71      7:05	  Nexus F3 .+71 Probe to Minerals and Gas .+92 Chronoboost Probe
+  00	  7:15	  Gateway x2, Pylon x3
+  00	  8:15	  Probe to Nexus F4
+  71|fq+  8:35	  Nexus F4
+  00	  9:46	  Probe to Minerals and Gas
+  00	  11:20	  Probe to Nexus F5
+  00	  11:50	  Nexus Assimilator x2

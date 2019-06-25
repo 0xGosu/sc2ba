@@ -16,7 +16,7 @@
   00	  2:02	  Zealot
   36|vw	  2:12	  Twilight Council
   00	  2:14	  Probe to entrance
-  00	  2:16	  Research Warp Gate .+108 warpgate completed
+  00	  2:16	  Research Warp Gate # .+108 warp gate completed
   46	  2:25	  Robotics Facility .+47 Warp Prism Chronoboost .+74 Observer
   71|vr	  2:48	  Dark Shrine
   53	  3:02	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
@@ -29,17 +29,18 @@
   00	  4:36	  Warp in Dark Templar  # DT Blink Chronoboost
   18	  4:53	  Pylon x2
   00	  5:00	  Research Charge Chronoboost
-  00	  5:10	  Robotics Facility, Pylon x2, Gateway x3
+  00	  5:10	  Build Gateway x3, Pylon x2
   40	  5:20	  Immortal
   +25	  5:25	  Warping
-  32	  5:30	  Forge .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  32	  5:30	  Build Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   00	  5:50	  Probe to Nexus F3
-  +40	  6:00	  Immortal x2
+  00      5:54    Robotics Facility
+  +40	  6:00	  Immortal
   00      6:05	  Nexus F3 .+71 Probe to Minerals and Gas
-  00	  6:35	  Templar Archives, Pylon x2, Gateway x4 .+38 Research Psionic Storm
-  32	  7:30	  Robotics Bay, Forge .+32 Research Upgrades Level 1
-  00	  7:50	  Probe to Nexus F4
-  71|fq+  8:05	  Nexus F4
-  00	  9:16	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
-  00	  11:16	  Probe to Nexus F5
-  71	  11:46	  Nexus Assimilator x2
+  00	  6:35	  Templar Archives .+38 Research Psionic Storm
+  00      7:05    Build Gateway x4
+  00	  7:55	  Probe to Nexus F4
+  71|fq+  8:10    Nexus Fx
+  00      9:10    Probe to Minerals and Gas  # Nexus Completed after 71s
+  00      12:10   Probe to Nexus Fx
+  71      12:40   Nexus Assimilator x2
