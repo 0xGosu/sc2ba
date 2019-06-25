@@ -20,7 +20,7 @@ import sys
 
 BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 
-lotv_regex = re.compile(r'([+*\d]+)\|?([\w+\-]*)\s*\t*\s*(\d+:\d+)\t\s*([\w +,.]+)')
+lotv_regex = re.compile(r'([+*\d]+)\|?([\w+\-]*)[\t\s]*(\d+:\d+)[\t\s]+([\w +,.]+)')
 
 MAX_BUILD_TIME = 60 * 20
 SYNC_DELTA = 3
