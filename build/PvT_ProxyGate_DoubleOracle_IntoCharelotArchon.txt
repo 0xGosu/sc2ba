@@ -8,17 +8,18 @@
   00	  0:48	  Assimilator
   00      0:53    Scout Probe to Proxy Gateway
   46	  1:04	  Proxy Gateway
+  00	  1:06	  Assimilator  # TODO lack of gas
   00      1:09    Probe to Gas
-  00	  1:11	  Assimilator
   00      1:19    Probe to Cyber core
   36|fc	  1:21	  Cybernetics Core
-  00      1:32    Probe to Gas
-  30	  1:57	  Stalker Chronoboost, Warpgate .+108 warpgate completed
-  27      2:03    Adept
+  00      1:27    Probe to Gas
+  30	  1:57	  Stalker Chronoboost
+  27      1:59    Adept
+  00      1:59    Research Warpgate .+108 warpgate completed
   00	  2:10	  Pylon
   30	  2:17	  Stalker
   43|vq	  2:26	  Stargate
-  27      2:35    Sentry
+  27      2:32    Adept
   30	  2:47	  Stalker
   00	  2:50	  Probe to Nexus F2
   00      3:00    Nexus F2
@@ -27,16 +28,18 @@
   00	  3:25	  Pylon
   36	  3:35	  Oracle
   46|va	  3:52	  Robotics Facility
-  25*5    4:11    Phoenix
-  +25     4:25    Warping
-  18      4:38    Observer
+  6*25    4:11    Phoenix
+  25      4:15    Warp in Stalker
+  18      4:40    Observer
   00	  4:45	  Build Gateway x2, Pylon x2
-  39	  4:56	  Immortal
+  25      4:50    Warp in Sentry
+  39	  4:58	  Immortal
   00	  5:05	  Assimilator x2, Pylon x2 .+21 Probe to Gas
-  36|vw	  5:22	  Twilight Council
+  36|vw	  5:12	  Twilight Council
   32      5:30    Build Forge .+34 Research Upgrades Level 1
   36	  5:35	  Warp Prism
-  36	  5:58	  Templar Archives .+38 Research Psionic Storm
+  36	  5:48	  Templar Archives .+38 Research Psionic Storm
+  +25	  5:55	  Warping
   00      6:00    Research Charge
   18      6:11    Observer  # 2nd observer not importance
   +40	  6:30	  Immortal
