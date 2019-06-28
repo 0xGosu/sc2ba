@@ -1,13 +1,13 @@
-  00	  0:02	  Scout Probe
+  00	  0:09	  Scout Probe to Proxy Pylon
   00	  0:15	  Probe to Pylon
   00	  0:17	  Pylon
   00	  0:33	  Probe to Gateway
   00	  0:35	  Gateway
   00	  0:37	  Chronoboost
-  18|fw-  0:44	  Proxy Pylon  # use scout probe to put this remote pylon
+  18|fw-  0:46	  Proxy Pylon  # use scout probe to put this remote pylon
   00	  0:48	  Assimilator
-  00	  0:53	  Scout Probe to Gateway
-  46|fa-  1:04	  Proxy Gateway  # put near remote pylon
+  00	  0:53	  Scout Probe to Proxy Gateway
+  46|fa-  1:06	  Proxy Gateway  # put near remote pylon
   00	  1:09	  Probe to Gas
   00	  1:10	  Cancel First Gateway # or Build Assimilator
   00	  1:28	  Probe to Nexus F2

@@ -1,49 +1,46 @@
-  00	  0:02	  Scout Probe
+  00	  0:09	  Scout Probe to Proxy Pylon
   00	  0:15	  Probe to Pylon
   00|fw-  0:17	  Pylon
   00      0:33    Probe to Gateway
   46|fa-  0:35	  Gateway
   00      0:37    Chronoboost
-  18      0:44    Proxy Pylon  # use scout probe to put this
+  18      0:46    Proxy Pylon  # use scout probe to put this
   00	  0:48	  Assimilator
   00      0:53    Scout Probe to Proxy Gateway
-  46	  1:04	  Proxy Gateway
-  00	  1:06	  Assimilator  # TODO lack of gas
-  00      1:09    Probe to Gas
+  46	  1:06	  Proxy Gateway
+  00	  1:09	  Assimilator
+  00      1:10    Probe to Gas
   00      1:19    Probe to Cyber core
   36|fc	  1:21	  Cybernetics Core
-  00      1:27    Probe to Gas
+  00      1:31    Probe to Gas
   30	  1:57	  Stalker Chronoboost
   27      1:59    Adept
   00      1:59    Research Warpgate .+108 warpgate completed
-  00	  2:10	  Pylon
+  00	  2:06	  Pylon
   30	  2:17	  Stalker
-  43|vq	  2:26	  Stargate
-  27      2:32    Adept
+  27      2:26    Adept
+  00	  2:28	  Shield Battery
+  43|vq	  2:39	  Proxy Stargate
   30	  2:47	  Stalker
-  00	  2:50	  Probe to Nexus F2
-  00      3:00    Nexus F2
-  36	  3:09	  Oracle Chronoboost
-  00	  3:13	  Shield Battery
+  00	  3:03	  Shield Battery
+  00	  3:13	  Probe to Nexus F2
+  36	  3:23	  Oracle Chronoboost
+  00      3:22    Nexus F2
   00	  3:25	  Pylon
-  36	  3:35	  Oracle
-  46|va	  3:52	  Robotics Facility
-  6*25    4:11    Phoenix
-  25      4:15    Warp in Stalker
-  18      4:40    Observer
+  +43	  3:48	  Void ray
+  25      4:15    Warp in Sentry
+  00      4:33    Probe to Minerals Chronoboost
   00	  4:45	  Build Gateway x2, Pylon x2
   25      4:50    Warp in Sentry
-  39	  4:58	  Immortal
   00	  5:05	  Assimilator x2, Pylon x2 .+21 Probe to Gas
-  36|vw	  5:12	  Twilight Council
+  25      5:16    Warp in Adept
+  36|vw	  5:22	  Twilight Council
   32      5:30    Build Forge .+34 Research Upgrades Level 1
-  36	  5:35	  Warp Prism
-  36	  5:48	  Templar Archives .+38 Research Psionic Storm
-  +25	  5:55	  Warping
-  00      6:00    Research Charge
-  18      6:11    Observer  # 2nd observer not importance
-  +40	  6:30	  Immortal
-  00	  6:40	  Build Gateway x4
+  25      5:45    Warp in Adept
+  00      6:00    Research Resonating Glaives
+  +25	  6:10	  Warping
+  36	  6:30	  Templar Archives .+38 Research Psionic Storm
+  00	  6:40	  Build Gateway x2
   00	  6:55	  Probe to Nexus F3
   71|fq+  7:10    Nexus Fx
   00      8:10    Probe to Minerals and Gas  # Nexus Completed after 71s

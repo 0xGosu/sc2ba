@@ -5,10 +5,10 @@
   00	  0:39	  Assimilator
   00	  0:40	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:49	  Gateway  # 0:44
-  00	  0:51	  Wait and Check Scout
-  00	  0:56	  Cancel Assimilator
-  32|fs-  0:58	  Forge  # consider cancel Assimilator and build it back at 1.03 if dont have enough mineral
-  00	  0:59	  Second Scout Probe
+  00	  0:49	  Wait and Check Scout
+  00	  0:54	  Cancel Assimilator to Canon Rush
+  32|fs-  0:57	  Build Forge  # consider cancel Assimilator and build it back at 1.03 if dont have enough mineral
+  00	  0:57	  Second Scout Probe
   00	  1:02	  Assimilator .+21 Probe to Gas
   18	  1:07	  Pylon	 # Proxy, behind expansion
   00	  1:30	  Photon Cannon  # Proxy
@@ -27,8 +27,8 @@
   00	  3:38	  Home Pylon	  # Home
   +39	  3:53	  Immortal
   36	  4:14	  Oracle Chronoboost
-  00	  4:30	  Research Warp Gate  .+108 warpgate completed
-  +36	  4:40	  Oracle
+  36	  4:40	  Oracle
+  +25	  5:15	  Phoenix
   00	  6:55	  Probe to Nexus F2
   71|fq+  7:10	  Nexus Fx
   00	  8:10	  Probe to Minerals and Gas  # Nexus Completed after 71s
