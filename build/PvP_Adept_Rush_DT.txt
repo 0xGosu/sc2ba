@@ -8,9 +8,9 @@
   00	  1:03	  Probe to Gas
   00	  1:09	  Probe to Gateway
   19	  1:14	  Gateway  # normal 1:11
-  00	  1:15	  Scout Probe to hidden pylon
+  00	  1:14	  Scout Probe to hidden pylon
   00	  1:17	  Probe to Cyber core
-  00	  1:18	  Probe to Gas
+  00	  1:17	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral til 6 probe to gas (4 first)
   00	  1:31	  Second Scout Probe to Hidden Pylon  # 2nd scout probe
   00	  1:34	  Hidden Pylon  # use 1st scout probe to put this hidden pylon

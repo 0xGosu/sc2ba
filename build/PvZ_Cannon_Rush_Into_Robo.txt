@@ -13,22 +13,24 @@
   18	  1:07	  Pylon	 # Proxy, behind expansion
   00	  1:30	  Photon Cannon  # Proxy
   36|fc	  1:35	  Cybernetics Core  # Build at Proxy in order to block enemy worker from attack 1st Canon
-  00	  1:40	  Photon Cannon	  # Proxy
-  00	  2:00	  Assimilator .+21 Probe to Gas
+  00	  1:36	  Zealot
+  00	  1:42	  Photon Cannon	  # Proxy
   46|va	  2:11	  Robotics Facility	  # Proxy
-  29	  2:14	  Shield Battery x2	  # Proxy
-  00	  2:16	  Adept
+  29	  2:12	  Shield Battery x2	  # Proxy
+  00	  2:16	  Assimilator .+21 Probe to Gas
   00	  2:32	  Pylon	  # Proxy
   39	  2:58	  Immortal Chronoboost
   00	  3:04	  Shield Battery x2  #  Proxy
-  00	  3:07	  Probe to entrance  # to Stargate
-  43|vq   3:17	  Stargate  # Proxy
+  00	  3:21	  Probe to entrance  # to Stargate
   36	  3:27	  Warp Prism Chronoboost	# After finnished, continue Immortal production
+  43|vq   3:30	  Stargate  # Home
   00	  3:38	  Home Pylon	  # Home
   +39	  3:53	  Immortal
-  36	  4:00	  Oracle Chronoboost
-  +36	  4:26	  Oracle
-  00	  4:40	  Research Warp Gate  # .+108 warpgate completed
-  00	  6:20	  Probe to Nexus F2
-  71|fq+  6:30	  Nexus F2
-  00	  7:41	  Probe to Minerals and Gas
+  36	  4:14	  Oracle Chronoboost
+  00	  4:30	  Research Warp Gate  .+108 warpgate completed
+  +36	  4:40	  Oracle
+  00	  6:55	  Probe to Nexus F2
+  71|fq+  7:10	  Nexus Fx
+  00	  8:10	  Probe to Minerals and Gas  # Nexus Completed after 71s
+  00	  11:10	  Probe to Nexus Fx
+  71	  11:40	  Nexus Assimilator x2

@@ -10,32 +10,25 @@
   00	  1:16	  Probe to Cyber core
   00	  1:17	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
-  00	  1:35	  Proxy Pylon  # use scout probe to put this remote pylon
+  00	  1:22	  Second Scout Probe to Proxy Pylon
+  00	  1:35	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon, after this focus on mineral
-  00	  2:03	  Research Warp Gate .+108 warpgate completed
-  00	  2:06	  Second Scout Probe to Block Pylon
   00	  2:10	  Block Pylon
+  00	  2:12	  Research Warp Gate .+108 warpgate completed
   39	  2:43	  Immortal Warp Prism Chronoboost #
   29	  2:48	  Shield Battery
   00	  3:10	  Immortal x2 Chronoboost
   00	  3:20	  Home Pylon
   29	  3:40	  Shield Battery # At home
   +40	  3:50	  Immortal
-  00	  4:15	  Pylon x2
+  4*25	  4:00	  Warp in Stalker
+  46|vd	  4:14	  Robotics Bay, Pylon x2
   00	  4:55	  Pylon x2
-  00	  5:15	  Probe to remote Nexus F2
-  00	  5:30	  Remote Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
-  00	  6:34	  Assimilator x2, Pylon x2 .+21 Probe to Gas
-  00|vw   7:00	  Twilight Council
-  00	  7:00	  Gateway x4, Pylon x2
-  36	  7:38	  Templar Archives
-  00	  7:40	  Research Charge Chronoboost
-  00	  7:45	  Probe to Nexus F3
-  00      8:00	  Nexus F3 .+71 Probe to Minerals and Gas
-  32	  8:15	  Forge x2, Pylon x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
-  66	  8:20	  Research Psionic Storm
-  00	  9:10	  Probe to Nexus F4
-  71|fq+  10:30	  Nexus F4
-  00	  10:41	  Probe to Minerals and Gas  # Nexus F4 Completed after 71s
-  00	  12:30	  Probe to Nexus F5
-  71	  13:00	  Nexus Assimilator x2
+  00	  5:00	  Research Speed Prism  # .+57 Gravitic Drive completed
+  00	  5:30	  Build Gateway x2, Pylon x2
+  +25	  6:15	  Warping
+  00	  6:55	  Probe to Nexus F2
+  71|fq+  7:10	  Nexus Fx
+  00	  8:10	  Probe to Minerals and Gas  # Nexus Completed after 71s
+  00	  11:10	  Probe to Nexus Fx
+  71	  11:40	  Nexus Assimilator x2
