@@ -1,12 +1,11 @@
   00	  0:09	  Scout Probe to Proxy Pylon
   00	  0:15	  Probe to Pylon
-  00|fw-  0:17	  Pylon
+  00      0:17	  Pylon
   00      0:33    Probe to Gateway
   46|fa-  0:35	  Gateway
   00      0:37    Chronoboost
   18      0:46    Proxy Pylon  # use scout probe to put this
   00	  0:48	  Assimilator
-  00      0:53    Scout Probe to Proxy Gateway
   46	  1:06	  Proxy Gateway
   00	  1:09	  Assimilator
   00      1:10    Probe to Gas
