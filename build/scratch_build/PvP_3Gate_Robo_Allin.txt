@@ -1,0 +1,21 @@
+  14	  0:17	  Pylon
+  16	  0:38	  Gateway
+  16	  0:48	  Assimilator
+  18	  0:57	  Assimilator
+  19	  1:12	  Gateway
+  21	  1:28	  Cybernetics Core
+  22	  1:41	  Pylon
+  23	  1:55	  Warp Gate
+  23	  2:04	  Stalker x2
+  27	  2:29	  Pylon
+  27	  2:34	  Stalker x2
+  31	  2:42	  Robotics Facility
+  31	  3:04	  Stalker x2
+  35	  3:10	  Gateway
+  35	  3:20	  Warp Prism
+  35	  3:26	  Shield Battery
+  37	  3:37	  Pylon
+  37	  3:58	  Stalker x2
+  41	  4:04	  Observer
+  41	  4:08	  Pylon
+  42	  4:30	  Stalker x2
