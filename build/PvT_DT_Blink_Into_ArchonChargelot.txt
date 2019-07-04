@@ -1,38 +1,38 @@
-  00	  0:09	  Scout Probe to Proxy Pylon
   00	  0:15	  Probe to Pylon
   18      0:17	  Pylon
+  00	  0:18	  Scout Probe to Proxy Pylon
   00      0:33    Probe to Gateway
   46|fa-  0:35	  Gateway
   00	  0:37	  Chronoboost
-  18      0:46    Proxy Pylon  # use scout probe to put this
-  00	  0:48	  Assimilator
-  46      1:06    Proxy Gateway
-  00	  1:09	  Assimilator
-  00	  1:10	  Probe to Gas
+  00	  0:46	  Assimilator
+  18      0:52    Proxy Pylon  # use scout probe to put this
+  00	  1:07	  Probe to Gas
+  46      1:10    Proxy Gateway
   00      1:19    Probe to Cyber core
   36|fc   1:21    Cybernetics Core
-  00      1:31    Probe to Gas
-  00	  1:34	  Probe to Nexus F2
-  00	  1:39	  Cancel Proxy Gateway
-  71      1:41	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  00	  1:23	  Assimilator
+  00      1:44    Probe to Gas
+  00	  1:46	  Probe to Nexus F2
+  00	  1:50	  Cancel Proxy Gateway
+  71      1:54	  Nexus F2 .+69 Probe to Minerals Chronoboost
   00	  1:57	  Adept Chronoboost
   36|vw	  2:12	  Twilight Council
   00	  2:16	  Research Warp Gate # .+108 warp gate completed
-  46	  2:25	  Robotics Facility .+47 Warp Prism .+74 Observer
   00      2:32    Pylon
   71|vr	  2:48	  Dark Shrine
   53	  3:02	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
   00	  3:12	  Chronoboost Warp Gate
   00	  3:31	  Assimilator, Pylon .+21 Probe to Gas
-  18	  3:45	  Pylon
-  00	  4:00	  Warp in Dark Templar x3
+  99	  4:00	  DT Blink Chronoboost
+  00	  4:02	  Warp in Dark Templar x3
   00	  4:06	  Assimilator, Pylon .+21 Probe to Gas
-  40	  4:15	  DT Blink Chronoboost
-  00	  4:36	  Warp in Dark Templar
+  46	  4:18	  Robotics Facility .+47 Warp Prism .+74 Observer
+  20	  4:20	  Chronoboost DT Blink
+  00	  4:38	  Warp in Dark Templar
+  20	  4:40	  Chronoboost DT Blink
   18	  4:53	  Pylon x2
   00	  5:00	  Research Charge Chronoboost
   00	  5:10	  Build Gateway x3, Pylon x2
-  40	  5:20	  Immortal
   +25	  5:25	  Warping
   32	  5:30	  Build Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   00	  5:50	  Probe to Nexus F3
@@ -45,5 +45,4 @@
   71|fq+  8:10    Nexus Fx
   00      9:10    Probe to Minerals and Gas  # Nexus Completed after 71s
   00      12:10   Probe to Nexus Fx
-  00	  4:06	  Assimilator, Pylon .+21 Probe to Gas
   71      12:40   Nexus Assimilator x2
