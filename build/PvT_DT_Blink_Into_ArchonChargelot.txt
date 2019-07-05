@@ -27,7 +27,7 @@
   00	  3:47	  Assimilator, Pylon .+21 Probe to Gas
   99	  3:58	  Research DT Blink Chronoboost
   00	  4:00	  Warp in Dark Templar x3
-  46	  4:18	  Robotics Facility .+47 Warp Prism .+74 Observer
+  46	  4:18	  Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
   20	  4:21	  Chronoboost DT Blink
   00	  4:38	  Warp in Dark Templar
   20	  4:42	  Chronoboost DT Blink
@@ -37,7 +37,6 @@
   +25	  5:25	  Warping
   32	  5:30	  Build Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   00	  5:50	  Probe to Nexus F3
-  00      5:54    Robotics Facility
   +40	  6:00	  Immortal
   00      6:05	  Nexus F3 .+71 Probe to Minerals and Gas
   00	  6:35	  Templar Archives .+38 Research Psionic Storm
