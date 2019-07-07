@@ -17,23 +17,25 @@
   00	  2:02	  Research Warp Gate .+98 Warpgate completed
   00	  2:08	  Second Scout Probe to proxy Pylon
   30	  2:25	  Stalker x2
-  00	  2:27	  Chronoboost Warp Gate
-  18	  2:30	  Pylon
+  00	  2:29	  Chronoboost Warp Gate
   46|va	  2:34	  Robotics Facility
-  46	  2:48	  Build Gateway
+  18	  2:39	  Pylon
   26	  2:55	  Stalker Sentry
-  00	  3:15	  Pylon
+  00	  3:00	  Home Shield Battery
+  46	  3:05	  Build Gateway
+  00	  3:17	  Pylon
   36	  3:20	  Warp Prism Chronoboost
-  00	  3:30	  Home Shield Battery
   00	  3:36	  Warp in Sentry Stalker
   00	  3:42	  Pylon
   18	  3:45	  Observer
-  39      4:05    Immortal Chronoboost
+  00	  3:55	  Pylon
+  39      4:08    Immortal Chronoboost
   +25     4:10    Warping
   5*50	  4:40	  Pylon x2
-  39      4:35    Immortal Chronoboost
-  32|fs   4:38    Build Forge .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
-  +40     5:10    Immortal
+  39      4:38    Immortal Chronoboost
+  32|fs   4:42    Build Forge x2  # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  00      5:15    Research Upgrades Level 1
+  +40     5:30    Immortal
   00      6:55    Probe to Nexus F2
   71|fq+  7:10    Nexus Fx
   00      8:10    Probe to Minerals and Gas  # Nexus Completed after 71s
