@@ -8,7 +8,7 @@
   18      0:52    Proxy Pylon  # use scout probe to put this
   00	  1:07	  Probe to Gas
   46      1:10    Proxy Gateway
-  00      1:19    Probe to Cyber core
+  00      1:19    Cut Probe for Cyber core
   36|fc   1:21    Cybernetics Core
   00	  1:25	  Assimilator
   00      1:46    Probe to Gas
