@@ -2,12 +2,12 @@
   18|fw-  0:17	  Pylon
   00	  0:30	  Probe to Gateway
   46|fa-  0:35	  Gateway
-  15	  0:37	  Chronoboost
-  17	  0:42	  Assimilator
-  18	  0:56	  Assimilator
+  00	  0:37	  Chronoboost
+  21	  0:42	  Assimilator
+  21	  0:56	  Assimilator
   00	  1:03	  Probe to Gas
   00	  1:09	  Probe to Gateway
-  19	  1:14	  Gateway  # normal 1:11
+  46	  1:14	  Gateway  # normal 1:11
   00	  1:14	  Scout Probe to hidden pylon
   00	  1:17	  Probe to Cyber core
   00	  1:17	  Probe to Gas
