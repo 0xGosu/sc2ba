@@ -1,0 +1,41 @@
+  14	  0:17	  Pylon
+  16	  0:45	  Gateway
+  17	  0:56	  Assimilator	 #  Rally in probes
+  20	  1:27	  Nexus
+  20	  1:36	  Cybernetics Core
+  21	  1:46	  Assimilator
+  22	  1:54	  Pylon
+  23	  2:11	  Adept (Chrono Boost)
+  25	  2:18	  Stargate
+  26	  2:28	  Warp Gate
+  27	  2:33	  Adept	 # Follow your first Adept
+  35	  3:00	  Adept	  #  Stalker if oracle first
+  35	  3:03	  Phoenix  (Chrono Boost)
+  39	  3:12	  Pylon
+  42	  3:21	  Oracle  (Chrono Boost)
+  48	  3:34	  Gateway x2
+  50	  3:48	  Twilight Council
+  50	  3:55	  Pylon
+  52	  4:08	  Assimilator x2
+  54	  4:12	  Pylon
+  56	  4:36	  Resonating Glaives # (Chrono Boost)
+  56	  4:37	  Nexus	 # pause probe at 45
+  52	  4:40	  Adept x3
+  58	  4:52	  Robotics Facility x2
+  57	  5:05	  Adept x3	#  move out if map is clear and glaives are done
+  63	  5:30	  Sentry x3
+  69	  5:39	  Immortal x2 (Chrono Boost)	#  pump out warp prism if need
+  77	  5:51	  Gateway x2
+  77	  5:57	  Gateway
+  77	  6:04	  Shield Battery	#  optional
+  77	  6:08	  Immortal (Chrono Boost)
+  86	  6:21	  Immortal (Chrono Boost)
+  88	  6:32	  Shield Battery	#  optional
+  90	  6:39	  Forge
+  93	  6:41	  Shield Battery	#  optional
+  94	  6:48	  Immortal
+  101	  6:54	  Observer
+  102	  7:01	  Charge
+  105	  7:15	  Templar Archives
+  102	  7:05	  Assimilator x2
+  102	  7:07	  Protoss Ground Weapons Level 1 (Chrono Boost)
