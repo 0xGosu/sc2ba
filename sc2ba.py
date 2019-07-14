@@ -24,7 +24,7 @@ lotv_regex = re.compile(r'([+*\d]+)\|?([\w+\-]*)[\t\s]*(\d+:\d+)[\t\s]+([\w +,.]
 
 MAX_BUILD_TIME = 60 * 20
 SYNC_DELTA = 3
-START_OFFSET = 1
+START_OFFSET = 0.5
 CMD_KEY_TRIGGER = 'space'
 CMD_KEY_TIMEOUT = 1.2
 SYNC_KEY_TIMEOUT = 0.9

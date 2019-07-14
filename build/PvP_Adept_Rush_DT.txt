@@ -16,7 +16,7 @@
   00	  1:34	  Hidden Pylon  # use 1st scout probe to put this hidden pylon
   36|vw	  1:57	  Twilight Council  # put next to hidden pylon
   00	  2:02	  Research Warp Gate # .+108 warpgate completed
-  00	  2:06	  Adept x2 Chronoboost
+  30	  2:06	  Adept x2 Chronoboost
   71|vr	  2:33	  Dark Shrine  # put next to hidden pylon
   00	  2:35	  Stalker
   00	  2:37	  Second Scout Probe to Proxy Pylon  # 2nd scout probe
