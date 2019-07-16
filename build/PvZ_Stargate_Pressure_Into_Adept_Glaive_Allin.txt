@@ -16,29 +16,34 @@
   30	  2:12	  Adept Chronoboost
   43|vq	  2:17	  Stargate
   00	  2:24	  Research Warp Gate # .+108 warp gate completed
-  3*30    2:32    Adept   #  -> 3:50    Adept
-  00	  2:35	  Scout Probe to Proxy Pylon
-  25      3:00    Phoenix
-  00      3:04    Proxy Pylon
-  37      3:24    Oracle Chronoboost
-  46      3:26    Build Gateway x2
+  3*30    2:32    Adept   #  -> 3:32    Adept
+  00	  2:38	  Scout Probe to Proxy Pylon
+  25      3:00    Phoenix or Oracle Chronoboost
+  00      3:06    Proxy Pylon
+  46      3:14    Build Gateway x2
+  3*25    3:25    Phoenix  # -> 4:40  Phoenix
   00      3:30    Second Proxy Pylon
   00      3:42    Assimilator x2, Pylon x2 .+21 Probe to Gas
-  2*25    3:51    Phoenix
-  36|vw   4:00    Twilight Council
-  00      4:12    Pylon x2
-  00      4:25    Warp in Adept x3
-  00      4:36    Resonating Glaives Chronoboost
-  43	  4:41	  Pylon x2
-  00      4:43    Probe to Nexus F3
-  +25     4:50    Warp in Adept   #  move out if map is clear and glaives are done
-  00      4:58    Nexus F3, Pylon x2 .+71 Probe to Minerals Chronoboost  # pause probe at 45
-  00      5:12    Build Gateway x3  # Robotics Facility
+  43      3:55    Stargate
+  00      4:10    Warp in Adept x3
+  00      4:15    Pylon x2
+  36|vw   4:24    Twilight Council
+  +25     4:35    Warping
+  8*25    4:40    Phoenix x2
+  6*50	  4:50	  Pylon x4
+  00      5:00    Resonating Glaives Chronoboost
+  46      5:14    Build Gateway x3
+  46      5:26    Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
   32      5:38    Build Forge .+32 Research Upgrades Level 1
-  105     6:15    Build Dark Shrine
-  102     6:35    Research Charge
-  102     6:40    Assimilator x2 .+21 Probe to Gas
+  00      5:43    Probe to Nexus F3
+  00      5:58    Nexus F3, Pylon x2 .+71 Probe to Minerals Chronoboost  # pause probe and move out if map is clear and glaives are done
+  00      6:15    Build Templar Archives .+38 Research Psionic Storm
+  00      6:35    Research Charge Chronoboost
+  00      6:40    Assimilator x2 .+21 Probe to Gas
+  43|vs   7:17    Build Fleet Beacon, Stargate x2, Gateway x2
   00      7:55    Probe to Nexus F4
+  +64     8:03    Carrier x2
+  +43     8:04    Tempest x2
   71|fq+  8:10    Nexus Fx
   00      9:10    Probe to Minerals and Gas  # Nexus Completed after 71s
   00      12:10   Probe to Nexus Fx
