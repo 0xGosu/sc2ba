@@ -15,18 +15,19 @@
   00	  1:31	  Second Scout Probe to Hidden Pylon  # 2nd scout probe
   00	  1:34	  Hidden Pylon  # use 1st scout probe to put this hidden pylon
   36|vw	  1:57	  Twilight Council  # put next to hidden pylon
-  00	  2:02	  Research Warp Gate # .+108 warpgate completed
-  30	  2:06	  Adept x2 Chronoboost
+  30	  2:02	  Adept x2 Chronoboost
+  00	  2:05	  Research Warp Gate # .+108 warpgate completed
+  00	  2:22	  Stalker
   71|vr	  2:33	  Dark Shrine  # put next to hidden pylon
-  00	  2:35	  Stalker
   00	  2:37	  Second Scout Probe to Proxy Pylon  # 2nd scout probe
-  00	  2:40	  Build Gateway, Pylon
-  00      3:00    Chronoboost Warp Gate
+  00      2:40    Chronoboost Warp Gate
+  00	  2:44	  Build Gateway, Pylon
+  00      3:02    Chronoboost Warp Gate
   00	  3:07	  Probe to Nexus F2
   71	  3:16	  Nexus F2 .+71 Probe to Minerals Chronoboost .+92 Chronoboost Probe
   00	  3:23	  Proxy Pylon  # use 2nd scout probe to put this pylon
   00	  3:27	  Shield Battery
-  00	  3:44	  Warp in Dark Templar x3
+  00	  3:45	  Warp in Dark Templar x3
   46	  4:00	  Robotics Facility .+50 Observer .+70 Warp Prism  # if enemy also have DT put this next to proxy pylon
   00	  4:25	  Warp in Dark Templar
   49	  4:33	  Proxy Gateway  # put this next to proxy pylon

@@ -14,12 +14,13 @@
   36|fc   1:21    Cybernetics Core
   18	  1:30	  proxy Pylon
   30	  1:57	  Stalker x2
-  00	  2:02	  Research Warp Gate .+98 Warpgate completed
-  00	  2:08	  Second Scout Probe to proxy Pylon
+  00	  2:02	  Research Warp Gate .+108 Warpgate completed
+  00	  2:04	  Second Scout Probe to proxy Pylon
   30	  2:25	  Stalker x2
   00	  2:29	  Chronoboost Warp Gate
   46|va	  2:34	  Proxy Robotics Facility
   18	  2:36	  Pylon
+  00	  2:50	  Chronoboost Warp Gate
   26	  2:55	  Stalker Sentry
   00	  3:00	  Home Shield Battery
   46	  3:05	  Build Gateway
