@@ -356,7 +356,7 @@ def main():
         def make_switch_build_func():
             def f(build_path=str(build_path_list[i]), _build_index=build_index):
                 runner.build_path = build_path
-                reload_runner(set_offset=None, verbose='say build %d is ready' % (_build_index))
+                reload_runner(set_offset=None)  # verbose='say build %d is ready' % (_build_index)
 
             return f
 

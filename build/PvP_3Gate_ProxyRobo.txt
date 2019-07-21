@@ -12,32 +12,36 @@
   00      1:17    Probe to Cyber core
   00      1:17    Probe to Gas
   36|fc   1:21    Cybernetics Core
-  18	  1:32	  proxy Pylon
+  18	  1:30	  proxy Pylon
   30	  1:57	  Stalker x2
   00	  2:02	  Research Warp Gate .+98 Warpgate completed
   00	  2:08	  Second Scout Probe to proxy Pylon
   30	  2:25	  Stalker x2
   00	  2:29	  Chronoboost Warp Gate
-  46|va	  2:34	  Robotics Facility
-  18	  2:39	  Pylon
+  46|va	  2:34	  Proxy Robotics Facility
+  18	  2:36	  Pylon
   26	  2:55	  Stalker Sentry
   00	  3:00	  Home Shield Battery
   46	  3:05	  Build Gateway
-  00	  3:17	  Pylon
+  00	  3:16	  Pylon
   36	  3:20	  Warp Prism Chronoboost
   00	  3:36	  Warp in Sentry Stalker
-  00	  3:42	  Pylon
+  00	  3:42	  Pylon x2
   18	  3:45	  Observer
-  00	  3:55	  Pylon
   39      4:08    Immortal Chronoboost
   +25     4:10    Warping
-  5*50	  4:40	  Pylon x2
+  50	  4:40	  Pylon x2
   39      4:38    Immortal Chronoboost
-  32|fs   4:42    Build Forge x2  # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
-  00      5:15    Research Upgrades Level 1
+  00      4:40    Probe to Nexus F2
+  71      4:52    Nexus F2, Pylon .+71 Probe to Minerals
   +40     5:30    Immortal
-  00      6:55    Probe to Nexus F2
-  71|fq+  7:10    Nexus Fx
-  00      8:10    Probe to Minerals and Gas  # Nexus Completed after 71s
-  00      11:10   Probe to Nexus Fx
-  71      11:40   Nexus Assimilator x2
+  50	  5:35	  Build Forge, Pylon .+32 Research Upgrades Level 1
+  36|vw   6:24    Twilight Council
+  00      6:30    Assimilator x2, Pylon x2 .+21 Probe to Gas
+  00      7:00    Research Charge Chronoboost
+  00	  7:04	  Templar Archives .+38 Research Psionic Storm
+  46      7:24    Build Gateway x3, Pylon x2
+  71|fq+  9:10    Nexus Fx
+  00      10:10   Probe to Minerals and Gas  # Nexus Completed after 71s
+  00      13:10   Probe to Nexus Fx
+  71      13:40   Nexus Assimilator x2
