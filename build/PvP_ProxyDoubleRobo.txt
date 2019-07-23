@@ -5,7 +5,7 @@
   00	  0:37	  Chronoboost
   00	  0:42	  Assimilator
   00	  0:56	  Assimilator
-  00	  0:58	  Scout Probe to Proxy Pylon
+  00	  0:57	  Scout Probe to Proxy Pylon
   00	  1:03	  Probe to Gas
   00	  1:16	  Probe to Cyber core
   00	  1:17	  Probe to Gas
