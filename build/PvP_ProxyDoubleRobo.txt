@@ -13,14 +13,15 @@
   00	  1:22	  Second Scout Probe to Proxy Pylon
   00	  1:35	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon, after this focus on mineral
-  00	  2:10	  Block Pylon
-  00	  2:12	  Research Warp Gate .+108 warpgate completed
+  00	  2:04	  Research Warp Gate .+108 warpgate completed
+  00	  2:18	  Block Pylon
   39	  2:43	  Immortal Warp Prism Chronoboost #
-  29	  2:48	  Shield Battery
+  29	  2:48	  Proxy Shield Battery
+  00	  2:55	  Home Pylon
   00	  3:10	  Immortal x2 Chronoboost
-  00	  3:20	  Home Pylon
-  29	  3:40	  Shield Battery # At home
-  +40	  3:50	  Immortal
+  29	  3:15	  Shield Battery # At home
+  18      2:38    Observer
+  +40	  3:56	  Immortal
   4*25	  4:00	  Warp in Stalker
   46|vd	  4:14	  Robotics Bay, Pylon x2
   00	  4:55	  Pylon x2
