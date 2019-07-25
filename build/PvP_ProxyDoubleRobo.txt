@@ -1,5 +1,5 @@
-  00	  0:12	  Probe to Pylon # 1st probe out
-  18|fw-  0:17	  Pylon
+  00	  0:09	  Probe to Block Pylon # put this next 1st entrance so that upon 2 building it completely block
+  18|fw-  0:17	  Block Pylon
   00	  0:30	  Probe to Gateway
   46|fa-  0:35	  Gateway
   00	  0:37	  Chronoboost
@@ -7,20 +7,21 @@
   00	  0:56	  Assimilator
   00	  0:57	  Scout Probe to Proxy Pylon
   00	  1:03	  Probe to Gas
-  00	  1:16	  Probe to Cyber core
+  00	  1:12	  Second Scout Probe to Cyber core
   00	  1:17	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
   00	  1:22	  Second Scout Probe to Proxy Pylon
-  00	  1:35	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
+  00	  1:32	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon, after this focus on mineral
-  00	  2:04	  Research Warp Gate .+108 warpgate completed
-  00	  2:18	  Block Pylon
-  39	  2:43	  Immortal Warp Prism Chronoboost #
-  29	  2:48	  Proxy Shield Battery
-  00	  2:55	  Home Pylon
-  00	  3:10	  Immortal x2 Chronoboost
-  29	  3:15	  Shield Battery # At home
-  18      2:38    Observer
+  00	  1:59	  Second Scout Probe to Proxy Pylon
+  00	  2:05	  Research Warp Gate .+108 warpgate completed
+  00	  2:22	  Second Proxy Pylon
+  39	  2:43	  Immortal x2 Chronoboost #
+  29	  2:47	  Proxy Shield Battery
+  00	  2:51	  Home Pylon
+  00	  3:10	  Warp Prism Observer Chronoboost
+  29	  3:14	  Home Shield Battery # At home
+  18      3:38    Observer
   +40	  3:56	  Immortal
   4*25	  4:00	  Warp in Stalker
   46|vd	  4:14	  Robotics Bay, Pylon x2
