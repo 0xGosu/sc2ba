@@ -7,7 +7,7 @@
   00	  0:56	  Assimilator
   00	  0:57	  Scout Probe to Proxy Pylon
   00	  1:03	  Probe to Gas
-  00	  1:12	  Second Scout Probe to Cyber core
+  00	  1:13	  Second Scout Probe to Cyber core
   00	  1:17	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
   00	  1:22	  Second Scout Probe to Proxy Pylon
@@ -29,7 +29,7 @@
   00	  5:00	  Research Speed Prism  # .+57 Gravitic Drive completed
   00	  5:30	  Build Gateway x2, Pylon x2
   +25	  6:15	  Warping
-  00	  6:55	  Probe to Nexus F2
+  00	  6:55	  Second Scout Probe to Hidden Nexus F2
   71|fq+  7:10	  Nexus Fx
   00	  8:10	  Probe to Minerals and Gas  # Nexus Completed after 71s
   00	  11:10	  Probe to Nexus Fx

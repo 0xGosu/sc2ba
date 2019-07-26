@@ -20,11 +20,11 @@
   00	  2:19	  Adept x2
   71|vr	  2:33	  Dark Shrine  # put next to hidden pylon
   00	  2:34	  Second Scout Probe to Proxy Pylon  # 2nd scout probe
-  00	  2:37	  Block Pylon
+  00	  2:37	  Block Shield Battery
   00	  2:44	  Build Gateway
-  00	  2:54	  Pylon
+  00	  2:52	  Home Pylon
   00      3:00    Chronoboost Warp Gate
-  00	  3:15	  Home Shield Battery
+  00	  3:14	  Home Shield Battery
   00	  3:23	  Proxy Pylon  # use 2nd scout probe to put this pylon
   00	  3:24	  Second Scout Probe to Hidden Nexus F2
   00	  3:45	  Warp in Dark Templar x3
