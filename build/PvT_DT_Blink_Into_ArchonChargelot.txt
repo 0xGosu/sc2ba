@@ -11,34 +11,36 @@
   00      1:19    Cut Probe for Cyber core
   36|fc   1:21    Cybernetics Core
   00	  1:25	  Assimilator
+  00	  1:38	  Probe to Nexus F2
+  00	  1:42	  Cancel Proxy Gateway
+  71      1:45	  Nexus F2 .+71 Probe to Minerals
   00      1:46    Probe to Gas
-  00	  1:46	  Probe to Nexus F2
-  00	  1:48	  Cancel Proxy Gateway
-  71      1:54	  Nexus F2 .+71 Probe to Minerals
   00	  1:57	  Adept Chronoboost
-  36|vw	  2:12	  Twilight Council
+  36|vw	  2:07	  Twilight Council
   00	  2:16	  Research Warp Gate # .+108 warp gate completed
+  00	  2:17	  Adept
   00      2:32    Pylon
-  71|vr	  2:48	  Dark Shrine
-  53	  3:02	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
-  00	  3:12	  Chronoboost Warp Gate
+  71|vr	  2:43	  Dark Shrine
+  53	  2:55	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
+  00	  3:10	  Chronoboost Warp Gate
   00	  3:25	  Assimilator .+21 Probe to Gas
-  00      3:32    Proxy Pylon
+  00      3:32    Second Proxy Pylon
   00	  3:47	  Assimilator, Pylon .+21 Probe to Gas
-  99	  3:58	  Research DT Blink Chronoboost
-  00	  4:00	  Warp in Dark Templar x3
-  46	  4:18	  Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
-  20	  4:21	  Chronoboost DT Blink
-  00	  4:38	  Warp in Dark Templar
-  20	  4:42	  Chronoboost DT Blink
+  99	  3:54	  Research DT Blink Chronoboost
+  00	  3:56	  Warp in Dark Templar x3
+  20	  4:17	  Chronoboost DT Blink
+  46	  4:20	  Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
+  00	  4:30	  Warp in Dark Templar
+  20	  4:38	  Chronoboost DT Blink
   18	  4:53	  Pylon x2
   00	  5:00	  Research Charge Chronoboost
-  00	  5:10	  Build Gateway x3, Pylon x2
-  +25	  5:25	  Warping
-  32	  5:30	  Build Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  00	  5:04	  Warp in Dark Templar
+  00	  5:15	  Build Gateway x3, Pylon x2
+  +25	  5:40	  Warping
   00	  5:50	  Probe to Nexus F3
-  +40	  6:00	  Immortal
+  32	  6:00	  Build Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   00      6:05	  Nexus F3 .+71 Probe to Minerals and Gas
+  +40	  6:15	  Immortal
   00	  6:35	  Templar Archives .+38 Research Psionic Storm
   00      7:05    Build Gateway x4
   00	  7:55	  Probe to Nexus F4

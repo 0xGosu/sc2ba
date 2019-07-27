@@ -10,7 +10,7 @@
   46      1:10    Proxy Gateway
   00      1:19    Cut Probe for Cyber core
   36|fc   1:21    Cybernetics Core
-  00	  1:23	  Assimilator
+  00	  1:25	  Assimilator
   00      1:46    Probe to Gas
   30	  1:57	  Stalker Chronoboost
   27      1:59    Adept

@@ -18,7 +18,7 @@
   00	  2:00	  Research Warp Gate
   30	  2:25	  Stalker x2
   46|va	  2:31	  Proxy Robotics Facility
-  18	  2:36	  Pylon
+  18	  2:34	  Home Pylon
   00	  2:50	  Chronoboost Warp Gate
   26	  2:55	  Stalker Sentry
   00	  3:00	  Home Shield Battery
