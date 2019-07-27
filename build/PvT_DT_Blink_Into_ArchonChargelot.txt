@@ -1,6 +1,6 @@
   00	  0:15	  Probe to Pylon
   18      0:17	  Pylon
-  00	  0:18	  Scout Probe to Proxy Pylon
+  00	  0:17	  Scout Probe to Proxy Pylon
   00      0:33    Probe to Gateway
   46|fa-  0:35	  Gateway
   00	  0:37	  Chronoboost
