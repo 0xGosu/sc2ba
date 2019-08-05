@@ -6,7 +6,7 @@
   00	  0:41	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:50	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
-  00	  1:09	  Fake Pylon
+  00	  1:08	  Fake Pylon
   00	  1:21	  Assimilator  # cut probe now when build Assimilator to make Nexus and CC
   00	  1:23	  Cut Probe for Nexus F2
   00	  1:25	  Cancel Fake Pylon

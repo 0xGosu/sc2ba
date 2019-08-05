@@ -7,7 +7,7 @@
   22	  1:56	  Pylon
   23	  2:11	  Warp Gate
   23	  2:12	  Adept (Chrono Boost)
-  27	  2:31	  Stargate
+  27	  2:31	  Star gate
   27	  2:35	  Adept
   35	  3:12	  Oracle (Chrono Boost)
   36	  3:16	  Pylon

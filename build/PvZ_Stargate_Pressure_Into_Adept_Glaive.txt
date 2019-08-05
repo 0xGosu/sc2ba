@@ -6,7 +6,7 @@
   00	  0:41	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:50	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
-  00	  1:09	  Fake Pylon
+  00	  1:08	  Fake Pylon
   00	  1:23	  Probe to Nexus F2
   00	  1:25	  Cancel Fake Pylon
   71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
@@ -14,7 +14,7 @@
   00	  1:40	  Assimilator .+21 Probe to Gas
   00	  1:45	  Pylon
   30	  2:12	  Adept Chronoboost
-  43|vq	  2:17	  Stargate
+  43|vq	  2:17	  Star gate
   00	  2:24	  Research Warp Gate # .+108 warp gate completed
   30      2:31    Adept Chronoboost
   00	  2:38	  Scout Probe to Proxy Pylon

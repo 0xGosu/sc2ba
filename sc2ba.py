@@ -34,7 +34,7 @@ START_KEY = 'f1'
 QUICK_CHAT_MAP = {
     'gg': "glhf",
     'jj': "thanks",
-    'jk': "Hi iam K of the north",
+    'jk': "Hi i'm from the north",
     'j0': "GG WP"
 }
 REPEATED_MODE_MAP = {
@@ -122,6 +122,7 @@ def type_chat(words):
 
 
 class Runner(object):
+    run_no = 0
     build_path = ""
     build_name = ""
     build_orders = []
@@ -136,6 +137,7 @@ class Runner(object):
 
 
 def process_step_message(step):
+    global runner
     for message in step.message.split('.'):
         if not message:
             continue
@@ -145,11 +147,17 @@ def process_step_message(step):
             message = m.group(2)
         else:
             delay = 0
-        keyboard.call_later(say, args=[message], delay=delay)
+
+        def say_only_if_run_no_match(run_no=None):
+            if run_no == runner.run_no:
+                say(message)
+
+        keyboard.call_later(say_only_if_run_no_match, args=[int(runner.run_no)], delay=delay)
 
 
 def run_build(start_key='', max_time=MAX_BUILD_TIME):
     global runner
+    runner.run_no += 1
     runner.stop_now = False
     runner.cur_second = 0
     runner.last_step = None
@@ -381,6 +389,7 @@ def main():
             if event.name in repeat_list and keyboard.is_pressed(hold_key):
                 # print "repeated %s" % event.name
                 keyboard.send(event.scan_code)
+
     keyboard.on_press(repeat_on_press, suppress=False)
 
     while 1:

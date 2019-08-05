@@ -10,7 +10,7 @@
   27	  2:34	  Pylon
   27	  2:40	  Stalker x2
   31	  2:53	  Shield Battery
-  31	  2:55	  Stargate
+  31	  2:55	  Star gate
   31	  2:59	  Shield Battery
   31	  3:11	  Shield Battery x2
   31	  3:33	  Pylon

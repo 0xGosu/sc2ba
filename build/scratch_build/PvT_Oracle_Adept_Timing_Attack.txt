@@ -8,7 +8,7 @@
   22	  2:05	  Assimilator
   23	  2:11	  Warp Gate
   27	  2:32	  Adept
-  29	  2:40	  Stargate
+  29	  2:40	  Star gate
   30	  2:47	  Pylon
   33	  3:09	  Twilight Council
   34	  3:14	  Oracle

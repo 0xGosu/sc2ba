@@ -8,7 +8,7 @@
   24	  2:03	  Warp Gate, Sentry, Stalker
   28	  2:10	  Pylon
   28	  2:29	  Stalker
-  30	  2:34	  Stargate
+  30	  2:34	  Star gate
   30	  2:50	  Nexus
   30	  2:58	  Stalker
   33	  3:09	  Oracle

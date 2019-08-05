@@ -6,7 +6,7 @@
   21	  1:46	  Assimilator
   22	  1:54	  Pylon
   23	  2:11	  Adept (Chrono Boost)
-  25	  2:18	  Stargate
+  25	  2:18	  Star gate
   26	  2:28	  Warp Gate
   27	  2:33	  Adept	 # Follow your first Adept
   35	  3:00	  Adept	  #  Stalker if oracle first
