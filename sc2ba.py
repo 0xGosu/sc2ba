@@ -175,7 +175,7 @@ def run_build(start_key='', max_time=MAX_BUILD_TIME):
         runner.cur_second = time.time() - start_time
         second = runner.cur_second + runner.offset
         step, same_time_steps = find_build_step(second, runner.build_orders)
-        if step != runner.last_step:
+        if step is not None and step != runner.last_step:
             if runner.last_step is None or (step.time != runner.last_step.time):
                 if same_time_steps is None:
                     process_step_message(step)
@@ -363,7 +363,9 @@ def main():
 
         def make_switch_build_func():
             def f(build_path=str(build_path_list[i]), _build_index=build_index):
-                runner.build_path = build_path
+                if build_path != runner.build_path:
+                    runner.run_no += 1;
+                    runner.build_path = build_path
                 reload_runner(set_offset=None)  # verbose='say build %d is ready' % (_build_index)
 
             return f
