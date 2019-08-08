@@ -13,7 +13,7 @@
   18	  1:05	  Proxy Pylon	 # Proxy, behind expansion
   00	  1:28	  Photon Cannon  # Proxy
   36|fc	  1:35	  Cybernetics Core  # Build at Proxy in order to block enemy worker from attack 1st Canon
-  00	  1:36	  Zealot
+  00	  1:36	  Zealot Chronoboost
   00	  1:42	  Photon Cannon	  # Proxy
   46|va	  2:11	  Robotics Facility	  # Proxy
   29	  2:12	  Shield Battery x2	  # Proxy
