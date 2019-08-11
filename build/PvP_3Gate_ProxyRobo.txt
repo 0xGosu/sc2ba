@@ -5,33 +5,34 @@
   00      0:37    Chronoboost
   21      0:42    Assimilator
   21      0:56    Assimilator
-  00      0:57    Scout Probe to proxy pylon
+  00      0:57    Scout Probe to Hidden pylon
   00      1:03    Probe to Gas
   00      1:05    Probe to Gateway
   46      1:10    Gateway  # normal 1:11
   00      1:17    Probe to Cyber core
   00      1:17    Probe to Gas
   36|fc   1:21    Cybernetics Core  # 1:21 keep 16 probes for mineral and only 5 probe to gas (total 22)
-  18	  1:30	  proxy Pylon
-  00	  1:47	  Second Scout Probe to proxy Pylon
+  18	  1:30	  Hidden Pylon  # use 1st scout probe to put this hidden pylon
+  00	  1:45	  Second Scout Probe to Hidden Pylon
   30	  1:57	  Stalker x2
   00	  2:00	  Research Warp Gate
-  30	  2:25	  Stalker x2
-  46|va	  2:31	  Proxy Robotics Facility
-  18	  2:34	  Home Pylon
-  00	  2:50	  Chronoboost Warp Gate
-  26	  2:55	  Stalker Sentry
-  00	  3:00	  Home Shield Battery
-  46	  3:05	  Build Gateway
-  00	  3:14	  Pylon
-  36	  3:18	  Warp Prism Chronoboost
-  00	  3:37	  Warp in Sentry Stalker
+  18	  2:04	  Home Pylon
+  30	  2:25	  Stalker x2 Chronoboost
+  46|va	  2:30	  Proxy Robotics Facility
+  00	  2:32	  Second Scout Probe to Proxy Pylon
+  00	  2:40	  Chronoboost Warp Gate
+  26	  2:50	  Stalker Sentry
+  46	  3:00	  Build Gateway
+  00	  3:03	  Home Shield Battery
+  00	  3:10	  Proxy Pylon
+  36	  3:16	  Warp Prism Chronoboost
+  00	  3:37	  Warp in Stalker x2
   00	  3:40	  Pylon x2
-  18	  3:43	  Observer
-  39      4:01    Immortal Chronoboost
-  +25     4:05    Warping
+  39      3:41    Immortal
+  +25     4:05    Warp in Stalker
+  18	  4:16	  Observer Chronoboost
   50	  4:40	  Pylon x2
-  39      4:30    Immortal Chronoboost
+  39      4:30    Immortal
   00      4:40    Probe to Nexus F2
   71      4:52    Nexus F2, Pylon .+71 Probe to Minerals
   18      5:09    Observer
