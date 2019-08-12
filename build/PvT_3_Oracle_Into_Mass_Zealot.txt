@@ -1,6 +1,6 @@
+  00	  0:12	  Scout Probe  # rally 1st probe out
   00	  0:15	  Probe to Pylon
-  18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
-  00	  0:17	  Scout Probe
+  18      0:17	  Pylon
   00	  0:35	  Chronoboost
   00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
   00	  0:43	  Probe to Gateway
@@ -8,11 +8,11 @@
   00	  1:00	  Probe to Gas
   00	  1:15	  Probe to Nexus F2
   71      1:21	  Nexus F2 .+69 Probe to Minerals Chronoboost  # After nexus focus on Gas
+  00	  1:24	  Scout Probe to Proxy Pylon
   00	  1:29	  Cut Probe for Cyber core
   36|fc	  1:31	  Cybernetics Core # 1:32
-  00	  1:33	  Scout Probe to Watch Pylon
   00	  1:38	  Assimilator .+21 Probe to Gas
-  00	  1:47	  Watch Pylon
+  00	  1:44	  Proxy Pylon
   30	  2:07	  Adept Chronoboost
   43|vq	  2:12	  Star gate
   00	  2:22	  Research Warp Gate # .+108 warp gate completed

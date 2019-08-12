@@ -1,4 +1,4 @@
-  00	  0:12	  Probe to Pylon # 1st probe out
+  00	  0:12	  Probe to Pylon # rally 1st probe out
   18|fw-  0:17	  Pylon
   00	  0:30	  Probe to Gateway
   46|fa-  0:35	  Gateway

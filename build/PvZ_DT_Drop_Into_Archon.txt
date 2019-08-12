@@ -1,4 +1,4 @@
-  00	  0:09	  Probe to entrance  # before 1st probe out
+  00	  0:12	  Probe to entrance  # rally 1st probe out
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
   00	  0:18	  Scout Probe
   00	  0:37	  Chronoboost
