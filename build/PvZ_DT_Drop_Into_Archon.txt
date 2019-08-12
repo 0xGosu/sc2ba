@@ -13,13 +13,14 @@
   71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
   36|fc	  1:36	  Cybernetics Core # 1:32
   00	  1:42	  Probe to Gas
-  00	  1:44	  Pylon
-  00	  2:00	  Zealot
+  00	  1:45	  Home Pylon
+  00	  2:02	  Probe to entrance
   36|vw	  2:12	  Twilight Council
-  00	  2:14	  Probe to entrance
+  30	  2:12	  Shield Battery
+  00	  2:14	  Adept Chronoboost
   00	  2:16	  Research Warp Gate # .+108 warp gate completed
   46	  2:25	  Robotics Facility .+47 Warp Prism Chronoboost .+74 Observer
-  00	  2:30	  Adept Chronoboost
+  00	  2:30	  Zealot
   71|vr	  2:48	  Dark Shrine
   53	  3:02	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
   00	  3:12	  Chronoboost Warp Gate
