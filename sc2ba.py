@@ -26,7 +26,7 @@ MAX_BUILD_TIME = 60 * 20
 SYNC_DELTA = 3
 START_OFFSET = 0.5
 CMD_KEY_TRIGGER = 'space'
-CMD_KEY_TIMEOUT = 1.2
+CMD_KEY_TIMEOUT = 1.5
 SYNC_KEY_TIMEOUT = 0.9
 TIME_SLEEP_UNIT = 0.2
 START_KEY = 'f1'
@@ -359,7 +359,7 @@ def main():
     keyboard.add_word_listener('stop', stop_now, triggers=[CMD_KEY_TRIGGER], match_suffix=True, timeout=CMD_KEY_TIMEOUT)
 
     for i in range(len(build_path_list)):
-        build_index = i + 1
+        build_index = i + 1 if i != 9 else 0
 
         def make_switch_build_func():
             def f(build_path=str(build_path_list[i]), _build_index=build_index):
