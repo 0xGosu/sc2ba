@@ -1,8 +1,8 @@
   00      0:12    Probe to Pylon # rally 1st probe out
-  18|fw-  0:17    Pylon
-  00      0:30    Probe to Gateway
+  18      0:17    Pylon
+  00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
+  00	  0:30	  Chronoboost
   46|fa-  0:35    Gateway
-  00      0:37    Chronoboost
   21      0:42    Assimilator
   21      0:56    Assimilator
   00      1:03    Probe to Gas

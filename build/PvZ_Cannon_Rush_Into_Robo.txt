@@ -1,9 +1,9 @@
   00	  0:12	  Probe to entrance  # rally 1st probe out
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
-  00	  0:18	  Scout Probe
-  00	  0:37	  Chronoboost
+  00	  0:17	  Scout Probe
+  00	  0:36	  Chronoboost
   00	  0:39	  Assimilator
-  00	  0:40	  Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
+  00	  0:40	  Rally Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:49	  Gateway  # 0:44
   00	  0:49	  Wait and Check Scout
   00	  0:53	  Cancel Assimilator to Canon Rush

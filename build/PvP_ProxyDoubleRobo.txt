@@ -1,13 +1,13 @@
   00	  0:12	  Probe to Block Pylon # put this next 1st entrance so that upon 2 building it completely block
-  18|fw-  0:17	  Block Pylon
-  00	  0:30	  Probe to Gateway
+  18      0:17	  Block Pylon
+  00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
+  00	  0:30	  Chronoboost
   46|fa-  0:35	  Gateway
-  00	  0:37	  Chronoboost
   00	  0:42	  Assimilator
   00	  0:56	  Assimilator
   00	  0:57	  Scout Probe to Proxy Pylon
   00	  1:03	  Probe to Gas
-  00	  1:13	  Second Scout Probe to Cyber core
+  00	  1:15	  Probe to Cyber core
   00	  1:17	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
   00	  1:22	  Second Scout Probe to Proxy Pylon
