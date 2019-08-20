@@ -1,4 +1,4 @@
-  00	  0:12	  Probe to Block Pylon # put this next 1st entrance so that upon 2 building it completely block
+  00	  0:10	  Rally Probe to Block Pylon # put this next 1st entrance so that upon 2 building it completely block
   18      0:17	  Block Pylon
   00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
   00	  0:30	  Chronoboost

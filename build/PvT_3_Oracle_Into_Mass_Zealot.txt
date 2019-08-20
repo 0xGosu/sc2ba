@@ -1,4 +1,4 @@
-  00	  0:12	  Scout Probe  # rally 1st probe out
+  00	  0:10	  Rally Scout Probe  # rally 1st probe out
   00	  0:15	  Probe to Pylon
   18      0:17	  Pylon
   00	  0:35	  Chronoboost

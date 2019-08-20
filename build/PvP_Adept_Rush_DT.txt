@@ -1,4 +1,4 @@
-  00	  0:12	  Probe to Pylon # rally 1st probe out
+  00	  0:10	  Rally Probe to Pylon # rally 1st probe out
   18      0:17	  Pylon
   00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
   00	  0:30	  Chronoboost

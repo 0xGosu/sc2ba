@@ -1,4 +1,4 @@
-  00	  0:12	  Probe to Block Pylon  # rally 1st probe out
+  00	  0:10	  Rally Probe to Block Pylon  # rally 1st probe out
   18      0:17	  Block Pylon
   00	  0:17	  Scout Probe to Proxy Pylon  # 1st probe
   00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
@@ -6,7 +6,7 @@
   46|fa-  0:35	  Gateway
   00	  0:45	  Assimilator
   00	  0:52	  Pull Scout Probe for Proxy Pylon
-  32      0:56	  Build Forge or Assimilator  # if vs Zerg/Protoss
+  32      0:56	  Check then Build Forge or Assimilator  # if vs Zerg/Protoss
   18      1:01    Proxy Pylon  # use scout probe to put this
   00	  1:03	  Probe to Gas
   00      1:15    Cut Probe for Cyber core
