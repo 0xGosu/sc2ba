@@ -148,12 +148,11 @@ def process_step_message(step):
         else:
             delay = 0
 
-        def make_func():
-            def _(run_no=None):
-                if run_no == runner.run_no:
-                    say(message)
-            return _
-        keyboard.call_later(make_func(), args=[int(runner.run_no)], delay=delay)
+        def say_only(msg, run_no=None):
+            if run_no == runner.run_no:
+                say(msg)
+
+        keyboard.call_later(say_only, args=[message, int(runner.run_no)], delay=delay)
 
 
 def run_build(start_key='', max_time=MAX_BUILD_TIME):

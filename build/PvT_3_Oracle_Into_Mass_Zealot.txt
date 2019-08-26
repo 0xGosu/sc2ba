@@ -1,11 +1,12 @@
-  00	  0:10	  Rally Scout Probe  # rally 1st probe out
+  00	  0:10	  Rally Scout Probe  # consider rally 3rd probe out
   00	  0:15	  Probe to Pylon
   18      0:17	  Pylon
-  00	  0:35	  Chronoboost
+  00	  0:30	  Chronoboost
   00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
   00	  0:43	  Probe to Gateway
   46|fa-  0:45	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
+  00	  1:02	  Chronoboost
   00	  1:15	  Probe to Nexus F2
   71      1:21	  Nexus F2 .+69 Probe to Minerals Chronoboost  # After nexus focus on Gas
   00	  1:24	  Scout Probe to Proxy Pylon

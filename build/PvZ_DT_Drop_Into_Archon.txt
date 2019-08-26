@@ -1,28 +1,28 @@
   00	  0:10	  Rally Probe to entrance  # rally 1st probe out
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
   00	  0:17	  Scout Probe
-  00	  0:35	  Chronoboost
+  00	  0:36	  Chronoboost
   00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
   00	  0:41	  Rally Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:50	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
+  00	  1:02	  Chronoboost
   00	  1:08	  Fake Pylon
-  00	  1:21	  Assimilator  # cut probe now when build Assimilator to make Nexus and CC
-  00	  1:23	  Cut Probe for Nexus F2
-  00	  1:25	  Cancel Fake Pylon
+  00	  1:17	  Assimilator  # cut probe now when build Assimilator to make Nexus and CC
+  00	  1:21	  Cut Probe for Nexus F2
+  00	  1:24	  Cancel Fake Pylon
   71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
   36|fc	  1:36	  Cybernetics Core # 1:32
-  00	  1:42	  Probe to Gas
-  00	  1:45	  Home Pylon
+  00	  1:38	  Probe to Gas
+  00	  1:40	  Home Pylon
   36|vw	  2:12	  Twilight Council
   00	  2:13	  Research Warp Gate # .+108 warp gate completed
-  00	  2:15	  Adept
+  00	  2:15	  Adept Chronoboost
   00	  2:17	  Probe to entrance
   46	  2:25	  Robotics Facility .+47 Warp Prism Chronoboost .+74 Observer
-  30	  2:27	  Shield Battery
   71|vr	  2:48	  Dark Shrine
-  00	  2:50	  Sentry
-  53	  3:02	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
+  53	  3:00	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
+  00	  3:05	  Zealot  # Shield Battery
   00	  3:12	  Chronoboost Warp Gate
   00	  3:20	  Assimilator, Pylon .+21 Probe to Gas
   18	  3:45	  Pylon

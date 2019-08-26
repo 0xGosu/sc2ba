@@ -1,9 +1,9 @@
   00	  0:10	  Rally Scout Probe to Proxy Pylon  # rally 1st probe out
   00	  0:15	  Probe to Pylon
   18      0:17	  Pylon
+  00	  0:30	  Chronoboost
   00      0:33    Probe to Gateway
   46|fa-  0:35	  Gateway
-  00	  0:37	  Chronoboost
   00	  0:46	  Assimilator
   18      0:52    Proxy Pylon  # use scout probe to put this
   00	  1:07	  Probe to Gas
