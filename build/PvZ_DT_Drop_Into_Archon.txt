@@ -3,7 +3,7 @@
   00	  0:17	  Scout Probe
   00	  0:36	  Chronoboost
   00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
-  00	  0:41	  Rally Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
+  00	  0:40	  Rally Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:50	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
   00	  1:02	  Chronoboost
