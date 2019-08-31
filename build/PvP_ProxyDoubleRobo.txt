@@ -6,31 +6,32 @@
   00	  0:44	  Assimilator
   00	  0:54	  Assimilator
   00	  0:57	  Scout Probe to Proxy Pylon
+  00	  1:02	  Chronoboost
   00	  1:05	  Probe to Gas
-  00	  1:08	  Rally Probe to Cyber core
+  00	  1:13	  Rally Probe to Cyber core
   00	  1:15	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
   00	  1:22	  Second Scout Probe to Proxy Pylon
   00	  1:32	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon, after this focus on mineral
-  00	  1:59	  Second Scout Probe to Proxy Pylon
   30	  2:05	  Adept
-  00	  2:22	  Second Proxy Pylon
-  39	  2:43	  Immortal Warp Prism Chronoboost #
+  00	  2:10	  Research Warp Gate .+108 warpgate completed
+  00	  2:15	  Second Proxy Pylon
+  39	  2:43	  Warp Prism Immortal Chronoboost #
   29	  2:47	  Proxy Shield Battery
   00	  2:54	  Home Pylon
-  00	  3:00	  Research Warp Gate .+108 warpgate completed
   00	  3:09	  Immortal Observer Chronoboost
-  29	  3:16	  Home Shield Battery # At home
-  18      3:38    Immortal
-  +40	  3:56	  Immortal
-  46|vd	  4:44	  Robotics Bay, Pylon x2
-  00	  4:55	  Pylon x2
-  4*25	  5:05	  Warp in Stalker
-  00	  5:30	  Research Speed Prism  # .+57 Gravitic Drive completed
-  00	  5:45	  Build Gateway x2, Pylon x2
+  00	  3:16	  Home Shield Battery # or Build Gateway
+  39      3:28    Immortal
+  39      3:38    Immortal
+  00	  3:45	  Pylon, Shield Battery
+  39      4:07    Observer Chronoboost
+  +40	  4:18	  Immortal x2
+  4*25	  4:25	  Warp in Sentry
+  46	  4:30	  Build Gateway, Pylon x2
+  00	  5:25	  Pylon x2
   +25	  6:15	  Warping
-  00	  6:55	  Second Scout Probe to Hidden Nexus F2
+  00	  6:55	  Scout Probe to Hidden Nexus F2
   71|fq+  7:10	  Nexus Fx
   00	  8:10	  Probe to Minerals and Gas  # Nexus Completed after 71s
   00	  11:10	  Probe to Nexus Fx

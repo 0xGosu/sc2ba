@@ -1,5 +1,5 @@
   00	  0:09	  Rally Scout Probe to Proxy Pylon  # rally 1st probe out
-  00	  0:15	  Probe to Pylon
+  00	  0:13	  Probe to Pylon
   18      0:17	  Pylon
   00	  0:26	  Rally Probe to Gateway  # 3rd probe
   00	  0:30	  Chronoboost
@@ -8,7 +8,7 @@
   18      0:52    Proxy Pylon  # use scout probe to put this
   00	  1:07	  Probe to Gas
   46      1:10    Proxy Gateway
-  00      1:19    Cut Probe for Cyber core
+  00      1:17    Cut Probe for Cyber core
   36|fc   1:21    Cybernetics Core
   00	  1:25	  Assimilator
   00      1:46    Probe to Gas

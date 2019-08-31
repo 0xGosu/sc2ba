@@ -1,5 +1,5 @@
-  00	  0:09	  Rally Scout Probe
-  00	  0:14	  Probe to Pylon
+  00	  0:09	  Rally Scout Probe to Proxy Pylon  # rally 1st probe out
+  00	  0:13	  Probe to Pylon
   18      0:17	  Pylon
   00	  0:30	  Chronoboost
   00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
@@ -8,11 +8,11 @@
   00	  1:00	  Probe to Gas
   00	  1:06	  Rally Probe to Nexus F2
   71      1:23	  Nexus F2 .+69 Probe to Minerals Chronoboost  # not enough mineral
-  00	  1:25	  Scout Probe to Proxy Pylon
-  00	  1:28	  Cut Probe for Cyber core
+  00	  1:24	  Scout Probe to Hidden Pylon
+  00	  1:27	  Cut Probe for Cyber core
   36|fc	  1:31	  Cybernetics Core # 1:32
   00	  1:35	  Assimilator .+21 Probe to Gas
-  00	  1:45	  Pylon
+  00	  1:45	  Hidden Pylon
   30	  2:07	  Adept Chronoboost
   43|vq	  2:12	  Star gate
   00	  2:22	  Research Warp Gate # .+108 warp gate completed
