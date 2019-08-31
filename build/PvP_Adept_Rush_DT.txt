@@ -1,23 +1,23 @@
-  00	  0:10	  Rally Probe to Pylon # rally 1st probe out
+  00	  0:09	  Rally Probe to Pylon # rally 1st probe out
   18      0:17	  Pylon
   00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
   00	  0:30	  Chronoboost
   46|fa-  0:35	  Gateway
-  21	  0:42	  Assimilator
-  21	  0:56	  Assimilator
-  00	  1:03	  Probe to Gas
+  21	  0:44	  Assimilator
+  21	  0:54	  Assimilator
+  00	  1:05	  Probe to Gas
   00	  1:06	  Probe to Gateway
+  00	  1:08	  Rally Probe to Cyber core
   46	  1:11	  Gateway  # normal 1:11
   00	  1:11	  Scout Probe to hidden pylon
-  00	  1:17	  Probe to Cyber core
-  00	  1:17	  Probe to Gas
+  00	  1:15	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 15 probes for mineral and 6 probe to gas (total 22)
   00	  1:25	  Second Scout Probe to Hidden Pylon  # 2nd scout probe
   00	  1:34	  Hidden Pylon  # use 1st scout probe to put this hidden pylon
   36|vw	  1:57	  Twilight Council  # put next to hidden pylon
   30	  1:59	  Adept x2 Chronoboost
   00	  2:05	  Research Warp Gate # .+108 warpgate completed
-  00	  2:19	  Adept x2
+  00	  2:17	  Adept x2
   71|vr	  2:33	  Dark Shrine  # put next to hidden pylon
   00	  2:34	  Second Scout Probe to Proxy Pylon  # 2nd scout probe
   00	  2:37	  Block Shield Battery

@@ -1,4 +1,4 @@
-  00	  0:10	  Rally Probe to Block Pylon  # rally 1st probe out
+  00	  0:09	  Rally Probe to Block Pylon  # rally 1st probe out
   18      0:17	  Block Pylon
   00	  0:17	  Scout Probe to Proxy Pylon  # 1st probe
   00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out

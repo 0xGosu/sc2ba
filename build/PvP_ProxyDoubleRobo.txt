@@ -1,14 +1,14 @@
-  00	  0:10	  Rally Probe to Block Pylon # put this next 1st entrance so that upon 2 building it completely block
+  00	  0:09	  Rally Probe to Block Pylon # put this next 1st entrance so that upon 2 building it completely block
   18      0:17	  Block Pylon
   00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
   00	  0:30	  Chronoboost
   46|fa-  0:35	  Gateway
-  00	  0:42	  Assimilator
-  00	  0:56	  Assimilator
+  00	  0:44	  Assimilator
+  00	  0:54	  Assimilator
   00	  0:57	  Scout Probe to Proxy Pylon
-  00	  1:03	  Probe to Gas
-  00	  1:15	  Probe to Cyber core
-  00	  1:17	  Probe to Gas
+  00	  1:05	  Probe to Gas
+  00	  1:08	  Rally Probe to Cyber core
+  00	  1:15	  Probe to Gas
   36|fc	  1:21	  Cybernetics Core  # 1:21 keep only 14 probes for mineral til 6 probe to gas (4 first)
   00	  1:22	  Second Scout Probe to Proxy Pylon
   00	  1:32	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
@@ -16,11 +16,11 @@
   00	  1:59	  Second Scout Probe to Proxy Pylon
   30	  2:05	  Adept
   00	  2:22	  Second Proxy Pylon
-  39	  2:43	  Immortal x2 Chronoboost #
+  39	  2:43	  Immortal Warp Prism Chronoboost #
   29	  2:47	  Proxy Shield Battery
   00	  2:54	  Home Pylon
   00	  3:00	  Research Warp Gate .+108 warpgate completed
-  00	  3:10	  Warp Prism Observer Chronoboost
+  00	  3:09	  Immortal Observer Chronoboost
   29	  3:16	  Home Shield Battery # At home
   18      3:38    Immortal
   +40	  3:56	  Immortal

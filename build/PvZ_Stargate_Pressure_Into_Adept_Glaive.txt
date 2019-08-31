@@ -1,4 +1,4 @@
-  00	  0:10	  Rally Probe to entrance  # rally 1st probe out
+  00	  0:09	  Rally Probe to entrance  # rally 1st probe out
   18      0:17	  Pylon # early scout use this to block Zerg 2nd Hatchery
   00	  0:17	  Scout Probe
   00	  0:36	  Chronoboost
@@ -8,8 +8,8 @@
   00	  1:00	  Probe to Gas
   00	  1:02	  Chronoboost
   00	  1:08	  Fake Pylon
-  00	  1:21	  Cut Probe for Nexus F2
-  00	  1:25	  Cancel Fake Pylon
+  00	  1:17	  Rally Probe for Nexus F2
+  00	  1:25	  Cancel Fake Pylon, Cut Probe
   71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
   36|fc	  1:36	  Cybernetics Core # 1:32
   00	  1:39	  Assimilator

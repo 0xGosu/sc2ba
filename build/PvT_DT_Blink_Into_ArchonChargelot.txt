@@ -1,4 +1,4 @@
-  00	  0:10	  Rally Scout Probe to Proxy Pylon  # rally 1st probe out
+  00	  0:09	  Rally Scout Probe to Proxy Pylon  # rally 1st probe out
   00	  0:15	  Probe to Pylon
   18      0:17	  Pylon
   00	  0:26	  Rally Probe to Gateway  # 3rd probe
