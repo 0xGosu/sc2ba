@@ -1,0 +1,39 @@
+  00	  0:09	  Rally Probe to Block Pylon  # rally 1st probe out
+  18      0:17	  Block Pylon
+  00	  0:17	  Scout Probe to Proxy Pylon  # 1st probe
+  00	  0:26	  Rally Probe to Gateway  # rally 3rd probe out
+  00	  0:30	  Chronoboost
+  32|fs-  0:35	  Build Forge
+  18      1:00    Proxy Pylon  # use scout probe to put this
+  00      1:06    Cut Probe
+  46|fa   1:18    Proxy Gateway x2  # proxy a bit away if vs Terran/Zerg, proxy close if vs Protoss
+  29	  1:18	  Proton Canon  # may need to double photon canon if vs Zerg
+  00	  1:32	  Assimilator .+21 Probe to Gas
+  00	  1:33	  Second Scout Probe to Proxy Pylon, Resume Probe
+  00	  1:58	  Probe to Cyber core
+  36|fc   2:04    Cybernetics Core
+  00	  2:05	  Zealot x2 Chronoboost
+  00	  2:12	  Second Proxy Pylon
+  00	  2:23	  Zealot x2
+  21      2:27	  Assimilator .+21 Probe to Gas
+  46|va	  2:40	  Robotics Facility	  # Proxy
+  00	  2:40	  Proxy Shield Battery x2
+  00	  2:50	  Adept x2  # Stalker if vs Protoss
+  00	  2:55	  Home Pylon, Cut Probe	  # Home
+  00	  3:22	  Sentry Stalker  #
+  36	  3:26	  Warp Prism Chronoboost
+  00      3:30    Research Warpgate .+108 warpgate completed
+  00	  3:50	  Stalker x2
+  39	  3:52	  Immortal Chronoboost
+  00	  4:20	  Stalker x2
+  39	  4:31	  Immortal
+  00	  4:50	  Stalker x2
+  39	  5:10	  Observer
+  +25	  5:25	  Warp in Stalker
+  +39	  5:30	  Immortal
+  00	  6:55	  Probe to Nexus F2
+  71|fq+  7:10	  Nexus Fx
+  00	  8:10	  Probe to Minerals and Gas  # Nexus Completed after 71s
+  00	  11:10	  Probe to Nexus Fx
+  71	  11:40	  Nexus Assimilator x2
+
