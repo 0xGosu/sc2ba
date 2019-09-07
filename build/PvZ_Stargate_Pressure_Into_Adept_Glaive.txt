@@ -6,34 +6,35 @@
   00	  0:39	  Rally Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:50	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
-  00	  1:08	  Fake Pylon
-  00	  1:20	  Rally Probe for Nexus F2 and Cut Probe
-  00	  1:25	  Cancel Fake Pylon
-  71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
-  36|fc	  1:36	  Cybernetics Core # 1:32
-  00	  1:39	  Assimilator
-  00	  1:43	  Home Pylon
-  00	  2:00	  Probe to Gas
-  30	  2:12	  Stalker Chronoboost
+  00	  1:01	  Fake Pylon
+  00	  1:08	  Rally Probe to Nexus F2 and Cut 1 Probe
+  00	  1:17	  Cancel Fake Pylon
+  71      1:22	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  36|fc	  1:37	  Cybernetics Core # 1:32
+  00	  1:42	  Home Pylon
+  00	  1:46	  Assimilator .+21 Probe to Gas
+  00	  1:52	  Chronoboost Probe
+  27	  2:00	  Zealot
   43|vq	  2:19	  Star gate
-  00	  2:23	  Research Warp Gate # .+108 warp gate completed
-  00	  2:25	  Probe to entrance
-  30      2:28    Adept
-  30	  2:34	  Build Gateway
-  30	  2:39	  Assimilator, Pylon .+21 Probe to Gas
+  30	  2:24	  Pylon
+  30	  2:27	  Adept
+  00	  2:32	  Research Warp Gate # .+108 warp gate completed
+  30	  2:35	  Assimilator .+21 Probe to Gas
+  30	  2:50	  Shield Battery
   25      3:03    Phoenix Chronoboost
   37      3:13    Oracle
-  00      3:30    Build Gateway, Pylon
+  00      3:26    Build Gateway x2, Pylon
   37      3:44    Oracle Chronoboost
-  00      3:50    Assimilator, Pylon .+21 Probe to Gas
-  46      4:00    Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
-  00      4:03    Probe to Nexus F3
+  36|vw   3:54    Twilight Council
+  46      3:56    Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
+  00      4:06    Probe to Nexus F3 and Pause Probe
   37      4:11    Oracle Chronoboost
-  00      4:18    Nexus F3, Pylon x2 .+71 Probe to Minerals Chronoboost  # pause probe and move out if map is clear and glaives are done
-  36|vw   4:24    Twilight Council
-  +25     4:35    Warping
-  00      5:00    Resonating Glaives Chronoboost
-  46      5:14    Build Gateway x3, Pylon x2
+  00      4:20    Nexus F3, Pylon x2 .+71 Probe to Minerals Chronoboost
+  00      4:30    Resonating Glaives Chronoboost # move out if map is clear and glaives are done
+  46      4:32    Build Gateway x3, Pylon x2
+  25      4:40    Warp in Sentry, Adept
+  46      4:50    Build Gateway x3, Pylon x2
+  +25     5:05    Warping
   +39	  5:32	  Immortal
   00      6:35    Research Charge Chronoboost
   71	  6:39	  Dark Shrine .+71 Warp in Dark Templar
