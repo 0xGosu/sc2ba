@@ -10,23 +10,23 @@
   00	  1:08	  Rally Probe to Nexus F2 and Cut 1 Probe
   00	  1:17	  Cancel Fake Pylon
   71      1:22	  Nexus F2 .+69 Probe to Minerals Chronoboost
-  36|fc	  1:37	  Cybernetics Core # 1:32
-  00	  1:42	  Home Pylon
-  00	  1:46	  Assimilator .+21 Probe to Gas
-  00	  1:52	  Chronoboost Probe
-  27	  2:00	  Zealot
+  36|fc	  1:37	  Cybernetics Core # 1:36
+  00	  1:42	  Assimilator .+21 Probe to Gas
+  00	  1:46	  Home Pylon
+  00	  2:05	  Chronoboost Probe
+  30	  2:13	  Adept
   43|vq	  2:19	  Star gate
-  30	  2:24	  Pylon
-  30	  2:27	  Adept
-  00	  2:32	  Research Warp Gate # .+108 warp gate completed
-  30	  2:35	  Assimilator .+21 Probe to Gas
-  30	  2:50	  Shield Battery
+  00	  2:25	  Research Warp Gate # .+108 warp gate completed
+  30	  2:33	  Zealot
+  00	  2:43	  Assimilator .+21 Probe to Gas
+  30	  2:48	  Shield Battery
+  30	  2:50	  Pylon
   25      3:03    Phoenix Chronoboost
   37      3:13    Oracle
   00      3:26    Build Gateway x2, Pylon
   37      3:44    Oracle Chronoboost
   36|vw   3:54    Twilight Council
-  46      3:56    Robotics Facility .+47 Observer Chronoboost .+56 Warp Prism
+  46      3:56    Robotics Facility .+47 Warp Prism Chronoboost .+73 Observer
   00      4:06    Probe to Nexus F3 and Pause Probe
   37      4:11    Oracle Chronoboost
   00      4:20    Nexus F3, Pylon x2 .+71 Probe to Minerals Chronoboost

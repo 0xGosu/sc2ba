@@ -6,40 +6,42 @@
   00	  0:39	  Rally Probe to entrance  # to gateway, scout probe here if versus T or want to do canon rush
   46|fa-  0:50	  Gateway  # 0:50
   00	  1:00	  Probe to Gas
-  00	  1:16	  Assimilator  # cut probe now when build Assimilator to make Nexus and CC
-  00	  1:20	  Rally Probe for Nexus F2 and Cut Probe
-  00	  1:24	  Cancel Fake Pylon
-  71      1:31	  Nexus F2 .+69 Probe to Minerals Chronoboost
-  36|fc	  1:36	  Cybernetics Core # 1:32
-  00	  1:37	  Probe to Gas
-  00	  1:40	  Home Pylon
-  36|vw	  2:12	  Twilight Council
-  00	  2:13	  Research Warp Gate # .+108 warp gate completed
-  00	  2:15	  Adept Chronoboost
-  00	  2:17	  Probe to entrance
-  46	  2:25	  Robotics Facility .+47 Warp Prism Chronoboost .+74 Observer
-  71|vr	  2:48	  Dark Shrine
-  53	  3:00	  Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
-  00	  3:05	  Zealot  # Shield Battery
-  00	  3:12	  Chronoboost Warp Gate
-  00	  3:20	  Assimilator, Pylon .+21 Probe to Gas
-  18	  3:45	  Pylon
-  00	  4:00	  Warp in Dark Templar x3
-  00	  4:10	  Assimilator, Pylon .+21 Probe to Gas
-  40	  4:28	  Immortal
-  00	  4:36	  Warp in Dark Templar  # DT Blink Chronoboost
-  18	  4:53	  Pylon x2
-  00	  5:00	  Research Charge Chronoboost
-  00	  5:10	  Build Gateway x3, Pylon x2
+  00	  1:01	  Fake Pylon
+  00	  1:08	  Rally Probe to Nexus F2 and Cut 1 Probe
+  00	  1:17	  Cancel Fake Pylon
+  71      1:22	  Nexus F2 .+69 Probe to Minerals Chronoboost
+  36|fc	  1:37	  Cybernetics Core # 1:36
+  00	  1:42	  Assimilator .+21 Probe to Gas
+  00	  1:46	  Home Pylon
+  00	  2:05	  Chronoboost Probe
+  00	  2:13	  Stalker
+  00	  2:14	  Scout Probe to Proxy Pylon
+  00	  2:16	  Probe to Twilight Council
+  36|vw	  2:19	  Twilight Council
+  00	  2:25	  Research Warp Gate # .+100 warp gate completed
+  00	  2:40	  Proxy Pylon  # or Adept
+  00	  2:52	  Probe to Dark Shrine
+  71|vr	  2:55	  Dark Shrine
+  46	  3:00	  Proxy Robotics Facility .+47 Warp Prism Chronoboost .+73 Observer
+  53	  3:05	  Cut Probe to Build Gateway x2  # 46 + 7s (warp transform) cut probe here as well
+  00	  3:15	  Chronoboost Warp Gate
+  30	  3:20	  Shield Battery
+  18	  3:40	  Assimilator x2, Pylon .+21 Probe to Gas
+  00      4:04    Probe to Nexus F3 and Pause Probe
+  00	  4:06	  Warp in Dark Templar x3
+  00      4:20    Nexus F3, Pylon .+71 Probe to Minerals Chronoboost
+  32	  4:30	  Build Forge, Pylon .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
+  00	  4:37	  Warp in Dark Templar  # DT Blink Chronoboost
+  40	  4:40	  Immortal
+  00	  4:45	  Research Charge Chronoboost
+  00	  4:50	  Build Gateway x3, Pylon x2
   40	  5:20	  Immortal
   +25	  5:25	  Warping
-  32	  5:30	  Build Forge x2 .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
-  00	  5:50	  Probe to Nexus F3
+  00	  5:30	  Build Gateway x3, Pylon x2
   00      5:54    Robotics Facility
   +40	  6:00	  Immortal
-  00      6:05	  Nexus F3 .+71 Probe to Minerals and Gas
-  00	  6:35	  Templar Archives .+38 Research Psionic Storm
-  00      7:05    Build Gateway x4
+  36|ve	  6:44	  Templar Archives
+  00      7:10    Research Psionic Storm
   00	  7:55	  Probe to Nexus F4
   71|fq+  8:10    Nexus Fx
   00      9:10    Probe to Minerals and Gas  # Nexus Completed after 71s
