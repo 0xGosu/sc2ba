@@ -15,7 +15,7 @@
   00	  1:23	  Probe to Gas
   30      1:57    Adept
   30	  2:02	  Stalker Chronoboost
-  00      2:05    Research Warpgate .+108 warpgate completed
+  00      2:05    Research Warp Gate .+108 Warp Gate completed
   00	  2:09	  Proxy Shield Battery
   00	  2:12	  Second Proxy Pylon
   30	  2:22	  Stalker Chronoboost

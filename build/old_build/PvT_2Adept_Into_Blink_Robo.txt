@@ -13,7 +13,7 @@
   00	  1:37	  Pylon
   00	  1:42	  Assimilator .+21 Probe to Gas
   30	  1:57	  Adept Chronoboost
-  00	  2:02	  Research Warp Gate .+108 warpgate completed
+  00	  2:02	  Research Warp Gate .+108 Warp Gate completed
   00	  2:17	  Adept
   36|vw	  2:22	  Twilight Council
   30	  2:47	  Stalker

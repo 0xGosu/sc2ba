@@ -21,7 +21,7 @@
   43|vq	  2:40	  Star gate
   00	  2:49	  Assimilator x2, Pylon .+21 Probe to Gas
   00	  2:55	  Pylon
-  00	  3:02	  Research Warp Gate .+108 warpgate completed
+  00	  3:02	  Research Warp Gate .+108 Warp Gate completed
   00	  3:15	  Shield Battery
   36	  3:25	  Oracle Chronoboost
   46	  3:32	  Star gate, Pylon

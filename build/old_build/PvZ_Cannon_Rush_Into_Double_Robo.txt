@@ -26,4 +26,4 @@
   36	  3:27	  Warp Prism Chronoboost	# After finnished, continue Immortal production
   00	  3:34	  Pylon	  # Home
   +39	  3:54	  Immortal x2
-  00	  4:00	  Research Warp Gate  # .+108 warpgate completed
+  00	  4:00	  Research Warp Gate  # .+108 Warp Gate completed

@@ -15,7 +15,7 @@
   00	  1:30	  Proxy Pylon  # use scout probe to put this remote pylon then keep scouting
   46|va	  1:57	  Robotics Facility x2  # put next to remote pylon
   30	  2:05	  Sentry Chronoboost  # after this focus on mineral
-  00	  2:15	  Research Warp Gate .+108 warpgate completed
+  00	  2:15	  Research Warp Gate .+108 Warp Gate completed
   00	  2:16	  Home Pylon
   39	  2:43	  Immortal Warp Prism # Chronoboost
   00	  2:46	  Forge

@@ -27,8 +27,12 @@ SYNC_DELTA = 3
 START_OFFSET = 0.5
 CMD_KEY_TRIGGER = 'space'
 CMD_KEY_TIMEOUT = 1.5
-SYNC_KEY_TIMEOUT = 0.9
+SYNC_KEY_TIMEOUT = 1.0
 TIME_SLEEP_UNIT = 0.2
+REMIND_ON_SYNC_KEY = 2  # Remind 2 more time if forgot to sync, set None or 0 to disable
+REMIND_SYNC_STEP_EVERY = 4.5  # remind after every 4.5s, this number need to be > SYNC_DELTA
+REMIND_SYNC_SAY_PREFIX = 'please '
+
 START_KEY = 'f1'
 # be careful of the text in this chat map, it shouldnt crash with sync keys, because it may trigger it during game
 QUICK_CHAT_MAP = {
@@ -136,6 +140,19 @@ class Runner(object):
     sync_handler_map = {}
 
 
+def say_only(msg, run_no=None, until_rmv_handler_removed=None):
+    global runner
+    if run_no == runner.run_no:
+        say(msg)
+        if until_rmv_handler_removed is not None:
+            for ti in range(REMIND_ON_SYNC_KEY):
+                time.sleep(REMIND_SYNC_STEP_EVERY)
+                if until_rmv_handler_removed not in runner.sync_handler_map:
+                    break
+                else:
+                    say(REMIND_SYNC_SAY_PREFIX + msg)
+
+
 def process_step_message(step):
     global runner
     for message in step.message.split('.'):
@@ -148,11 +165,12 @@ def process_step_message(step):
         else:
             delay = 0
 
-        def say_only(msg, run_no=None):
-            if run_no == runner.run_no:
-                say(msg)
-
-        keyboard.call_later(say_only, args=[message, int(runner.run_no)], delay=delay)
+        until_rmv_handler_removed = None
+        if delay == 0 and step.sync and REMIND_ON_SYNC_KEY:
+            keys, _rmv_handler = make_rmv_handler_key(step)
+            if '+' not in _rmv_handler:  # these sync key will not be removed after press
+                until_rmv_handler_removed = _rmv_handler
+        keyboard.call_later(say_only, args=[message, int(runner.run_no), until_rmv_handler_removed], delay=delay)
 
 
 def run_build(start_key='', max_time=MAX_BUILD_TIME):
@@ -195,6 +213,19 @@ def run_build(start_key='', max_time=MAX_BUILD_TIME):
     time.sleep(3)  # sleep for a shortime before exit run
 
 
+def make_rmv_handler_key(step):
+    if step.sync[-1] == '+': # these sync key will not be removed after press
+        keys = step.sync[:-1]  # remove char + out of keys sync
+        _rmv_handler = str(step.sync)
+    elif step.sync[-1] == '-':
+        keys = step.sync[:-1]  # remove char + out of keys sync
+        _rmv_handler = str(step.sync) + str(step.supply)
+    else:
+        keys = step.sync
+        _rmv_handler = str(keys) + str(step.time)
+    return keys, _rmv_handler
+
+
 def process_runner_build_orders(run, enable_sync=True):
     # remove all sync handler
     if run.sync_handler_map:
@@ -209,17 +240,7 @@ def process_runner_build_orders(run, enable_sync=True):
 
     for step in run.build_orders:
         if step.sync and len(step.sync) >= 2 and enable_sync:
-
-            if step.sync[-1] == '+':
-                keys = step.sync[:-1]  # remove char + out of keys sync
-                _rmv_handler = str(step.sync)
-            elif step.sync[-1] == '-':
-                keys = step.sync[:-1]  # remove char + out of keys sync
-                _rmv_handler = str(step.sync) + str(step.supply)
-            else:
-                keys = step.sync
-                _rmv_handler = str(keys) + str(step.time)
-
+            keys, _rmv_handler = make_rmv_handler_key(step)
             print("create sync %s for:" % (keys), step)
 
             def make_sync_build():
@@ -245,7 +266,7 @@ def process_runner_build_orders(run, enable_sync=True):
                                 print("still good")
                         # still removed the handler even though SYNC_DELTA check failed
                         if skip_and_remove or (remove_handler_key is not None and '+' not in remove_handler_key):
-                            # remove sync listerner
+                            # remove sync listerner except for repeated sync key end with '+'
                             handler = run.sync_handler_map.pop(remove_handler_key, None)
                             if handler:
                                 try:

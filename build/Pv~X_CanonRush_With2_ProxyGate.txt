@@ -22,7 +22,7 @@
   00	  2:55	  Home Pylon, Cut Probe	  # Home
   00	  3:22	  Sentry Stalker  #
   36	  3:26	  Warp Prism Chronoboost
-  00      3:30    Research Warpgate .+108 warpgate completed
+  00      3:30    Research Warp Gate .+108 Warp Gate completed
   00	  3:50	  Stalker x2
   39	  3:52	  Immortal Chronoboost
   00	  4:20	  Stalker x2
