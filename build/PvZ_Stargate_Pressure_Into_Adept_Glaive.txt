@@ -14,10 +14,10 @@
   00	  1:42	  Assimilator .+21 Probe to Gas
   00	  1:46	  Home Pylon
   00	  2:05	  Chronoboost Probe
-  30	  2:13	  Adept
+  30	  2:13	  Adept  # Chronoboost
   43|vq	  2:19	  Star gate
   00	  2:25	  Research Warp Gate # .+108 warp gate completed
-  30	  2:33	  Zealot
+  30	  2:33	  Adept
   00	  2:43	  Assimilator .+21 Probe to Gas
   30	  2:48	  Shield Battery
   30	  2:50	  Pylon
@@ -33,7 +33,7 @@
   46      4:30    Build Gateway x3, Pylon x2
   25      4:40    Warp in Sentry, Adept
   00      4:45    Resonating Glaives Chronoboost # move out if map is clear and glaives are done
-  46      5:55    Build Gateway x3, Pylon x2
+  46      4:55    Build Gateway x3, Pylon x2
   +25     5:05    Warping
   +39	  5:32	  Immortal
   00      6:15    Research Charge Chronoboost
