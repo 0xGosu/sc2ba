@@ -25,17 +25,20 @@
   00	  3:20	  Probe to Nexus F2
   36	  3:23	  Oracle Chronoboost
   00	  3:28	  Pylon
-  71|fq-  3:33    Nexus F2  .+71 Probe to Minerals
-  +43	  3:48	  Void ray
+  71|fq-  3:33    Nexus F2
+  4*43	  3:48	  Void ray
   25      4:15    Warp in Sentry
+  00      4:43    Probe to Minerals Chronoboost
   00	  4:45	  Build Gateway x2, Pylon x2
   25      4:50    Warp in Sentry
   00	  5:10	  Assimilator x2, Pylon x2 .+21 Probe to Gas
   25      5:16    Warp in Adept
   43|vs   5:32    Fleet Beacon
   25      5:45    Warp in Adept
+  43	  6:00	  Proxy Star gate
+  43      6:16    Tempest Chronoboost
   36|vw	  6:32	  Twilight Council
-  00	  6:40	  Build Gateway x2
+  +43     6:48    Tempest x2
   00	  6:55	  Probe to Nexus F3
   71|fq+  7:10    Nexus Fx
   00      8:30    Probe to Minerals and Gas  # Nexus Completed after 71s
