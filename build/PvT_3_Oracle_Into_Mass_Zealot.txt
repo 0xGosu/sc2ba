@@ -1,45 +1,57 @@
-  00	  0:09	  Rally Scout Probe to Proxy Pylon  # rally 1st probe out
-  00	  0:13	  Probe to Pylon
+  00	  0:09	  Rally Probe to Pylon # rally 1st probe out
   18      0:17	  Pylon
+  00	  0:17	  Scout Probe
+  00	  0:26	  Rally Probe to Gateway  # 3rd probe
   00	  0:30	  Chronoboost
-  00	  0:39	  Assimilator # .+21 Probe to Gas # Alway keep 16 probes for mineral until build Nexus
-  00	  0:39	  Rally Probe to Gateway
-  46|fa-  0:45	  Gateway  # 0:50
-  00	  1:00	  Probe to Gas
-  00	  1:06	  Rally Probe to Nexus F2
-  71      1:23	  Nexus F2 .+69 Probe to Minerals Chronoboost  # not enough mineral
-  00	  1:24	  Scout Probe to Hidden Pylon
-  00	  1:27	  Cut Probe for Cyber core
-  36|fc	  1:31	  Cybernetics Core # 1:32
-  00	  1:35	  Assimilator .+21 Probe to Gas
-  00	  1:45	  Hidden Pylon
-  30	  2:07	  Adept Chronoboost
-  43|vq	  2:12	  Star gate
+  46|fa-  0:35	  Gateway
+  00	  0:46	  Assimilator
+  18      0:52    Proxy Pylon  # use scout probe to put this
+  00	  1:07	  Probe to Gas
+  00	  1:08	  Rally Probe to Cyber core
+  46      1:10    Proxy Gateway
+  36|fc   1:21    Cybernetics Core
+  00	  1:28	  Assimilator
+  00	  1:32	  Rally Probe to Nexus F2 and Cut 1 Probe
+  00	  1:46	  Cancel Proxy Gateway
+  71      1:48	  Nexus F2 .+71 Probe to Minerals
+  00      1:49    Probe to Gas
+  00	  1:51	  Scout Probe to Proxy Star gate
+  00	  1:57	  Adept Chronoboost
+  43|vq	  2:15	  Proxy Star gate
+  30      2:16    Adept
   00	  2:22	  Research Warp Gate # .+108 warp gate completed
-  30      2:26    Adept
-  00      2:42    Assimilator .+21 Probe to Gas
-  00      2:45    Pylon
-  37      2:55    Oracle Chronoboost
-  30      2:57    Stalker
-  37      3:22    Oracle Chronoboost
-  00      3:32    Assimilator, Pylon .+21 Probe to Gas
-  37      3:49    Oracle
-  46      4:00    Robotics Facility, Pylon .+47 Observer Chronoboost .+56 Warp Prism
-  00      4:03    Probe to Nexus F3
-  00      4:10    Warp in Adept
-  36      4:15    Phoenix
-  00|fq-  4:18    Nexus F3
-  00      4:20    Pylon
+  00      2:32    Pylon
+  30      2:46    Stalker
+  37      2:58    Oracle Chronoboost
+  00      3:10    Assimilator .+21 Probe to Gas
+  30      3:16    Stalker
+  53      3:20    Build Gateway
+  37      3:25    Oracle
+  53      3:30    Build Gateway
+  00      3:40    Assimilator, Pylon .+21 Probe to Gas
+  37      3:57    Oracle Chronoboost
+  46|va   4:00    Robotics Facility, Pylon
+  00      4:10    Warp in Stalker
+  25      4:15    Phoenix
   00      4:30    Build Gateway x3, Pylon x2
+  00      4:35    Warp in Sentry
+  25      4:40    Phoenix
   36|vw   4:44    Twilight Council
+  32	  4:46	  Build Forge, Pylon
+  00      4:46    Observer Chronoboost
+  00      4:56    Warp Prism
+  00      5:00    Warp in Stalker
   46      5:14    Build Gateway x3, Pylon x2
+  32	  5:18	  Research Upgrades Level 1
   00      5:20    Research Charge Chronoboost
+  00|ve	  5:22	  Templar Archives
   +25     5:25    Warping
-  00      5:28    Probe to Minerals Chronoboost
+  00      5:15    Probe to Nexus F3
+  00|fq-  5:30    Nexus F3
   +39	  5:32	  Immortal
-  00|ve	  5:35	  Templar Archives # .+38 Research Psionic Storm
-  32      6:00    Build Forge x2, Pylon x2 .+32 Research Upgrades Level 1
-  00      6:20    Research Psionic Storm
+  00      5:58    Research Psionic Storm
+  32      6:00    Build Forge, Pylon .+32 Research Upgrades Level 1
+  00      6:40    Probe to Minerals Chronoboost
   00      6:45    Research Blink Chronoboost
   00      6:50    Assimilator x2, Pylon x2 .+21 Probe to Gas
   00      7:20    Build Gateway x3, Pylon x2

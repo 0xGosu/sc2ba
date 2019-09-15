@@ -32,7 +32,7 @@
   00	  4:11	  Warp in Dark Templar x3
   71|fq-  4:20    Nexus F3
   00	  4:20	  Pylon
-  36      4:23    Observer Chronoboost
+  36      4:23    Observer
   32	  4:30	  Build Forge, Pylon .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   00	  4:35	  Research Charge Chronoboost
   00	  4:43	  Warp in Dark Templar  # DT Blink Chronoboost
