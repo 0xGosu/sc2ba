@@ -15,17 +15,18 @@
   00	  1:46	  Cancel Proxy Gateway
   71      1:48	  Nexus F2 .+71 Probe to Minerals
   00      1:49    Probe to Gas
+  00      1:51    Scout Probe to Hidden Pylon
   00	  1:57	  Adept Chronoboost
   00	  2:02	  Probe to Twilight Council
   36|vw	  2:07	  Twilight Council
   00	  2:15	  Research Warp Gate # .+108 warp gate completed
   00	  2:16	  Adept
-  00      2:32    Pylon
-  00	  2:38	  Probe to Dark Shrine
+  00      2:22    Hidden Pylon
+  00	  2:38	  Probe to Hidden Dark Shrine
   71|vr	  2:43	  Dark Shrine
   30      2:46    Adept
   53	  2:58	  Build Gateway  # 46 + 7s (warp transform)
-  46|va	  3:12	  Robotics Facility
+  46|va	  3:12	  Proxy Robotics Facility
   00	  3:15	  Chronoboost Warp Gate
   30      3:16    Stalker
   53      3:20    Build Gateway  # 46 + 7s (warp transform) this not really needed
@@ -34,12 +35,14 @@
   99	  3:54	  Research DT Blink Chronoboost
   00	  3:56	  Warp in Dark Templar x2
   36      3:58    Warp Prism Chronoboost
+  46|vd   4:00    Robotics Bay
   20	  4:17	  Chronoboost DT Blink
-  36      4:25    Observer
+  36      4:26    Observer
   00	  4:30	  Warp in Dark Templar x2
   20	  4:38	  Chronoboost DT Blink
+  2*36    4:46    Disruptor
+  00      4:48    Research Speed Prism
   18	  4:53	  Pylon x2
-  00	  5:00	  Research Blink Chronoboost
   00	  5:04	  Warp in Dark Templar
   00	  5:15	  Build Gateway x3, Pylon x2
   +25	  5:40	  Warping
@@ -47,7 +50,8 @@
   00|fq-  6:00	  Nexus F3
   32	  6:05	  Build Forge .+32 Research Upgrades Level 1 # .+161 Research Upgrades Level 2 .+315 Research Upgrades Level 3
   +40	  6:15	  Immortal
-  46|vd	  6:39	  Robotics Bay
+  46	  6:39	  Robotics Facility
+  00	  7:00	  Research Blink Chronoboost
   00      7:10    Probe to Minerals Chronoboost
   00      7:15    Build Gateway x4
   00	  7:25	  Research Extended Thermal Lance
