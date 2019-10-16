@@ -214,7 +214,7 @@ def run_build(start_key='', max_time=MAX_BUILD_TIME):
 
 
 def make_rmv_handler_key(step):
-    if step.sync[-1] == '+': # these sync key will not be removed after press
+    if step.sync[-1] == '+':  # these sync key will not be removed after press
         keys = step.sync[:-1]  # remove char + out of keys sync
         _rmv_handler = str(step.sync)
     elif step.sync[-1] == '-':
@@ -322,13 +322,19 @@ def process_quick_chat(chat_map, verbose=0):
 
 
 def get_build_path(verbose=0):
-    build_folder_path = os.path.join(os.getcwd(), 'build')
+    relative_path = 'build'
+    build_index = None
+    if len(sys.argv) == 3:
+        relative_path = sys.argv[1]
+        build_index = int(sys.argv[2]) - 1
+    elif len(sys.argv) == 2:
+        relative_path = sys.argv[1]
+
+    build_folder_path = os.path.join(os.getcwd(), relative_path)
     build_list = sorted([p for p in os.listdir(build_folder_path) if p.endswith('.txt')])
     build_path_list = [os.path.join(build_folder_path, build_path) for build_path in build_list]
-    build_index = None
-    if len(sys.argv) >= 2:
-        build_index = (int(sys.argv[1]) - 1) % len(build_list)
-        file_path = build_path_list[build_index]
+    if build_index is not None:
+        file_path = build_path_list[build_index % len(build_list)]
     else:
         file_path = build_path_list[-1]  # default is last one 'build/PvZ_DT_Drop_Into_Archon.txt'
 
