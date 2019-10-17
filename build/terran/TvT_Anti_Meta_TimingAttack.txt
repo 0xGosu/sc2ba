@@ -1,0 +1,30 @@
+  14	  0:16	  Supply Depot
+  14	  0:28	  Refinery
+  00	  0:39	  Worker to Gas
+  16|fa-  0:44	  Barracks
+  19	  1:31	  Reaper
+  19	  1:32	  Orbital Command
+  20|fq-  1:43	  Command Center .+71 Orbital Command, Worker to Minerals and Gas
+  20|va   1:52	  Factory
+  21	  2:04	  Supply Depot
+  21	  2:06	  Barracks Reactor
+  22	  2:15	  Refinery
+  00	  2:36	  Worker to Gas
+  24|vq	  2:41	  Starport
+  24	  2:45	  Hellion x2
+  24	  2:49	  Barracks Tech Lab
+  28	  3:06	  Hellion x2
+  28	  3:10	  Marauder
+  34	  3:18	  Medivac
+  36	  3:28	  Hellion x2
+  36	  3:31	  Marauder
+  42	  3:36	  Supply Depot
+  42	  3:38	  Concussive Shells
+  42	  3:49	  Hellion x2
+  46	  3:58	  Marauder
+  46	  4:00	  Supply Depot
+  51	  4:10	  Hellion
+  41|fs	  4:55	  Engineering Bay
+  91|fq+  6:25	  Command Center
+  00	  7:35	  Worker to Minerals and Gas
+  00	  10:35	  Command Center Refinery x2
