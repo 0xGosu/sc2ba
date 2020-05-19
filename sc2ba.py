@@ -48,6 +48,28 @@ REPEATED_MODE_MAP = {
 FACTOR = 1
 
 
+if os.name == 'nt':  # window 
+	# import the required module from text to speech conversion 
+	import win32com.client 
+	# Calling the Disptach method of the module which  
+	# interact with Microsoft Speech SDK to speak 
+	speaker = win32com.client.Dispatch("SAPI.SpVoice") 
+	try:
+		speaker.Voice = speak.GetVoices("Name=Microsoft Zira").Item(0)
+		speaker.Speak('')
+	except:
+		speaker.Voice = speaker.GetVoices().Item(1)
+		speaker.Speak('')
+	speaker.Volume = 100
+	speaker.Rate = 2
+	speak = lambda msg: speaker.Speak(' %s' % msg)
+elif os.name == 'posix':
+	speak = lambda msg: os.system("say '%s'" % msg)
+else:
+	raise OSError("Unsupported OS: %s" % os.name)
+
+
+
 def add_step(build_orders, time_map, step):
     build_orders.append(step)
     # construct time map
@@ -99,7 +121,7 @@ def find_build_step(second, build_orders):
 
 
 def binary_search_step(second, b, e, build_orders):
-    mid = (b + e) / 2
+    mid = (b + e) // 2
     step = build_orders[mid]
     if second == step.time:
         return step
@@ -116,7 +138,7 @@ def binary_search_step(second, b, e, build_orders):
 def say(msg, verbose=False):
     if verbose:
         print("say: " + msg)
-    os.system("say '%s'" % msg)
+    speak(msg)
 
 
 def type_chat(words):
