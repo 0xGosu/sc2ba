@@ -7,7 +7,7 @@
   18      1:00    Proxy Pylon  # use scout probe to put this
   00      1:06    Cut Probe
   46|fa   1:18    Proxy Gateway x2  # proxy a bit away if vs Terran/Zerg, proxy close if vs Protoss
-  29	  1:18	  Proton Canon  # may need to double photon canon if vs Zerg
+  29	  1:18	  Photon Canon  # may need to double photon canon if vs Zerg
   00	  1:32	  Assimilator .+21 Probe to Gas
   00	  1:33	  Second Scout Probe to Proxy Pylon, Resume Probe
   00	  1:58	  Probe to Cyber core

@@ -23,8 +23,9 @@ BuildStep = namedtuple('BuildStep', ['supply', 'sync', 'time', 'message'])
 lotv_regex = re.compile(r'([+*\d]+)\|?([\w+\-]*)[\t\s]*(\d+:\d+)[\t\s]+([\w +,.]+)')
 
 MAX_BUILD_TIME = 60 * 20
-SYNC_DELTA = 3
+SYNC_DELTA = 3.5
 START_OFFSET = 0.5
+FIND_STEP_OFFSET = 0.0
 CMD_KEY_TRIGGER = 'space'
 CMD_KEY_TIMEOUT = 1.5
 SYNC_KEY_TIMEOUT = 1.0
@@ -47,27 +48,28 @@ REPEATED_MODE_MAP = {
 # this should be equal 1 unless for testing
 FACTOR = 1
 
+if os.name == 'nt':  # window
+    # import the required module from text to speech conversion
+    import win32com.client
 
-if os.name == 'nt':  # window 
-	# import the required module from text to speech conversion 
-	import win32com.client 
-	# Calling the Disptach method of the module which  
-	# interact with Microsoft Speech SDK to speak 
-	speaker = win32com.client.Dispatch("SAPI.SpVoice") 
-	try:
-		speaker.Voice = speak.GetVoices("Name=Microsoft Zira").Item(0)
-		speaker.Speak('')
-	except:
-		speaker.Voice = speaker.GetVoices().Item(1)
-		speaker.Speak('')
-	speaker.Volume = 100
-	speaker.Rate = 2
-	speak = lambda msg: speaker.Speak(' %s' % msg)
+    # Calling the Disptach method of the module which
+    # interact with Microsoft Speech SDK to speak
+    speaker = win32com.client.Dispatch("SAPI.SpVoice")
+    try:
+        speaker.Voice = speaker.GetVoices("Name=Microsoft Zira").Item(0)
+        speaker.Speak('')
+    except:
+        speaker.Voice = speaker.GetVoices().Item(0)
+        speaker.Speak('')
+    speaker.Volume = 100
+    speaker.Rate = 2
+    speak = lambda msg: speaker.Speak(' %s' % msg)
+    # due to Window Text To Speech is a bit delay
+    FIND_STEP_OFFSET = 0.3
 elif os.name == 'posix':
-	speak = lambda msg: os.system("say '%s'" % msg)
+    speak = lambda msg: os.system("say '%s'" % msg)
 else:
-	raise OSError("Unsupported OS: %s" % os.name)
-
+    raise OSError("Unsupported OS: %s" % os.name)
 
 
 def add_step(build_orders, time_map, step):
@@ -214,7 +216,7 @@ def run_build(start_key='', max_time=MAX_BUILD_TIME):
     while second <= max_time:
         runner.cur_second = time.time() - start_time
         second = runner.cur_second + runner.offset
-        step, same_time_steps = find_build_step(second, runner.build_orders)
+        step, same_time_steps = find_build_step(second + FIND_STEP_OFFSET, runner.build_orders)
         if step is not None and step != runner.last_step:
             if runner.last_step is None or (step.time != runner.last_step.time):
                 if same_time_steps is None:
@@ -269,7 +271,7 @@ def process_runner_build_orders(run, enable_sync=True):
                 def f(step_time=step.time, remove_handler_key=_rmv_handler):
                     print("sync build %.2f <> %d" % (run.cur_second + run.offset, step_time))
                     # only sync backward (go back in time) and current time if off by more than SYNC_DELTA
-                    if run.cur_second > step_time - (START_OFFSET + SYNC_DELTA):
+                    if run.cur_second > step_time - SYNC_DELTA:
                         skip_and_remove = False
                         if '-' in remove_handler_key:
                             outbound_duration = int(remove_handler_key.split('-')[-1])
