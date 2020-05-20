@@ -55,17 +55,24 @@ if os.name == 'nt':  # window
     # Calling the Disptach method of the module which
     # interact with Microsoft Speech SDK to speak
     speaker = win32com.client.Dispatch("SAPI.SpVoice")
-    try:
-        speaker.Voice = speaker.GetVoices("Name=Microsoft Zira").Item(0)
-        speaker.Speak('')
-    except:
+    for i in range(50):
+        try:
+            if "Microsoft Zira" in speaker.GetVoices().Item(i).GetDescription():
+                speaker.Voice = speaker.GetVoices().Item(i)
+                break
+            else:
+                print(speaker.GetVoices().Item(i).GetDescription())
+        except:
+            continue
+    else:
         speaker.Voice = speaker.GetVoices().Item(0)
-        speaker.Speak('')
+    # run speak first time to connect the win32 client
+    speaker.Speak('')
     speaker.Volume = 100
     speaker.Rate = 2
     speak = lambda msg: speaker.Speak(' %s' % msg)
     # due to Window Text To Speech is a bit delay
-    FIND_STEP_OFFSET = 0.3
+    FIND_STEP_OFFSET = 0.1
 elif os.name == 'posix':
     speak = lambda msg: os.system("say '%s'" % msg)
 else:
